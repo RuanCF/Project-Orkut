@@ -1,0 +1,53 @@
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.exe
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.deps.json
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.runtimeconfig.json
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.dll
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.pdb
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.Form1.resources
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.csproj.GenerateResource.cache
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.AssemblyInfoInputs.cache
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.AssemblyInfo.cs
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.csproj.CoreCompileInputs.cache
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.dll
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\refint\Login_Teste.dll
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.pdb
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.genruntimeconfig.cache
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\ref\Login_Teste.dll
+C:\Users\ZettZ\source\repos\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.Form2.resources
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.exe
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.deps.json
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.runtimeconfig.json
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.dll
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.pdb
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.Form1.resources
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.Form2.resources
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.Form3.resources
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.csproj.GenerateResource.cache
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.AssemblyInfoInputs.cache
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.AssemblyInfo.cs
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.csproj.CoreCompileInputs.cache
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.dll
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\refint\Login_Teste.dll
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.pdb
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.genruntimeconfig.cache
+C:\Users\ruanc\OneDrive\Área de Trabalho\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\ref\Login_Teste.dll
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.exe
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.deps.json
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.runtimeconfig.json
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.dll
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\bin\Debug\net8.0-windows\Login_Teste.pdb
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.AssemblyInfo.cs
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.dll
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\refint\Login_Teste.dll
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.pdb
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.genruntimeconfig.cache
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\ref\Login_Teste.dll
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.LoginForm.resources
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.HomeForm.resources
+C:\Users\User\Desktop\Login_Teste\Login_Teste\Login_Teste\obj\Debug\net8.0-windows\Login_Teste.RegisterForm.resources
