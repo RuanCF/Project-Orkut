@@ -29,25 +29,37 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(267, 148);
+            label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(247, 159);
+            label1.Size = new Size(198, 128);
             label1.TabIndex = 0;
             label1.Text = "Olá";
             // 
-            // Form2
+            // button1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            button1.Location = new Point(2, 197);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 1;
+            button1.Text = "Redefinir senha";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // HomeForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
+            Controls.Add(button1);
             Controls.Add(label1);
-            Name = "Form2";
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "HomeForm";
             Text = "Form2";
             ResumeLayout(false);
             PerformLayout();
@@ -56,5 +68,6 @@
         #endregion
 
         private Label label1;
+        private Button button1;
     }
 }

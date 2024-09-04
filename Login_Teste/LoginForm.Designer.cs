@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             button1 = new Button();
             button2 = new Button();
             panel1 = new Panel();
             campoSenha = new TextBox();
             campoUsuario = new TextBox();
+            textBox1 = new TextBox();
+            contextMenuStrip1 = new ContextMenuStrip(components);
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -88,18 +91,35 @@
             campoUsuario.Size = new Size(174, 23);
             campoUsuario.TabIndex = 2;
             // 
-            // Form1
+            // textBox1
+            // 
+            textBox1.Location = new Point(331, 90);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 3;
+            textBox1.Text = "RUan";
+            textBox1.Enter += textBox1_Enter;
+            textBox1.Leave += textBox1_Leave;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
+            // 
+            // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(305, 280);
+            ClientSize = new Size(495, 301);
+            Controls.Add(textBox1);
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
-            Name = "Form1";
+            Name = "LoginForm";
             Text = "Form1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -109,5 +129,7 @@
         private Panel panel1;
         private TextBox campoSenha;
         private TextBox campoUsuario;
+        private TextBox textBox1;
+        private ContextMenuStrip contextMenuStrip1;
     }
 }

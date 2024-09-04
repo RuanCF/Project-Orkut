@@ -12,7 +12,7 @@ namespace Login_Teste
         {
             InitializeComponent();
         }
-       
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -40,6 +40,16 @@ namespace Login_Teste
             RegisterForm form3 = new RegisterForm();
             this.Hide();
             form3.Show();
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            textBox1.Text = "Ruan Lindo";
         }
     }
 }

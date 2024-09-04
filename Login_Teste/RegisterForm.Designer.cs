@@ -44,7 +44,7 @@
             panel1.Controls.Add(campoUsuario);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(button2);
-            panel1.Location = new Point(272, 103);
+            panel1.Location = new Point(12, 11);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(257, 244);
@@ -99,13 +99,13 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // Form3
+            // RegisterForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(279, 265);
             Controls.Add(panel1);
-            Name = "Form3";
+            Name = "RegisterForm";
             Text = "Form3";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
