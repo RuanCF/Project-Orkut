@@ -1,0 +1,82 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cliente\\Downloads\\RedeSocial - Teste2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\downloads\\redesocial - teste2\\redesocial\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\downloads\\redesocial - teste2\\redesocial\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\downloads\\redesocial - teste2\\redesocial\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Cliente\\Downloads\\RedeSocial - Teste2\\RedeSocial\\App.xaml",
+              "RelativeDocumentMoniker": "RedeSocial\\App.xaml",
+              "ToolTip": "C:\\Users\\Cliente\\Downloads\\RedeSocial - Teste2\\RedeSocial\\App.xaml",
+              "RelativeToolTip": "RedeSocial\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-03T22:42:47.085Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Cliente\\Downloads\\RedeSocial - Teste2\\RedeSocial\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "RedeSocial\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Cliente\\Downloads\\RedeSocial - Teste2\\RedeSocial\\MainWindow.xaml.cs",
+              "RelativeToolTip": "RedeSocial\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T00:05:57.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Cliente\\Downloads\\RedeSocial - Teste2\\RedeSocial\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "RedeSocial\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Cliente\\Downloads\\RedeSocial - Teste2\\RedeSocial\\MainWindow.xaml",
+              "RelativeToolTip": "RedeSocial\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-03T11:29:03.227Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
