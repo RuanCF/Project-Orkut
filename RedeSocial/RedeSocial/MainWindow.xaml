@@ -93,6 +93,19 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <Style x:Key="PasswordSemDestaque" TargetType="PasswordBox">
+            <Setter Property="FontFamily" Value="Arimo"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="PasswordBox">
+                        <Border  BorderBrush="#E3E5E7" BorderThickness="1">
+                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
     </Window.Resources>
 
@@ -145,7 +158,7 @@
                                 <TextBlock Width="345" Height="14" Canvas.Top="110" Canvas.Left="57"  Foreground="#9094B6" 
                Panel.ZIndex="1" IsHitTestVisible="False" Text="Senha" Visibility="{Binding ElementName=areaSenha, Path=Password.IsEmpty, Converter={StaticResource BoolToVis} }" FontSize="14" FontFamily="Arimo" />
                                 <!--IsEmpty não funciona em PasswordBox, criar um converter depois-->
-                                <PasswordBox x:Name="areaSenhaCadastro" Width="375" Height="53" Canvas.Top="90" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" BorderBrush="#E3E5E7" FontSize="14"/>
+                                <PasswordBox x:Name="areaSenhaCadastro" Width="375" Height="53" Canvas.Top="90" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" BorderBrush="#E3E5E7" FontSize="14" Style="{StaticResource PasswordSemDestaque}"/>
 
                                 <!--PasswordBox Repetir Senha-->
                                 <TextBlock Width="345" Height="14" Canvas.Top="162" Canvas.Left="57"  Foreground="#9094B6" 
