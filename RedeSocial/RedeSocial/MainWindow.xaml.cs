@@ -16,12 +16,12 @@ namespace RedeSocial
     /// </summary>
     public partial class MainWindow : Window
     {
+        private UserManager userManager = new UserManager();
+
         public MainWindow()
         {
             InitializeComponent();
         }
-
-        
 
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -35,12 +35,59 @@ namespace RedeSocial
             }
         }
 
+        private void ButtonEntrar_Click(object sender, RoutedEventArgs e)
+        {
+            string username = areaUsuario.Text;
+            string password = areaSenha.Password;
+
+            // Chama o método Logar da classe UserManager
+            string resultado = userManager.Logar(username, password);
+
+            MessageBox.Show(resultado);
+
+            // Abre a tela principal (mas ainda não tem T_T)
+            /*if (resultado == "Logado com sucesso!")
+            {
+                Principal form2 = new Principal();
+                this.Close();
+                form2.Show();
+            }*/
+        }
+
+        private void buttonCadastrar_Click(object sender, RoutedEventArgs e)
+        {
+            string username = areaID.Text;
+            string password = areaSenhaCadastro.Password;
+            //Não tem confirmar senha, então usei o campo do nome como substituto temporário T_T
+            string confirmPassword = areaNome.Text;
+
+            string resultado = userManager.Registrar(username, password, confirmPassword);
+
+            MessageBox.Show(resultado);
+
+            //Como tá na mesma tela, não vai precisar disso. Mas dá pra colocar pra entrar direto na tela principal ou voltar pro tab de login
+            if (resultado == "Usuário registrado com sucesso!")
+            {
+                /*LoginForm form1 = new LoginForm();
+                this.Hide();
+                form1.Show();*/
+
+                //Apaga os campos
+                areaID.Clear();
+                areaSenhaCadastro.Clear();
+                areaRepetirSenha.Clear();
+                areaEmail.Clear();
+                areaNome.Clear();
+                
+            }
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void areaUsuario_TextChanged(object sender, TextChangedEventArgs e)
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
 
         }

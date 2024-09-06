@@ -6,6 +6,9 @@
     <Application.Resources>
 
         <Style x:Key="EstiloBotaoRedondo" TargetType="Button">
+            <Setter Property="FontFamily" Value="Arimo"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -26,42 +29,6 @@
             </Setter>
         </Style>
 
-        <Style x:Key="CaixaRedondoEmCima" TargetType="TextBox">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="TextBox">
-                        <Border CornerRadius="5,5,0,0" BorderBrush="#E3E5E7" BorderThickness="1">
-                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-
-        <Style x:Key="CaixaRedondoEmBaixo" TargetType="TextBox">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="TextBox">
-                        <Border CornerRadius="0,0,5,5" BorderBrush="#E3E5E7" BorderThickness="1">
-                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style x:Key="PasswordRedondoEmBaixo" TargetType="PasswordBox">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="PasswordBox">
-                        <Border CornerRadius="0,0,5,5" BorderBrush="#E3E5E7" BorderThickness="1">
-                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
 
 
     </Application.Resources>

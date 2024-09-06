@@ -61,3 +61,45 @@ C:\Users\Cliente\Downloads\RedeSocial - Teste2\RedeSocial\obj\Debug\net8.0-windo
 C:\Users\Cliente\Downloads\RedeSocial - Teste2\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.genruntimeconfig.cache
 C:\Users\Cliente\Downloads\RedeSocial - Teste2\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
 C:\Users\Cliente\Downloads\RedeSocial - Teste2\RedeSocial\obj\Debug\net8.0-windows\App.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.cache
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.lref
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\refint\RedeSocial.dll
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.exe
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.deps.json
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.runtimeconfig.json
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.g.resources
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfoInputs.cache
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfo.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.csproj.CoreCompileInputs.cache
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.genruntimeconfig.cache
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Project-Orkut-main\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.exe
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.deps.json
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.runtimeconfig.json
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.cache
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.lref
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.baml
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.g.resources
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfoInputs.cache
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfo.cs
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.csproj.CoreCompileInputs.cache
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\refint\RedeSocial.dll
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.genruntimeconfig.cache
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
