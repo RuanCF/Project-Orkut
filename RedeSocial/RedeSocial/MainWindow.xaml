@@ -106,6 +106,19 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        
+        <!--Datepicker sem marca-->
+        <Style x:Key="DataSemMarca" TargetType="DatePickerTextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="DatePickerTextBox">
+                        <Grid>
+                            <ScrollViewer x:Name="PART_ContentHost" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
     </Window.Resources>
 
@@ -127,11 +140,11 @@
                             <Canvas>
                                 <!--TextBox Usuário-->
                                 <TextBlock Width="345" Height="14" Canvas.Top="57" Canvas.Left="57"  Foreground="#9094B6" 
-                               Panel.ZIndex="1" IsHitTestVisible="False" Text="ID ou Telefone" Visibility="{Binding ElementName=areaUsuario, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }" FontFamily="Arimo" FontSize="14" />
+                               Panel.ZIndex="1" IsHitTestVisible="False" Text="ID ou E-mail" Visibility="{Binding ElementName=areaUsuario, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }" FontFamily="Arimo" FontSize="14" />
                                 <TextBox x:Name="areaUsuario" Width="375" Height="53" Canvas.Top="38" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" Style="{StaticResource CaixaRedondoEmCima}" />
 
                                 <!--PasswordBox Senha-->
-                                <TextBlock Width="345" Height="14" Canvas.Top="109" Canvas.Left="57"  Foreground="#9094B6" 
+                                <TextBlock x:Name="labelSenha" Width="345" Height="14" Canvas.Top="109" Canvas.Left="57"  Foreground="#9094B6" 
                                Panel.ZIndex="1" IsHitTestVisible="False" Text="Senha" Visibility="{Binding ElementName=areaSenha, Path=Password.IsEmpty, Converter={StaticResource BoolToVis} }" FontFamily="Arimo" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" />
                                 <!--IsEmpty não funciona em PasswordBox, criar um converter depois-->
                                 <PasswordBox x:Name="areaSenha" Width="375" Height="53" Canvas.Top="90" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" Style="{StaticResource PasswordRedondoEmBaixo}" />
@@ -140,7 +153,7 @@
                                 <CheckBox Width="100" Height="14"  Content="Lembrar Conta" Canvas.Top="168" Canvas.Left="57" FontSize="12" FontFamily="Arimo"  />
 
                                 <!--Botão Entrar-->
-                                <Button x:Name="buttonEntrar" Content="Entrar" Width="343" Height="47" Canvas.Left="58" Canvas.Top="205" Style="{StaticResource EstiloBotaoRedondo}" Click="ButtonEntrar_Click"/>
+                                <Button x:Name="botaoEntrar" Content="Entrar" Width="343" Height="47" Canvas.Left="58" Canvas.Top="205" Style="{StaticResource EstiloBotaoRedondo}" Click="botaoEntrar_Click"/>
                             </Canvas>
                         </Grid>
                     </StackPanel>
@@ -151,17 +164,17 @@
                             <Canvas>
                                 <!--TextBox Usuário-->
                                 <TextBlock Width="345" Height="14" Canvas.Top="58" Canvas.Left="57"  Foreground="#9094B6" 
-               Panel.ZIndex="1" IsHitTestVisible="False" Text="ID" Visibility="{Binding ElementName=areaID, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }" FontSize="14" />
+                                           Panel.ZIndex="1" IsHitTestVisible="False" Text="ID" Visibility="{Binding ElementName=areaID, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }" FontSize="14" />
                                 <TextBox x:Name="areaID" Width="375" Height="53" Canvas.Top="38" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" Style="{StaticResource CaixaRedondoEmCima}" />
 
                                 <!--PasswordBox Senha-->
-                                <TextBlock Width="345" Height="14" Canvas.Top="110" Canvas.Left="57"  Foreground="#9094B6" 
-               Panel.ZIndex="1" IsHitTestVisible="False" Text="Senha" Visibility="{Binding ElementName=areaSenha, Path=Password.IsEmpty, Converter={StaticResource BoolToVis} }" FontSize="14" FontFamily="Arimo" />
+                                <TextBlock x:Name="labelSenhaCadastro"  Width="345" Height="14" Canvas.Top="110" Canvas.Left="57"  Foreground="#9094B6" 
+                                           Panel.ZIndex="1" IsHitTestVisible="False" Text="Senha" Visibility="{Binding ElementName=areaSenha, Path=Password.IsEmpty, Converter={StaticResource BoolToVis} }" FontSize="14" FontFamily="Arimo" />
                                 <!--IsEmpty não funciona em PasswordBox, criar um converter depois-->
                                 <PasswordBox x:Name="areaSenhaCadastro" Width="375" Height="53" Canvas.Top="90" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" BorderBrush="#E3E5E7" FontSize="14" Style="{StaticResource PasswordSemDestaque}"/>
 
                                 <!--PasswordBox Repetir Senha-->
-                                <TextBlock Width="345" Height="14" Canvas.Top="162" Canvas.Left="57"  Foreground="#9094B6" 
+                                <TextBlock x:Name="labelRepetirSenha" Width="345" Height="14" Canvas.Top="162" Canvas.Left="57"  Foreground="#9094B6" 
                                            Panel.ZIndex="1" IsHitTestVisible="False" Text="Repetir senha" Visibility="{Binding ElementName=areaSenha, Path=Password.IsEmpty, Converter={StaticResource BoolToVis} }" FontSize="14" />
                                 <PasswordBox x:Name="areaRepetirSenha" Width="375" Height="53" Canvas.Top="142" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" BorderBrush="#E3E5E7" FontSize="14" Style="{StaticResource PasswordRedondoEmBaixo}"/>
 
@@ -172,13 +185,22 @@
                                     Panel.ZIndex="1" IsHitTestVisible="False" Text="Nome" Visibility="{Binding ElementName=areaNome, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }" FontSize="14" />
                                 <TextBox x:Name="areaNome" Width="375" Height="53" Canvas.Top="205" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" Style="{StaticResource CaixaRedondoEmCima}" />
 
+                                <!--DatePicker-->
+                                <TextBlock Width="345" Height="14" Canvas.Top="275" Canvas.Left="57"  Foreground="#9094B6"
+                                           Panel.ZIndex="1" IsHitTestVisible="False" Text="Data de Nascimento" Visibility="{Binding ElementName=AreaNascimento, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                <DatePicker x:Name="AreaNascimento" Width="375" Height="53" Canvas.Top="257" Canvas.Left="42" HorizontalAlignment="Left" VerticalAlignment="Center"
+                                            BorderBrush="#E3E5E7" BorderThickness="1" VerticalContentAlignment="Center" Padding="14 0 0 0" FontSize="14">
+                                    <DatePicker.Resources>
+                                        <Style TargetType="DatePickerTextBox" BasedOn="{StaticResource DataSemMarca}"/>
+                                    </DatePicker.Resources>
+                                </DatePicker>
                                 <!--TextBox Email-->
                                 <TextBlock Width="345" Height="14" Canvas.Top="329" Canvas.Left="57"  Foreground="#9094B6" 
                                            Panel.ZIndex="1" IsHitTestVisible="False" Text="Email" Visibility="{Binding ElementName=areaEmail, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }" FontSize="14" />
                                 <TextBox x:Name="areaEmail" Width="375" Height="53" Canvas.Top="309" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" Style="{StaticResource CaixaRedondoEmBaixo}" FontSize="14" />
 
                                 <!--Botão Entrar-->
-                                <Button x:Name="buttonCadastrar" Content="Cadastrar" Width="320" Height="47" Canvas.Left="70" Canvas.Top="381" Style="{StaticResource EstiloBotaoRedondo}" Click="buttonCadastrar_Click" />
+                                <Button x:Name="botaoCadastrar" Content="Cadastrar" Width="320" Height="47" Canvas.Left="70" Canvas.Top="381" Style="{StaticResource EstiloBotaoRedondo}" Click="botaoCadastrar_Click" />
                             </Canvas>
                         </Grid>
                     </StackPanel>

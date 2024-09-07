@@ -25,7 +25,7 @@ namespace RedeSocial
 
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(tabMenu.SelectedIndex == 1)
+            if (tabMenu.SelectedIndex == 1)
             {
                 tabMenu.Height = 533;
             }
@@ -35,61 +35,91 @@ namespace RedeSocial
             }
         }
 
-        private void ButtonEntrar_Click(object sender, RoutedEventArgs e)
+        private void areaSenha_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            string username = areaUsuario.Text;
-            string password = areaSenha.Password;
-
-            // Chama o método Logar da classe UserManager
-            string resultado = userManager.Logar(username, password);
-
-            MessageBox.Show(resultado);
-
-            // Abre a tela principal (mas ainda não tem T_T)
-            /*if (resultado == "Logado com sucesso!")
+            if (string.IsNullOrEmpty(areaSenha.Password))
             {
-                Principal form2 = new Principal();
-                this.Close();
-                form2.Show();
-            }*/
-        }
-
-        private void buttonCadastrar_Click(object sender, RoutedEventArgs e)
-        {
-            string username = areaID.Text;
-            string password = areaSenhaCadastro.Password;
-            //Não tem confirmar senha, então usei o campo do nome como substituto temporário T_T
-            string confirmPassword = areaNome.Text;
-
-            string resultado = userManager.Registrar(username, password, confirmPassword);
-
-            MessageBox.Show(resultado);
-
-            //Como tá na mesma tela, não vai precisar disso. Mas dá pra colocar pra entrar direto na tela principal ou voltar pro tab de login
-            if (resultado == "Usuário registrado com sucesso!")
+                labelSenha.Text = "Senha";
+            }
+            else
             {
-                /*LoginForm form1 = new LoginForm();
-                this.Hide();
-                form1.Show();*/
-
-                //Apaga os campos
-                areaID.Clear();
-                areaSenhaCadastro.Clear();
-                areaRepetirSenha.Clear();
-                areaEmail.Clear();
-                areaNome.Clear();
-                
+                labelSenha.Text = string.Empty;
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void areaSenhaCadastro_PasswordChanged(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrEmpty(areaSenhaCadastro.Password))
+            {
+                labelSenhaCadastro.Text = "Senha";
+            }
+            else
+            {
+                labelSenhaCadastro.Text = string.Empty;
+
+            }
+        }
+
+        private void areaRepetirSenha_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(areaRepetirSenha.Password))
+            {
+                labelRepetirSenha.Text = " Repetir senha";
+            }
+            else
+            {
+                labelRepetirSenha.Text = string.Empty;
+
+            }
 
         }
 
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        private void botaoCadastrar_Click(object sender, RoutedEventArgs e)
         {
+            string email = areaEmail.Text;
+            string password = areaSenhaCadastro.Password;
+            string confirmPassword = areaRepetirSenha.Password;
+            string fullName = areaNome.Text;
+            DateTime? birthDate = AreaNascimento.SelectedDate;
 
+            if (!birthDate.HasValue)
+            {
+                MessageBox.Show("Por favor, selecione uma data de nascimento.");
+                return;
+            }
+
+            string resultado = userManager.Registrar(email, password, confirmPassword, fullName, birthDate.Value);
+
+            MessageBox.Show(resultado);
+
+            if (resultado == "Usuário registrado com sucesso!")
+            {
+                //Apaga os campos
+                areaEmail.Clear();
+                areaSenhaCadastro.Clear();
+                areaRepetirSenha.Clear();
+                areaNome.Clear();
+
+                AreaNascimento.SelectedDate = null;
+                tabMenu.SelectedIndex = 0; // Troca para a aba "Login" (índice 0)
+            }
+        }
+
+        private void botaoEntrar_Click(object sender, RoutedEventArgs e)
+        {
+            string email = areaEmail.Text;
+            string password = areaSenha.Password;
+
+            string resultado = userManager.Logar(email, password);
+
+            MessageBox.Show(resultado);
+
+            if (resultado == "Logado com sucesso!")
+            {
+                Home homeWindow = new Home();
+                homeWindow.Show();
+                this.Close();
+            }
         }
     }
 }

@@ -125,3 +125,4 @@ C:\Users\Cliente\source\repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8
 C:\Users\Cliente\source\repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.pdb
 C:\Users\Cliente\source\repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.genruntimeconfig.cache
 C:\Users\Cliente\source\repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
+C:\Users\Cliente\Music\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.g.cs
