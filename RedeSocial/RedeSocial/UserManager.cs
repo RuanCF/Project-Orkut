@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Security.Cryptography;
+using System.Text;
 using System.Text.RegularExpressions;
+using System.Windows;
 
 namespace RedeSocial
 {
@@ -13,7 +13,7 @@ namespace RedeSocial
         public string Email { get; set; }
         public string PasswordHash { get; set; }
         public string FullName { get; set; }
-
+        //public string Phone { get; set; }
         public DateTime BirthDate { get; set; }
     }
 
@@ -21,7 +21,6 @@ namespace RedeSocial
     {
         private const int AgeLimit = 16; // Limite de idade mínima
 
-        // Dicionário para armazenar usuários e suas informações
         // Dicionário para armazenar usuários e suas informações
         private static Dictionary<string, User> users = new Dictionary<string, User>();
 
@@ -65,21 +64,23 @@ namespace RedeSocial
         }
 
         // Valida o formato do telefone
-        private bool IsValidPhone(string phone)
+        /*private bool IsValidPhone(string phone)
         {
             string phonePattern = @"^\(\d{2}\)\d{5}-\d{4}$";
             return Regex.IsMatch(phone, phonePattern);
         }
 
+        */
+        
         // Registrar um novo usuário
-        public string Registrar(string email, string password, string confirmPassword, string fullName, string phone, DateTime birthDate)
+        public string Registrar(string email, string password, string confirmPassword, string fullName, DateTime birthDate)
         {
             /////////////////// EMAIL  /////////////////
             if (string.IsNullOrWhiteSpace(email))
             {
                 return "O email não pode ser vazio.";
             }
-            if (!IsValidEmail(email))
+            if (!IsValidEmail(email)) 
             {
                 return "O email não é válido.";
             }
@@ -108,6 +109,17 @@ namespace RedeSocial
                 return "O nome completo não pode ser vazio.";
             }
            
+            /////////////////////////////////////////
+            //////////////// Telefone //////////////
+            /*if (string.IsNullOrWhiteSpace(phone))
+            {
+                return "O telefone não pode ser vazio.";
+            }
+            if (!IsValidPhone(phone))
+            {
+                return "O telefone não é válido. Use o formato (XX)99999-9999";
+            }
+            */
             ///////////////////////////////////////
             ///////////// Data Nascimento ////////
             if (!IsValidAge(birthDate))
@@ -124,6 +136,7 @@ namespace RedeSocial
                 Email = email,
                 PasswordHash = passwordHash,
                 FullName = fullName,
+                //Phone = phone,
                 BirthDate = birthDate
             };
 

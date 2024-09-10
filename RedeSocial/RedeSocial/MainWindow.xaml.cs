@@ -89,7 +89,6 @@ namespace RedeSocial
             }
 
             string resultado = userManager.Registrar(email, password, confirmPassword, fullName, birthDate.Value);
-
             MessageBox.Show(resultado);
 
             if (resultado == "Usuário registrado com sucesso!")
@@ -111,7 +110,6 @@ namespace RedeSocial
             string password = areaSenha.Password;
 
             string resultado = userManager.Logar(email, password);
-
             MessageBox.Show(resultado);
 
             if (resultado == "Logado com sucesso!")
