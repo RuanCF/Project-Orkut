@@ -149,3 +149,5 @@ C:\Users\User\Documents\GitHub\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net
 C:\Users\User\Documents\GitHub\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.sourcelink.json
 C:\Users\User\Documents\GitHub\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.genruntimeconfig.cache
 C:\Users\User\Documents\GitHub\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
+C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.g.cs
+C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.baml

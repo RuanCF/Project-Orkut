@@ -5,6 +5,10 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
+        <!--Some o TextBlock-->
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+        <FontFamily x:Key="ArimoFont">pack://application:,,,/Fontes/#Arimo</FontFamily>
+
         <Style x:Key="EstiloBotaoRedondo" TargetType="Button">
             <Setter Property="FontFamily" Value="Arimo"/>
             <Setter Property="FontSize" Value="18"/>

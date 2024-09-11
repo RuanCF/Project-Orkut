@@ -9,12 +9,47 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Icones\icon_amigos.png" />
+    <None Remove="Icones\icon_conversas.png" />
+    <None Remove="Icones\icon_depoimentos.png" />
+    <None Remove="Icones\icon_grupos.png" />
+    <None Remove="Icones\icon_inicio.png" />
+    <None Remove="Icones\icon_jogos.png" />
+    <None Remove="Icones\icon_menu.png" />
+    <None Remove="Icones\icon_sair.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Fontes\" />
     <Resource Include="Fontes\Arimo-Regular.ttf" />
     <Resource Include="Fontes\Arimo-VariableFont_wght.ttf" />
     <Resource Include="Fontes\Arimo-Bold.ttf" />
     <Resource Include="Fontes\KulimPark-Regular.ttf" />
     <Resource Include="Fontes\KulimPark-Bold.ttf" />
+    <Resource Include="Icones\icon_amigos.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icones\icon_conversas.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icones\icon_depoimentos.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icones\icon_grupos.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icones\icon_inicio.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icones\icon_jogos.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icones\icon_menu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icones\icon_sair.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

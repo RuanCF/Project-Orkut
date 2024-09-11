@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\thais\\source\\repos\\Project-Orkut\\",
+  "WorkspaceRootPath": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\",
   "Documents": [],
   "DocumentGroupContainers": [
     {
@@ -22,6 +22,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }

@@ -23,5 +23,14 @@ namespace RedeSocial
         {
             InitializeComponent();
         }
+        private void botaoMenu_Checked(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Opacity = 0.3;
+        }
+
+        private void botaoMenu_Unchecked(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Opacity = 1.0;
+        }
     }
 }
