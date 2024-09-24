@@ -77,30 +77,31 @@ namespace RedeSocial
         private void botaoCadastrar_Click(object sender, RoutedEventArgs e)
         {
             string email = areaEmail.Text;
+            string id = areaID.Text;
             string password = areaSenhaCadastro.Password;
             string confirmPassword = areaRepetirSenha.Password;
             string fullName = areaNome.Text;
-            DateTime? birthDate = AreaNascimento.SelectedDate;
 
-            if (!birthDate.HasValue)
+            if (!AreaNascimento.SelectedDate.HasValue)
             {
                 MessageBox.Show("Por favor, selecione uma data de nascimento.");
                 return;
             }
+            DateOnly birthDate = DateOnly.FromDateTime(AreaNascimento.SelectedDate.Value);
 
-            string resultado = userManager.Registrar(email, password, confirmPassword, fullName, birthDate.Value);
+            string resultado = userManager.Registrar(email, id, password, confirmPassword, fullName, birthDate);
             MessageBox.Show(resultado);
 
             if (resultado == "Usuário registrado com sucesso!")
             {
                 //Apaga os campos
-                areaEmail.Clear();
+                /*areaEmail.Clear();
+                areaID.Clear();
                 areaSenhaCadastro.Clear();
                 areaRepetirSenha.Clear();
                 areaNome.Clear();
-
-                AreaNascimento.SelectedDate = null;
-                tabMenu.SelectedIndex = 0; // Troca para a aba "Login" (índice 0)
+                AreaNascimento.SelectedDate = null; */
+                tabMenu.SelectedIndex = 0;
             }
         }
 
@@ -112,9 +113,10 @@ namespace RedeSocial
             string resultado = userManager.Logar(email, password);
             MessageBox.Show(resultado);
 
+
             if (resultado == "Logado com sucesso!")
             {
-                Home homeWindow = new Home();
+                Home homeWindow = new();
                 homeWindow.Show();
                 this.Close();
             }

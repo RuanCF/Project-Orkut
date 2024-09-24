@@ -10,19 +10,20 @@ namespace RedeSocial
 {
     public class User
     {
-        public string Email { get; set; }
-        public string PasswordHash { get; set; }
-        public string FullName { get; set; }
-        //public string Phone { get; set; }
-        public DateTime BirthDate { get; set; }
+        public required string Email { get; set; }
+        public required string ID { get; set; }
+        public required string PasswordHash { get; set; }
+        public required string FullName { get; set; }
+        public DateOnly BirthDate { get; set; }
     }
 
     public class UserManager
     {
         private const int AgeLimit = 16; // Limite de idade mínima
 
-        // Dicionário para armazenar usuários e suas informações
-        private static Dictionary<string, User> users = new Dictionary<string, User>();
+        // Dicionário para armazenar usuários e suas informações, indexados pelo Email e ID
+        private static Dictionary<string, User> usersByEmail = new Dictionary<string, User>();
+        private static Dictionary<string, User> usersByID = new Dictionary<string, User>();
 
         // Método para criar o hash da senha
         private string HashPassword(string password)
@@ -40,12 +41,12 @@ namespace RedeSocial
         }
 
         // Verifica se a pessoa tem pelo menos 16 anos
-        private bool IsValidAge(DateTime birthDate)
+        private bool IsValidAge(DateOnly birthDate)
         {
-            DateTime today = DateTime.Today;
+            DateOnly today = DateOnly.FromDateTime(DateTime.Today);
             int age = today.Year - birthDate.Year;
 
-            if (birthDate.Date > today.AddYears(-age)) age--; // Ajusta a idade caso o aniversário não tenha ocorrido ainda este ano
+            if (birthDate > today.AddYears(-age)) age--; // Ajusta a idade caso o aniversário não tenha ocorrido ainda este ano
 
             return age >= AgeLimit;
         }
@@ -63,112 +64,137 @@ namespace RedeSocial
             return password.Length >= 6;
         }
 
-        // Valida o formato do telefone
-        /*private bool IsValidPhone(string phone)
-        {
-            string phonePattern = @"^\(\d{2}\)\d{5}-\d{4}$";
-            return Regex.IsMatch(phone, phonePattern);
-        }
-
-        */
-        
         // Registrar um novo usuário
-        public string Registrar(string email, string password, string confirmPassword, string fullName, DateTime birthDate)
+        public string Registrar(string email, string id, string password, string confirmPassword, string fullName, DateOnly birthDate)
         {
-            /////////////////// EMAIL  /////////////////
+            // Valida o Email
             if (string.IsNullOrWhiteSpace(email))
             {
                 return "O email não pode ser vazio.";
             }
-            if (!IsValidEmail(email)) 
+
+            if (!IsValidEmail(email))
             {
                 return "O email não é válido.";
             }
-            if (users.ContainsKey(email))
+
+            if (usersByEmail.ContainsKey(email))
             {
                 return "Email já cadastrado. Tente novamente.";
             }
-            ///////////////////////////////////////////
-            /////////////////// Senha ////////////////
+
+            // Valida o ID
+            if (string.IsNullOrWhiteSpace(id))
+            {
+                return "O ID não pode ser vazio.";
+            }
+
+            if (usersByID.ContainsKey(id))
+            {
+                return "ID já está em uso. Escolha outro.";
+            }
+
+            // Valida a Senha
             if (string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(confirmPassword))
             {
                 return "Não é permitido espaço em branco na senha.";
             }
+
             if (!IsValidPassword(password))
             {
                 return "A senha deve ter pelo menos 6 caracteres.";
             }
+
             if (password != confirmPassword)
             {
                 return "As senhas não coincidem. Tente novamente.";
             }
-            ///////////////////////////////////////////
-            ///////////////// Nome ///////////////////
+
+            // Valida o Nome Completo
             if (string.IsNullOrWhiteSpace(fullName))
             {
                 return "O nome completo não pode ser vazio.";
             }
-           
-            /////////////////////////////////////////
-            //////////////// Telefone //////////////
-            /*if (string.IsNullOrWhiteSpace(phone))
-            {
-                return "O telefone não pode ser vazio.";
-            }
-            if (!IsValidPhone(phone))
-            {
-                return "O telefone não é válido. Use o formato (XX)99999-9999";
-            }
-            */
-            ///////////////////////////////////////
-            ///////////// Data Nascimento ////////
+
+            // Valida a Idade
             if (!IsValidAge(birthDate))
             {
                 return $"Você deve ter pelo menos {AgeLimit} anos para se registrar.";
             }
-            /////////////////////////////////////
-            ///
+
+            // Cria o hash da senha
             string passwordHash = HashPassword(password);
 
             // Criar novo usuário
             User newUser = new User
             {
                 Email = email,
+                ID = id,
                 PasswordHash = passwordHash,
                 FullName = fullName,
-                //Phone = phone,
                 BirthDate = birthDate
             };
 
-            users.Add(email, newUser);
+            // Armazenar o usuário tanto por Email quanto por ID
+            usersByEmail.Add(email, newUser);
+            usersByID.Add(id, newUser);
+
             return "Usuário registrado com sucesso!";
         }
 
-        // Realizar login usando o Email
-        public string Logar(string email, string password)
+        // Realizar login usando o Email ou o ID
+        public string Logar(string login, string password)
         {
-            if (!users.ContainsKey(email))
+            User? user = null;
+
+            // Verificações de entrada
+            if (string.IsNullOrWhiteSpace(login))
             {
-                return "Usuário não encontrado!";
+                return "Por favor, insira o email ou ID.";
+            }
+            if (string.IsNullOrWhiteSpace(password))
+            {
+                return "Por favor, insira a senha.";
             }
 
-            string passwordHash = HashPassword(password);
-            if (users[email].PasswordHash == passwordHash)
+            // Verifica se o login é um email ou um ID
+            if (usersByEmail.ContainsKey(login))
             {
-                return "Logado com sucesso!";
+                user = usersByEmail[login];
             }
-            else
+            else if (usersByID.ContainsKey(login))
             {
-                return "Senha ou email incorretos!";
+                user = usersByID[login];
             }
+
+            if (user != null)
+            {
+                string passwordHash = HashPassword(password);
+                if (user.PasswordHash == passwordHash)
+                {
+                    return "Logado com sucesso!";
+                }
+                else
+                {
+                    return "Senha incorreta!";
+                }
+            }
+
+            return "Usuário não encontrado!";
         }
 
-        // Obter usuário pelo Email
-        public User ObterUsuario(string email)
+
+
+        // Obter usuário pelo Email ou ID
+        public User? ObterUsuario(string login)
         {
-            if (users.ContainsKey(email))
+            if (usersByEmail.ContainsKey(login))
             {
-                return users[email];
+                return usersByEmail[login];
+            }
+            else if (usersByID.ContainsKey(login))
+            {
+                return usersByID[login];
             }
             return null;
         }

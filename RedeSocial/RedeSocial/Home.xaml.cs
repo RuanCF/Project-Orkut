@@ -32,5 +32,12 @@ namespace RedeSocial
         {
             MainFrame.Opacity = 1.0;
         }
+
+        private void botaoSair(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }
