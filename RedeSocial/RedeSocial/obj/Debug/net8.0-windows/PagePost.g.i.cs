@@ -141,7 +141,7 @@ namespace RedeSocial {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/RedeSocial;component/pagepost.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/RedeSocial;V1.0.0.0;component/pagepost.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PagePost.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

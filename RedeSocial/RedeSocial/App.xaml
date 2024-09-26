@@ -7,6 +7,8 @@
 
         <!--Some o TextBlock-->
         <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+
+        <!--Fontes-->
         <FontFamily x:Key="ArimoFont">pack://application:,,,/Fontes/#Arimo Variable</FontFamily>
         <FontFamily x:Key="KulimParkBold">pack://application:,,,/Fontes/#Kulim Park Bold</FontFamily>
 
@@ -14,6 +16,8 @@
             <Setter Property="FontFamily" Value="{StaticResource ArimoFont}"/>
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#63C3FF"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -22,10 +26,10 @@
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="borda" Property="Background" Value="LightSkyBlue"/>
+                                <Setter TargetName="borda" Property="Background" Value="#6FD2FF"/>
                             </Trigger>
                             <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="borda" Property="Background" Value="DeepSkyBlue"/>
+                                <Setter TargetName="borda" Property="Background" Value="#307FAD "/>
                             </Trigger>
                         </ControlTemplate.Triggers>
 

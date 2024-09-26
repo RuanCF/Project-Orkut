@@ -29,9 +29,11 @@
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsSelected" Value="True">
                                 <Setter Property="Background" Value="White"/>
+                                <Setter Property="Foreground" Value="#6FD2FF"/>
                             </Trigger>
                             <Trigger Property="IsSelected" Value="False">
                                 <Setter Property="Background" Value="#E3E5E7"/>
+                                <Setter Property="Foreground" Value="#9094B6"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -123,10 +125,8 @@
     </Window.Resources>
 
 
-
-
     <Grid>
-        <Label Content="Orkut" Width="195" Height="70" VerticalAlignment="Top" Margin="538,41,547,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontFamily="{StaticResource KulimParkBold}" FontSize="64" FontWeight="Bold"/>
+        <Label Content="Orkut" Width="195" Height="70" VerticalAlignment="Top" Margin="538,41,547,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontFamily="{StaticResource KulimParkBold}" FontSize="64" FontWeight="Bold"  Foreground="#49BBFF"/>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="157"/>
