@@ -86,7 +86,7 @@
             <TextBox x:Name="caixaPesquisa"  Width="520" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="{StaticResource ArimoFont}" FontSize="14" Foreground="#333333" Padding="14 0 0 0" Style="{StaticResource SearchBox}"/>
 
             <!--Toggle Menu / margin era 93-->
-            <ToggleButton x:Name="botaoMenu" VerticalAlignment="Center" HorizontalAlignment="Left" Height="30" Width="30" BorderThickness="0"  Margin="18,0,0,0" Checked="botaoMenu_Checked" Unchecked="botaoMenu_Unchecked" Style="{StaticResource botaoToggle}">
+            <ToggleButton x:Name="botaoMenu" VerticalAlignment="Center" HorizontalAlignment="Left" Height="30" Width="30" BorderThickness="0"  Margin="17.5,0,0,0" Checked="botaoMenu_Checked" Unchecked="botaoMenu_Unchecked" Style="{StaticResource botaoToggle}">
                 <ToggleButton.Background>
                     <ImageBrush ImageSource="/Icones/icon_menu.png"/>
                 </ToggleButton.Background>
