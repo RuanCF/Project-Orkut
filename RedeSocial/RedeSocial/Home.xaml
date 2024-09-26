@@ -50,6 +50,26 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        
+        <!--Estilo ToggleButton-->
+        <ImageBrush x:Key="iconToggleButton" ImageSource="/Icones/icon_menu.png"/>
+        <Style x:Key="botaoToggle" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border x:Name="bordaTG" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True"/>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="bordaTG" Value="{StaticResource iconToggleButton}"/>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="true">
+                                <Setter Property="Background" TargetName="bordaTG" Value="{StaticResource iconToggleButton}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
     </Window.Resources>
 
@@ -66,7 +86,7 @@
             <TextBox x:Name="caixaPesquisa"  Width="520" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="{StaticResource ArimoFont}" FontSize="14" Foreground="#333333" Padding="14 0 0 0" Style="{StaticResource SearchBox}"/>
 
             <!--Toggle Menu-->
-            <ToggleButton x:Name="botaoMenu" VerticalAlignment="Center" HorizontalAlignment="Left" Height="30" Width="30" BorderThickness="0" RenderTransformOrigin="2.556,0.718" Margin="93,0,0,0" Checked="botaoMenu_Checked" Unchecked="botaoMenu_Unchecked">
+            <ToggleButton x:Name="botaoMenu" VerticalAlignment="Center" HorizontalAlignment="Left" Height="30" Width="30" BorderThickness="0" RenderTransformOrigin="2.556,0.718" Margin="93,0,0,0" Checked="botaoMenu_Checked" Unchecked="botaoMenu_Unchecked" Style="{StaticResource botaoToggle}">
                 <ToggleButton.Background>
                     <ImageBrush ImageSource="/Icones/icon_menu.png"/>
                 </ToggleButton.Background>
@@ -74,7 +94,7 @@
                     <EventTrigger RoutedEvent="ToggleButton.Unchecked">
                         <BeginStoryboard>
                             <Storyboard x:Name="guardeStackPanel">
-                                <DoubleAnimation Storyboard.TargetName="menuLateral" Storyboard.TargetProperty="Width" BeginTime="0:0:0" From="230" To="65"  Duration="0:0:0.3"/>
+                                <DoubleAnimation Storyboard.TargetName="menuLateral" Storyboard.TargetProperty="Width" BeginTime="0:0:0" From="230" To="65"  Duration="0:0:0.2"/>
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger>
@@ -98,7 +118,7 @@
                     <!--Item Perfil-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,50,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_sair.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
+                            <Ellipse x:Name="ellipseFotoUser" Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Perfil" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
@@ -145,11 +165,14 @@
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Sair-->
-                    <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}" Selected="botaoSair">
+                    <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}" MouseDoubleClick="carlos">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_sair.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image x:Name="botaoSair" Source="/Icones/icon_sair.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" MouseLeftButtonUp="botaoSair_MouseLeftButtonUp" />
                             <TextBlock Text="Sair" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <TextBlock Text="Alterar foto de perfil" TextWrapping="Wrap" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp" />
                     </ListViewItem>
                 </ListView>
 

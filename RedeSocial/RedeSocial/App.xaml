@@ -7,10 +7,11 @@
 
         <!--Some o TextBlock-->
         <BooleanToVisibilityConverter x:Key="BoolToVis"/>
-        <FontFamily x:Key="ArimoFont">pack://application:,,,/Fontes/#Arimo</FontFamily>
+        <FontFamily x:Key="ArimoFont">pack://application:,,,/Fontes/#Arimo Variable</FontFamily>
+        <FontFamily x:Key="KulimParkBold">pack://application:,,,/Fontes/#Kulim Park Bold</FontFamily>
 
         <Style x:Key="EstiloBotaoRedondo" TargetType="Button">
-            <Setter Property="FontFamily" Value="Arimo"/>
+            <Setter Property="FontFamily" Value="{StaticResource ArimoFont}"/>
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Template">

@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.IO;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -69,9 +70,7 @@ namespace RedeSocial
             else
             {
                 labelRepetirSenha.Text = string.Empty;
-
             }
-
         }
 
         private void botaoCadastrar_Click(object sender, RoutedEventArgs e)
@@ -94,31 +93,69 @@ namespace RedeSocial
 
             if (resultado == "Usuário registrado com sucesso!")
             {
+                string projectPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+                string modifiedString = projectPath.Remove(projectPath.Length - 3);
+                userManager.AdicionarFoto(userManager.BuscarCodigoUsuario(areaID.Text), modifiedString + "Fotos\\SemFoto.jpeg");
                 //Apaga os campos
-                /*areaEmail.Clear();
+                areaEmail.Clear();
                 areaID.Clear();
                 areaSenhaCadastro.Clear();
                 areaRepetirSenha.Clear();
                 areaNome.Clear();
-                AreaNascimento.SelectedDate = null; */
+                AreaNascimento.SelectedDate = null;
                 tabMenu.SelectedIndex = 0;
             }
         }
 
         private void botaoEntrar_Click(object sender, RoutedEventArgs e)
         {
-            string email = areaEmail.Text;
+            string email = areaUsuario.Text;
             string password = areaSenha.Password;
 
             string resultado = userManager.Logar(email, password);
             MessageBox.Show(resultado);
 
-
             if (resultado == "Logado com sucesso!")
             {
-                Home homeWindow = new();
+                Home homeWindow = new Home(userManager.BuscarCodigoUsuario(email));
                 homeWindow.Show();
                 this.Close();
+            }
+        }
+
+        private void areaSenhaCadastro_PasswordChanged_1(object sender, RoutedEventArgs e)
+        {
+            if (String.IsNullOrEmpty(areaSenhaCadastro.Password))
+            {
+                labelSenhaCadastro.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                labelSenhaCadastro.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void areaRepetirSenha_PasswordChanged_1(object sender, RoutedEventArgs e)
+        {
+            if (String.IsNullOrEmpty(areaRepetirSenha.Password))
+            {
+                labelRepetirSenha.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                labelRepetirSenha.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void areaSenha_PasswordChanged_1(object sender, RoutedEventArgs e)
+        {
+            if (String.IsNullOrEmpty(areaSenha.Password))
+            {
+                labelSenha.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                labelSenha.Visibility = Visibility.Hidden;
             }
         }
     }

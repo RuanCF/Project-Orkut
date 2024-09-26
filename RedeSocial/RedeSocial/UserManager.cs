@@ -1,10 +1,8 @@
-﻿using Microsoft.VisualBasic;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Windows;
 
 namespace RedeSocial
 {
@@ -15,6 +13,7 @@ namespace RedeSocial
         public required string PasswordHash { get; set; }
         public required string FullName { get; set; }
         public DateOnly BirthDate { get; set; }
+        public string Foto { get; set; }
     }
 
     public class UserManager
@@ -183,8 +182,6 @@ namespace RedeSocial
             return "Usuário não encontrado!";
         }
 
-
-
         // Obter usuário pelo Email ou ID
         public User? ObterUsuario(string login)
         {
@@ -197,6 +194,30 @@ namespace RedeSocial
                 return usersByID[login];
             }
             return null;
+        }
+
+        //Adiciona uma foto de perfil
+        public void AdicionarFoto(int codUsuario, string foto)
+        {
+            usersByEmail.ElementAt(codUsuario).Value.Foto = foto;
+        }
+
+        //Busca o código do usuário pelo id
+        public int BuscarCodigoUsuario(string id)
+        {
+            return usersByID.Keys.ToList().IndexOf(id);
+        }
+
+        //Busca o nome de um usuário pelo código
+        public string BuscarNome(int codUsuario)
+        {
+            return usersByEmail.ElementAt(codUsuario).Value.FullName;
+        }
+
+        //Busca a foto de um usuário pelo código
+        public string BuscarFoto(int codUsuario)
+        {
+            return usersByEmail.ElementAt(codUsuario).Value.Foto;
         }
     }
 }

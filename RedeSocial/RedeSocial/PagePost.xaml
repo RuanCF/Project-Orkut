@@ -1,0 +1,52 @@
+﻿<Page x:Class="RedeSocial.PagePost"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RedeSocial"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="650"
+      Title="PagePost">
+
+    <Grid>
+        <ScrollViewer Background="#FFEEEEEE">
+            <StackPanel>
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="0,20,0,20" Width="600">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height = "*"/>
+                        <RowDefinition Height = "*"/>
+                        <RowDefinition Height = "*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="botaoPostProprio" Grid.Column="0" Content="Próprio" Height="30" Background="#FFFFFFFF" Click="botaoPostProprio_Click"/>
+                        <Button x:Name="botaoPostAmigos" Grid.Column="1" Content="Amigos" Height="30" Background="#FFFFFFFF"/>
+                        <Button x:Name="botaoPostGeral" Grid.Column="2" Content="Geral" Height="30" Background="#FFFFFFFF" Click="botaoPostGeral_Click"/>
+                    </Grid>
+                    <Border Grid.Row="1" Background="#FFFFFFFF" CornerRadius="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Grid x:Name="gridFormPost">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height = "*"/>
+                                <RowDefinition Height = "*"/>
+                                <RowDefinition Height = "*"/>
+                                <RowDefinition Height = "*"/>
+                                <RowDefinition Height = "*"/>
+                            </Grid.RowDefinitions>
+                            <TextBox x:Name="campoTitulo" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,10,10,0" Height="25" TextWrapping="Wrap" TextChanged="campoTitulo_TextChanged"/>
+                            <Label x:Name="labelTitulo" Grid.Row="0" Content="Título" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Center" Foreground="#66000000" IsHitTestVisible="False" Height="25"/>
+                            <TextBox x:Name="campoTexto" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Margin="10,10,10,0" Padding="5,5,5,5" Height="50" TextWrapping="Wrap" TextChanged="campoTexto_TextChanged"/>
+                            <Label x:Name="labelTexto" Grid.Row="1" Content="Texto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Foreground="#66000000" IsHitTestVisible="False" Height="25"/>
+                            <Button x:Name="botaoImagem" Grid.Row="3" Content="Selecionar imagem" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,10,10,0" Height="25" Click="botaoImagem_Click" Background="White"/>
+                            <Button x:Name="botaoPostar" Grid.Row="4" Content="Postar" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="30" Margin="10,10,10,10" FontSize="16" Click="botaoPostar_Click" Background="White" />
+                        </Grid>
+                    </Border>
+                    <Grid x:Name="gridPosts" Grid.Row="2"/>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
