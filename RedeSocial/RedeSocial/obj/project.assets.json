@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cliente\\Downloads\\RedeSocial (Com Post)\\RedeSocial\\RedeSocial.csproj",
+      "projectUniqueName": "C:\\Users\\Cliente\\Source\\Repos\\Project-Orkut\\RedeSocial\\RedeSocial\\RedeSocial.csproj",
       "projectName": "RedeSocial",
-      "projectPath": "C:\\Users\\Cliente\\Downloads\\RedeSocial (Com Post)\\RedeSocial\\RedeSocial.csproj",
+      "projectPath": "C:\\Users\\Cliente\\Source\\Repos\\Project-Orkut\\RedeSocial\\RedeSocial\\RedeSocial.csproj",
       "packagesPath": "C:\\Users\\Cliente\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cliente\\Downloads\\RedeSocial (Com Post)\\RedeSocial\\obj\\",
+      "outputPath": "C:\\Users\\Cliente\\Source\\Repos\\Project-Orkut\\RedeSocial\\RedeSocial\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Cliente\\AppData\\Roaming\\NuGet\\NuGet.Config",

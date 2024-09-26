@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RedeSocial"
-        mc:Ignorable="d"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" 
         Title="MainWindow" Height="720" Width="1280">
 
     <Window.Resources>
@@ -57,7 +57,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type ToggleButton}">
-                        <Border x:Name="bordaTG" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True"/>
+                        <Border x:Name="bordaTG" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" />
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="true">
                                 <Setter Property="Background" TargetName="bordaTG" Value="{StaticResource iconToggleButton}"/>
@@ -85,8 +85,8 @@
        Panel.ZIndex="1" IsHitTestVisible="False" Text="Pesquise no (nome da rede)" Visibility="{Binding ElementName=caixaPesquisa, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }"  HorizontalAlignment="Center" VerticalAlignment="Center" Padding="14 0 0 0" Width="520" />
             <TextBox x:Name="caixaPesquisa"  Width="520" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="{StaticResource ArimoFont}" FontSize="14" Foreground="#333333" Padding="14 0 0 0" Style="{StaticResource SearchBox}"/>
 
-            <!--Toggle Menu-->
-            <ToggleButton x:Name="botaoMenu" VerticalAlignment="Center" HorizontalAlignment="Left" Height="30" Width="30" BorderThickness="0" RenderTransformOrigin="2.556,0.718" Margin="93,0,0,0" Checked="botaoMenu_Checked" Unchecked="botaoMenu_Unchecked" Style="{StaticResource botaoToggle}">
+            <!--Toggle Menu / margin era 93-->
+            <ToggleButton x:Name="botaoMenu" VerticalAlignment="Center" HorizontalAlignment="Left" Height="30" Width="30" BorderThickness="0"  Margin="18,0,0,0" Checked="botaoMenu_Checked" Unchecked="botaoMenu_Unchecked" Style="{StaticResource botaoToggle}">
                 <ToggleButton.Background>
                     <ImageBrush ImageSource="/Icones/icon_menu.png"/>
                 </ToggleButton.Background>
