@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RedeSocial"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen" 
-        Title="MainWindow" Height="720" Width="1280">
+        Title="MainWindow" Height="720" Width="1280" Background="#FFF0F0FA"
+        WindowState="Maximized">
 
     <Window.Resources>
 
@@ -23,7 +24,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type ListViewItem}">
-                        <Border Height="50" BorderThickness="0" Background="{TemplateBinding Background}">
+                        <Border Height="55" BorderThickness="0" Background="{TemplateBinding Background}"> <!--Mudei a altura de 50 pra 55, mande um feedback-->
                             <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                         </Border>
                         <ControlTemplate.Triggers>
@@ -42,7 +43,7 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="TextBox">
                         <Grid>
-                            <Border CornerRadius="15"  Background="#E0E4E8">
+                            <Border CornerRadius="15"  Background="White">
                                 <ScrollViewer x:Name="PART_ContentHost" Margin="0" />
                             </Border>
                         </Grid>
@@ -52,7 +53,8 @@
         </Style>
         
         <!--Estilo ToggleButton-->
-        <ImageBrush x:Key="iconToggleButton" ImageSource="/Icones/icon_menu.png"/>
+        <ImageBrush x:Key="iconToggleButton" ImageSource="/Icones/icon_menuB.png"/>
+        <ImageBrush x:Key="iconToggleButtonC" ImageSource="/Icones/icon_menuBC.png"/>
         <Style x:Key="botaoToggle" TargetType="{x:Type ToggleButton}">
             <Setter Property="Template">
                 <Setter.Value>
@@ -60,11 +62,9 @@
                         <Border x:Name="bordaTG" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" />
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="true">
-                                <Setter Property="Background" TargetName="bordaTG" Value="{StaticResource iconToggleButton}"/>
+                                <Setter Property="Background" TargetName="bordaTG" Value="{StaticResource iconToggleButtonC}"/>
                             </Trigger>
-                            <Trigger Property="IsChecked" Value="true">
-                                <Setter Property="Background" TargetName="bordaTG" Value="{StaticResource iconToggleButton}"/>
-                            </Trigger>
+
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
@@ -80,15 +80,15 @@
         </Grid.RowDefinitions>
 
         <!--Barra superior-->
-        <Grid Grid.Row="0" Background="#D1D5D9">
+        <Grid Grid.Row="0" Background="#37376E ">
             <TextBlock Canvas.Top="57" Canvas.Left="57" FontFamily="{StaticResource ArimoFont}" FontSize="14" Foreground="#9094B6" 
-       Panel.ZIndex="1" IsHitTestVisible="False" Text="Pesquise no (nome da rede)" Visibility="{Binding ElementName=caixaPesquisa, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }"  HorizontalAlignment="Center" VerticalAlignment="Center" Padding="14 0 0 0" Width="520" />
+       Panel.ZIndex="1" IsHitTestVisible="False" Text="Pesquise na Orbit" Visibility="{Binding ElementName=caixaPesquisa, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }"  HorizontalAlignment="Center" VerticalAlignment="Center" Padding="14 0 0 0" Width="520" />
             <TextBox x:Name="caixaPesquisa"  Width="520" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="{StaticResource ArimoFont}" FontSize="14" Foreground="#333333" Padding="14 0 0 0" Style="{StaticResource SearchBox}"/>
 
             <!--Toggle Menu / margin era 93-->
-            <ToggleButton x:Name="botaoMenu" VerticalAlignment="Center" HorizontalAlignment="Left" Height="30" Width="30" BorderThickness="0"  Margin="17.5,0,0,0" Checked="botaoMenu_Checked" Unchecked="botaoMenu_Unchecked" Style="{StaticResource botaoToggle}">
+            <ToggleButton x:Name="botaoMenu" VerticalAlignment="Center" HorizontalAlignment="Left" Height="30" Width="30" BorderThickness="0"  Margin="17.5,0,0,0" Checked="botaoMenu_Checked" Unchecked="botaoMenu_Unchecked" Style="{StaticResource botaoToggle}" IsChecked="True" >
                 <ToggleButton.Background>
-                    <ImageBrush ImageSource="/Icones/icon_menu.png"/>
+                    <ImageBrush ImageSource="/Icones/icon_menuB.png" Stretch="UniformToFill"/>
                 </ToggleButton.Background>
                 <ToggleButton.Triggers>
                     <EventTrigger RoutedEvent="ToggleButton.Unchecked">
@@ -110,69 +110,67 @@
         </Grid>
 
         <!--Menu Lateral-->
-        <Grid x:Name="menuLateral" Grid.Row="1" HorizontalAlignment="Left" Width="65" Background="#F2F4F7" Panel.ZIndex="1">
+        <Grid x:Name="menuLateral" Grid.Row="1" HorizontalAlignment="Left" Width="230" Background="#F2F4F7" Panel.ZIndex="1">
             <StackPanel x:Name="nomePlaceholder">
 
                 <!--Listview pro menu-->
+                <!--Mudei o tamanho dos itens de 30 pra 35, era pra ser 33 pra acompanhar a proção, manda um feedback quando possível-->
                 <ListView x:Name="itensMenu" Background="Transparent" BorderBrush="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                     <!--Item Perfil-->
-                    <ListViewItem HorizontalAlignment="Left" Margin="0,50,0,0" Style="{StaticResource ListViewPadrão}">
+                    <ListViewItem HorizontalAlignment="Left" Margin="0,50,0,0" Style="{StaticResource ListViewPadrão}" PreviewMouseLeftButtonUp="TextBlock_MouseLeftButtonUp"> 
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Ellipse x:Name="ellipseFotoUser" Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
+                            <Ellipse x:Name="ellipseFotoUser" Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Perfil" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Inicio-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_inicio.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image Source="/Icones/icon_inicio.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Inicio" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Amigos-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_amigos.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image Source="/Icones/icon_amigos.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Amigos" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Conversas-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_conversas.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image Source="/Icones/icon_conversas.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Conversas" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Depoimentos-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_depoimentos.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image Source="/Icones/icon_depoimentos.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Depoimentos" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Comunidades-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_grupos.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image Source="/Icones/icon_grupos.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Comunidades" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Jogos-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_jogos.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image Source="/Icones/icon_jogos.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Jogos" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Sair-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}" MouseDoubleClick="carlos">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image x:Name="botaoSair" Source="/Icones/icon_sair.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" MouseLeftButtonUp="botaoSair_MouseLeftButtonUp" />
+                            <Image x:Name="botaoSair" Source="/Icones/icon_sair.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" MouseLeftButtonUp="botaoSair_MouseLeftButtonUp" />
                             <TextBlock Text="Sair" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
-                    </ListViewItem>
-                    <ListViewItem>
-                        <TextBlock Text="Alterar foto de perfil" TextWrapping="Wrap" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp" />
                     </ListViewItem>
                 </ListView>
 

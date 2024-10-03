@@ -8,8 +8,48 @@
       d:DesignHeight="450" d:DesignWidth="650"
       Title="PagePost">
 
+    <Page.Resources>
+        <!--RichText padrão-->
+        <Style x:Key="EstiloRichTextBox" TargetType="RichTextBox">
+            <Setter Property="FontFamily" Value="{StaticResource ArimoFont}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RichTextBox">
+                        <Border CornerRadius="5" BorderBrush="#E3E5E7" BorderThickness="1">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <!--RichText Post-->
+        <Style x:Key="RichTextBoxPost" TargetType="RichTextBox">
+            <Setter Property="FontFamily" Value="{StaticResource ArimoFont}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RichTextBox">
+                        <Border CornerRadius="0" BorderBrush="White" BorderThickness="0">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
     <Grid>
-        <ScrollViewer Background="#FFEEEEEE">
+        <ScrollViewer>
+            <ScrollViewer.Background>
+                <ImageBrush x:Name="fundo"
+                            TileMode="Tile"
+                            Viewport="0,0,1000,1000"
+                            ViewportUnits="Absolute"/>
+            </ScrollViewer.Background>
             <StackPanel>
                 <Grid HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="0,20,0,20" Width="600">
                     <Grid.RowDefinitions>
@@ -36,12 +76,21 @@
                                 <RowDefinition Height = "*"/>
                                 <RowDefinition Height = "*"/>
                             </Grid.RowDefinitions>
-                            <TextBox x:Name="campoTitulo" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,10,10,0" Height="25" TextWrapping="Wrap" TextChanged="campoTitulo_TextChanged"/>
-                            <Label x:Name="labelTitulo" Grid.Row="0" Content="Título" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Center" Foreground="#66000000" IsHitTestVisible="False" Height="25"/>
-                            <TextBox x:Name="campoTexto" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Margin="10,10,10,0" Padding="5,5,5,5" Height="50" TextWrapping="Wrap" TextChanged="campoTexto_TextChanged"/>
-                            <Label x:Name="labelTexto" Grid.Row="1" Content="Texto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Foreground="#66000000" IsHitTestVisible="False" Height="25"/>
-                            <Button x:Name="botaoImagem" Grid.Row="3" Content="Selecionar imagem" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,10,10,0" Height="25" Click="botaoImagem_Click" Background="White"/>
-                            <Button x:Name="botaoPostar" Grid.Row="4" Content="Postar" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="30" Margin="10,10,10,10" FontSize="16" Click="botaoPostar_Click" Background="White" />
+                            <TextBox x:Name="campoTitulo" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="10,10,10,0" Height="25" TextWrapping="Wrap" TextChanged="campoTitulo_TextChanged" Padding="8 0 0 0" FontSize="15" Style="{StaticResource EstiloTextBox}"/>
+                            <Label x:Name="labelTitulo" Grid.Row="0" Content="Título" HorizontalAlignment="Left" Margin="16,8,0,0" VerticalAlignment="Center" Foreground="#66000000" IsHitTestVisible="False" Height="25" FontFamily="{StaticResource ArimoFont}" FontSize="15"/>
+                            
+                            <RichTextBox x:Name="campoTexto" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Margin="10,10,10,0" Padding="8,5,5,5" Height="50"  TextChanged="campoTexto_TextChanged" FontSize="14" Style="{StaticResource EstiloRichTextBox }"/>
+                            <Label x:Name="labelTexto" Grid.Row="1" Content="Texto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,11,0,0" Foreground="#66000000" IsHitTestVisible="False" Height="25" FontFamily="{StaticResource ArimoFont}" FontSize="14"/>
+                            
+                            
+                            <Button x:Name="botaoPostar" Grid.Row="4" Content="Postar" HorizontalAlignment="Right" VerticalAlignment="Center" Height="30" Width="120" Margin="10,10,10,10" FontSize="14" Click="botaoPostar_Click"  Style="{StaticResource EstiloBotaoRedondo}"/>
+
+                            <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="10,10,10,0">
+                                <Button x:Name="botaoImagem" Content="Selecionar imagem" HorizontalAlignment="left" VerticalAlignment="Center" Margin="10,10,10,0" Height="25" Width="150" Click="botaoImagem_Click" FontSize="12"  Style="{StaticResource EstiloBotaoRedondo}"/>
+                                <Button Content="Negrito" HorizontalAlignment="left" VerticalAlignment="Center" Margin="10,10,10,0" Height="25" Width="50"  FontSize="12"  Style="{StaticResource EstiloBotaoRedondo}" Click="botaoNegrito_Click"/>
+                                <Button Content="Itálico" HorizontalAlignment="left" VerticalAlignment="Center" Margin="10,10,10,0" Height="25" Width="50" FontSize="12"  Style="{StaticResource EstiloBotaoRedondo}" Click="botaoItalico_Click"/>
+                                <Button Content="Sublinhado" HorizontalAlignment="left" VerticalAlignment="Center" Margin="10,10,10,0" Height="25" Width="70"  FontSize="12"  Style="{StaticResource EstiloBotaoRedondo}" Click="botaoSublinhado_Click"/>
+                            </StackPanel>
                         </Grid>
                     </Border>
                     <Grid x:Name="gridPosts" Grid.Row="2"/>

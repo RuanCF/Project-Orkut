@@ -33,12 +33,12 @@ namespace RedeSocial
         }
         private void botaoMenu_Checked(object sender, RoutedEventArgs e)
         {
-            MainFrame.Opacity = 0.3;
+            //MainFrame.Opacity = 0.3;
         }
 
         private void botaoMenu_Unchecked(object sender, RoutedEventArgs e)
         {
-            MainFrame.Opacity = 1.0;
+           // MainFrame.Opacity = 1.0;
         }
 
         private void ListViewItem_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

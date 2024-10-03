@@ -16,6 +16,8 @@
     <None Remove="Icones\icon_inicio.png" />
     <None Remove="Icones\icon_jogos.png" />
     <None Remove="Icones\icon_menu.png" />
+    <None Remove="Icones\icon_menuB.png" />
+    <None Remove="Icones\icon_menuBC.png" />
     <None Remove="Icones\icon_sair.png" />
   </ItemGroup>
 
@@ -45,6 +47,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Icones\icon_menu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icones\icon_menuB.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icones\icon_menuBC.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Icones\icon_sair.png">

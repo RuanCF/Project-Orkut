@@ -11,12 +11,13 @@
         <!--Fontes-->
         <FontFamily x:Key="ArimoFont">pack://application:,,,/Fontes/#Arimo Variable</FontFamily>
         <FontFamily x:Key="KulimParkBold">pack://application:,,,/Fontes/#Kulim Park Bold</FontFamily>
-
+        
+        <!--Botões-->
         <Style x:Key="EstiloBotaoRedondo" TargetType="Button">
             <Setter Property="FontFamily" Value="{StaticResource ArimoFont}"/>
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Background" Value="#63C3FF"/>
+            <Setter Property="Background" Value="#37376E"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="Template">
                 <Setter.Value>
@@ -26,10 +27,10 @@
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="borda" Property="Background" Value="#6FD2FF"/>
+                                <Setter TargetName="borda" Property="Background" Value="#4B4B82"/>
                             </Trigger>
                             <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="borda" Property="Background" Value="#307FAD "/>
+                                <Setter TargetName="borda" Property="Background" Value="#2D2D5A "/>
                             </Trigger>
                         </ControlTemplate.Triggers>
 
@@ -37,6 +38,22 @@
                 </Setter.Value>
             </Setter>
         </Style>
+
+        <Style x:Key="EstiloTextBox" TargetType="TextBox">
+            <Setter Property="FontFamily" Value="{StaticResource ArimoFont}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border CornerRadius="5" BorderBrush="#E3E5E7" BorderThickness="1">
+                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
 
 
 

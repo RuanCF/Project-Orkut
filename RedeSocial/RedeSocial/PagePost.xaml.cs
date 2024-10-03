@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,32 +28,21 @@ namespace RedeSocial
         int codUsuario;
         string enderecoMidia;
         string exibicaoPost;
+        string projectPath; //Caminho até o projeto para poder adicionar fotos e ícones
         public PagePost(int codUser)
         {
             InitializeComponent();
 
             //Atribuições para teste
-            //Precisa alterar o caminho das fotos para rodar    VVVVVVVV
-            /*userManager.ArmazenarUsuario(0, "Johnny Mukai", "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Johnny\\Posts\\Posts\\Imagens\\Pukki.jpg");
-            userManager.ArmazenarUsuario(1, "Satoru Gojo", "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Johnny\\Posts\\Posts\\Imagens\\Gojo.jpg");
-            userManager.ArmazenarUsuario(2, "Jennifer Lawrence", "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Johnny\\Posts\\Posts\\Imagens\\Jennifer.jpeg");
-            userManager.ArmazenarUsuario(3, "Luigi", "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Johnny\\Posts\\Posts\\Imagens\\Luigi.png");
-
-            codUsuario = 0;
-            postManager.ArmazenarPost(0, "Pudim", "Fiz um pudim muito bom!", "", "22/09/2024 10:10");
-            postManager.ArmazenarPost(0, "Elefante", "Olha esse elefante gigante", "", "22/09/2024 11:13");
-            postManager.ArmazenarPost(1, "Como correr", "Leve uma perna para frente e em seguida a perna oposta. Repita o processo.", "", "23/09/2024 09:54");
-            postManager.ArmazenarPost(1, "Joinha", "Deixa o Like!", "", "23/09/2024 15:33");
-            postManager.ArmazenarPost(3, "", "Que Mario?", "", "23/09/2024 19:27");
-            postManager.ArmazenarPost(2, "Novo filme!", "Se preparem para um novo filme", "", "24/09/2024 01:11");
-            postManager.AdicionarLike(0, 2);
-            postManager.AdicionarLike(0, 3);
-            postManager.AdicionarLike(0, 4);
-            postManager.AdicionarLike(1, 4);*/
-
             exibicaoPost = "proprio";
             codUsuario = codUser;
             enderecoMidia = "";
+            projectPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+            projectPath = projectPath.Remove(projectPath.Length - 4);
+
+            //Altera o fundo
+            //fundo.ImageSource = new BitmapImage(new Uri(projectPath + "\\Fundo\\fundoPadraoBranco.jpg", UriKind.RelativeOrAbsolute));
+
             atualizarPaginaPostProprio();
 
             botaoPostProprio.Background = Brushes.Gray;
@@ -93,17 +83,57 @@ namespace RedeSocial
             gridAutor.ColumnDefinitions.Add(new ColumnDefinition() { Width = GridLength.Auto });
             gridAutor.ColumnDefinitions.Add(new ColumnDefinition() { Width = GridLength.Auto });
 
-            //Colunas para os botões Curtir, Comentar e Recomendar
+            //Grid para os botões Curtir e Recomendar
             Grid gridBotoes = new Grid();
             gridBotoes.ColumnDefinitions.Add(new ColumnDefinition());//Botão curtir
-            gridBotoes.ColumnDefinitions.Add(new ColumnDefinition());//Botão comentar
             gridBotoes.ColumnDefinitions.Add(new ColumnDefinition());//Botão recomendar
+            //Borda do gridBotoes
+            Border borderBotoes = new Border()
+            {
+                BorderBrush = Brushes.DarkGray,
+                BorderThickness = new Thickness(0, 1, 0, 1)
+            };
+            borderBotoes.Child = gridBotoes;
 
-            //Colunar para a quantidade de likes, comentários e recomendações
-            Grid gridQtdLCR = new Grid();
-            gridQtdLCR.ColumnDefinitions.Add(new ColumnDefinition());//Quantidade de Likes
-            gridQtdLCR.ColumnDefinitions.Add(new ColumnDefinition());//Quantidade de Comentários
-            gridQtdLCR.ColumnDefinitions.Add(new ColumnDefinition());//Quantidade de Recomendações
+            //Botão curtir 
+            Grid gridCurtir = new Grid();
+            gridCurtir.ColumnDefinitions.Add(new ColumnDefinition());//Ícone curtir
+            gridCurtir.ColumnDefinitions.Add(new ColumnDefinition());//Quantidade de curtidas
+            //Ícone curtir
+            Image newIconeCurtir = new Image()
+            {
+                HorizontalAlignment = HorizontalAlignment.Right,
+                VerticalAlignment = VerticalAlignment.Center,
+                Height = 20,
+                Width = 20,
+                Margin = new Thickness(10),
+                Source = new BitmapImage(new Uri(projectPath + "\\Icones\\Like.png", UriKind.RelativeOrAbsolute))
+            };
+            //Quantidade de curtidas
+            TextBlock newQuantidadeCurtida = new TextBlock()
+            {
+                Text = postManager.buscarQuantidadeLike(i).ToString(),
+                HorizontalAlignment = HorizontalAlignment.Left,
+                VerticalAlignment = VerticalAlignment.Center,
+                FontSize = 14
+            };
+            gridCurtir.MouseLeftButtonUp += (sender, e) => gridCurtir_Click(sender, e, i, gridCurtir, newQuantidadeCurtida);
+            Grid.SetColumn(newIconeCurtir, 0);
+            Grid.SetColumn(newQuantidadeCurtida, 1);
+            gridCurtir.Children.Add(newIconeCurtir);
+            gridCurtir.Children.Add(newQuantidadeCurtida);
+
+            //Botão recomendar
+            Grid gridRecomendar = new Grid();
+            //Texto recomendar
+            TextBlock newRecomendar = new TextBlock()
+            {
+                Text = "Recomendar",
+                VerticalAlignment = VerticalAlignment.Center,
+                HorizontalAlignment = HorizontalAlignment.Center,
+                FontSize = 14
+            };
+            gridRecomendar.Children.Add(newRecomendar);
 
             //Cria o balão
             Grid gridPostCorpo = new Grid();
@@ -118,10 +148,6 @@ namespace RedeSocial
             gridPosts.RowDefinitions.Add(new RowDefinition() { Height = GridLength.Auto });
 
             //Cria a foto do autor
-            ImageBrush imageBrush = new ImageBrush();
-            BitmapImage bitmapImage = new BitmapImage(new Uri(userManager.BuscarFoto(postManager.BuscarRemetente(i)), UriKind.Relative));
-            imageBrush.ImageSource = bitmapImage;
-
             Ellipse newAutorFoto = new Ellipse()
             {
                 HorizontalAlignment = HorizontalAlignment.Left,
@@ -130,7 +156,7 @@ namespace RedeSocial
                 Width = 45,
                 Stroke = Brushes.DarkGray,
                 Margin = new Thickness(10),
-                Fill = imageBrush
+                Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(postManager.BuscarRemetente(i)), UriKind.Relative)))
             };
 
             //Cria o nome do autor
@@ -163,66 +189,30 @@ namespace RedeSocial
             };
 
             //Cria o texto
-            TextBlock newTexto = new TextBlock()
+            // Usa RichTextBox para manter a formatação do texto
+            RichTextBox newTexto = new RichTextBox()
             {
-                Text = postManager.BuscarTexto(i),
-                TextWrapping = TextWrapping.Wrap,
-                FontSize = 14,
-                Margin = new Thickness(15, 5, 15, 5)
+                Padding = new Thickness(15,0,0,0),
+                Style = (Style)FindResource("RichTextBoxPost")
             };
+            newTexto.IsReadOnly = true; // Define RichTextBox como somente leitura
+            newTexto.Document.Blocks.Clear();
 
-            BitmapImage newBitmapImage = new BitmapImage();
-            newBitmapImage.BeginInit();
-            newBitmapImage.UriSource = new Uri(postManager.BuscarMidia(i), UriKind.RelativeOrAbsolute);
-            newBitmapImage.EndInit();
+            // Carrega o texto formatado do Xaml armazenado
+            string textoFormatado = postManager.BuscarTexto(i);
+            using (MemoryStream stream = new MemoryStream(Encoding.UTF8.GetBytes(textoFormatado)))
+            {
+                TextRange range = new TextRange(newTexto.Document.ContentStart, newTexto.Document.ContentEnd);
+                range.Load(stream, DataFormats.Xaml);
+            }
 
-            //Cria a foto
+            //Cria a foto do post
             Image newMidia = new Image()
             {
-                Source = newBitmapImage,
+                Source = new BitmapImage(new Uri(postManager.BuscarMidia(i), UriKind.RelativeOrAbsolute)),
                 MaxHeight = 150,
-                MaxWidth = 150
-            };
-
-            //Cria a quantidade de likes
-            TextBlock newLikes = new TextBlock() //Número de likes
-            {
-                Text = "Curtidas: " + postManager.buscarQuantidadeLike(i).ToString(),
-                TextWrapping = TextWrapping.Wrap,
-                Margin = new Thickness(5)
-            };
-
-            //Cria o botão Curtir
-            Button botaoCurtir = new Button()
-            {
-                Content = "Curtir",
-                VerticalAlignment = VerticalAlignment.Center,
-                HorizontalAlignment = HorizontalAlignment.Stretch,
-                Margin = new Thickness(0, 0, 0, 0),
-                Background = new SolidColorBrush(Colors.White)
-            };
-
-            //Função de curtir
-            botaoCurtir.Click += (sender, e) => BotaoCurtir_Click(sender, e, i, botaoCurtir, newLikes);
-
-            //Cria o botão comentar
-            Button botaoComentar = new Button()
-            {
-                Content = "Comentar",
-                VerticalAlignment = VerticalAlignment.Center,
-                HorizontalAlignment = HorizontalAlignment.Stretch,
-                Margin = new Thickness(0, 0, 0, 0),
-                Background = new SolidColorBrush(Colors.White)
-            };
-
-            //Cria o botão recomendar
-            Button botaoRecomendar = new Button()
-            {
-                Content = "Recomendar",
-                VerticalAlignment = VerticalAlignment.Center,
-                HorizontalAlignment = HorizontalAlignment.Stretch,
-                Margin = new Thickness(0, 0, 0, 0),
-                Background = new SolidColorBrush(Colors.White)
+                MaxWidth = 150,
+                Margin = new Thickness(0, 0, 0, 10)
             };
 
             //Cria a borda arredondada
@@ -251,66 +241,58 @@ namespace RedeSocial
             gridAutor.Children.Add(newAutorNome);
             gridAutor.Children.Add(newDataHora);
 
-            //Adiciona a quantidade de likes, comentários e recomendações na gridQtdLCR
-            Grid.SetColumn(newLikes, 0);
-            gridQtdLCR.Children.Add(newLikes);
-
             //Adiciona os botões na gridBotoes
-            Grid.SetColumn(botaoCurtir, 0);
-            Grid.SetColumn(botaoComentar, 1);
-            Grid.SetColumn(botaoRecomendar, 2);
-            gridBotoes.Children.Add(botaoCurtir);
-            gridBotoes.Children.Add(botaoComentar);
-            gridBotoes.Children.Add(botaoRecomendar);
+            Grid.SetColumn(gridCurtir, 0);
+            Grid.SetColumn(gridRecomendar, 1);
+            gridBotoes.Children.Add(gridCurtir);
+            gridBotoes.Children.Add(gridRecomendar);
 
             //Adiciona tudo no gridPostCorpo
             Grid.SetRow(gridAutor, 0);
             Grid.SetRow(newTitulo, 1);
             Grid.SetRow(newTexto, 2);
             Grid.SetRow(newMidia, 3);
-            Grid.SetRow(gridQtdLCR, 4);
-            Grid.SetRow(gridBotoes, 5);
+            Grid.SetRow(borderBotoes, 4);
             gridPostCorpo.Children.Add(gridAutor);
             gridPostCorpo.Children.Add(newTitulo);
             gridPostCorpo.Children.Add(newTexto);
             gridPostCorpo.Children.Add(newMidia);
-            gridPostCorpo.Children.Add(gridQtdLCR);
-            gridPostCorpo.Children.Add(gridBotoes);
+            gridPostCorpo.Children.Add(borderBotoes);
 
             //Adiciona o post na tela
             Grid.SetRow(border, gridPosts.RowDefinitions.Count - 1);
             Grid.SetColumn(border, 0);
 
             //Altera a cor do botão do like
-            alterarCorBotaoLike(i, botaoCurtir);
+            alterarCorBotaoLike(i, gridCurtir);
         }
 
         //Função do botão Curtir
-        private void BotaoCurtir_Click(object sender, EventArgs e, int i, Button button, TextBlock textBlock)
+        private void gridCurtir_Click(object sender, EventArgs e, int i, Grid grid, TextBlock textBlock)
         {
             if (!postManager.verificarUsuarioLike(i, codUsuario))
             {
                 postManager.AdicionarLike(i, codUsuario);
-                button.Background = new SolidColorBrush(Colors.PowderBlue);
-                textBlock.Text = "Curtidas: " + postManager.buscarQuantidadeLike(i).ToString();
+                grid.Background = new SolidColorBrush(Colors.PowderBlue);
+                textBlock.Text = postManager.buscarQuantidadeLike(i).ToString();
             }
             else
             {
                 postManager.RemoverLike(i, codUsuario);
-                button.Background = new SolidColorBrush(Colors.White);
-                textBlock.Text = "Curtidas: " + postManager.buscarQuantidadeLike(i).ToString();
+                grid.Background = new SolidColorBrush(Colors.White);
+                textBlock.Text = postManager.buscarQuantidadeLike(i).ToString();
             }
         }
 
-        private void alterarCorBotaoLike(int i, Button button)
+        private void alterarCorBotaoLike(int i, Grid grid)
         {
             if (postManager.verificarUsuarioLike(i, codUsuario))
             {
-                button.Background = new SolidColorBrush(Colors.PowderBlue);
+                grid.Background = new SolidColorBrush(Colors.PowderBlue);
             }
             else
             {
-                button.Background = new SolidColorBrush(Colors.White);
+                grid.Background = new SolidColorBrush(Colors.White);
             }
         }
 
@@ -330,7 +312,9 @@ namespace RedeSocial
         //Apagar a label "Texto" quando digitar
         private void campoTexto_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (String.IsNullOrEmpty(campoTexto.Text))
+            TextRange textRange = new TextRange(campoTexto.Document.ContentStart, campoTexto.Document.ContentEnd);
+            string texto = textRange.Text.Trim();
+            if (String.IsNullOrEmpty(texto))
             {
                 labelTexto.Visibility = Visibility.Visible;
             }
@@ -343,19 +327,34 @@ namespace RedeSocial
         //Botão para postar o post
         private void botaoPostar_Click(object sender, RoutedEventArgs e)
         {
-            if (String.IsNullOrEmpty(campoTexto.Text) && enderecoMidia == "")
+            TextRange textRange = new TextRange(campoTexto.Document.ContentStart, campoTexto.Document.ContentEnd);
+            string textoFormatado;
+            using (MemoryStream stream = new MemoryStream())
+            {
+                textRange.Save(stream, DataFormats.Xaml);
+                stream.Position = 0;
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    textoFormatado = reader.ReadToEnd();
+                }
+            }
+
+            // Verifica se o texto formatado contém apenas a estrutura vazia do XAML
+            bool isRichTextBoxEmpty = string.IsNullOrWhiteSpace(textRange.Text.Trim()) || textoFormatado.Trim().Equals("<FlowDocument xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\" />");
+
+            if (isRichTextBoxEmpty && string.IsNullOrEmpty(enderecoMidia))
             {
                 MessageBox.Show("Escreva algum texto ou selecione uma imagem.");
             }
             else
             {
-                postManager.ArmazenarPost(codUsuario, campoTitulo.Text, campoTexto.Text, enderecoMidia, DateTime.Now.ToString("dd/MM/yyyy HH:mm"));
+                postManager.ArmazenarPost(codUsuario, campoTitulo.Text, textoFormatado, enderecoMidia, DateTime.Now.ToString("dd/MM/yyyy HH:mm"));
 
                 campoTitulo.Clear();
-                campoTexto.Clear();
+                campoTexto.Document.Blocks.Clear(); // Limpar o RichTextBox
                 enderecoMidia = "";
 
-                removerPrevia(); //Remove a prévia da foto após postar
+                removerPrevia(); // Remove a prévia da foto após postar
                 botaoImagem.Content = "Selecionar imagem";
             }
 
@@ -368,7 +367,6 @@ namespace RedeSocial
                 atualizarPaginaPostGeral();
             }
         }
-
         //Permite selecionar uma foto para a postagem
         private void botaoImagem_Click(object sender, RoutedEventArgs e)
         {
@@ -390,6 +388,55 @@ namespace RedeSocial
                 enderecoMidia = "";
                 removerPrevia();
                 botaoImagem.Content = "Selecionar imagem";
+            }
+        }
+
+        private void botaoNegrito_Click(object sender, RoutedEventArgs e)
+        {
+            TextSelection selectedText = campoTexto.Selection;
+            if (!selectedText.IsEmpty)
+            {
+                if (selectedText.GetPropertyValue(TextElement.FontWeightProperty).Equals(FontWeights.Bold))
+                {
+                    selectedText.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Normal);
+                }
+                else
+                {
+                    selectedText.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Bold);
+                }
+            }
+        }
+
+        private void botaoItalico_Click(object sender, RoutedEventArgs e)
+        {
+            TextSelection selectedText = campoTexto.Selection;
+            if (!selectedText.IsEmpty)
+            {
+                if (selectedText.GetPropertyValue(TextElement.FontStyleProperty).Equals(FontStyles.Italic))
+                {
+                    selectedText.ApplyPropertyValue(TextElement.FontStyleProperty, FontStyles.Normal);
+                }
+                else
+                {
+                    selectedText.ApplyPropertyValue(TextElement.FontStyleProperty, FontStyles.Italic);
+                }
+            }
+        }
+
+        private void botaoSublinhado_Click(object sender, RoutedEventArgs e)
+        {
+            TextSelection selectedText = campoTexto.Selection;
+            if (!selectedText.IsEmpty)
+            {
+                TextDecorationCollection textDecorations = (TextDecorationCollection)selectedText.GetPropertyValue(Inline.TextDecorationsProperty);
+                if (textDecorations == TextDecorations.Underline)
+                {
+                    selectedText.ApplyPropertyValue(Inline.TextDecorationsProperty, null);
+                }
+                else
+                {
+                    selectedText.ApplyPropertyValue(Inline.TextDecorationsProperty, TextDecorations.Underline);
+                }
             }
         }
 

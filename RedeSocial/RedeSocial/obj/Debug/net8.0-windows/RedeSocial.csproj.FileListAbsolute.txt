@@ -226,3 +226,159 @@ C:\Users\Cliente\Downloads\RedeSocial (Com Post)\RedeSocial\obj\Debug\net8.0-win
 C:\Users\Cliente\Downloads\RedeSocial (Com Post)\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.g.cs
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.baml
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.exe
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.deps.json
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.runtimeconfig.json
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.g.cs
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.g.cs
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.cache
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.lref
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.baml
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.baml
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.baml
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.g.resources
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfoInputs.cache
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfo.cs
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.csproj.CoreCompileInputs.cache
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.sourcelink.json
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\refint\RedeSocial.dll
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.genruntimeconfig.cache
+C:\Users\NettN\Downloads\Project-Orkut\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.exe
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.deps.json
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.runtimeconfig.json
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.g.cs
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.g.cs
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.cache
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.lref
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.baml
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.baml
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.baml
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.g.resources
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfoInputs.cache
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfo.cs
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.csproj.CoreCompileInputs.cache
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.sourcelink.json
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\refint\RedeSocial.dll
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.genruntimeconfig.cache
+C:\Users\NettN\Downloads\Project-Orkut - Copia\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.exe
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.deps.json
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.runtimeconfig.json
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.g.cs
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.g.cs
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.cache
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.lref
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.baml
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.baml
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.baml
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.g.resources
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfoInputs.cache
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfo.cs
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.csproj.CoreCompileInputs.cache
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.sourcelink.json
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\refint\RedeSocial.dll
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.genruntimeconfig.cache
+C:\Users\NettN\Downloads\Project-Orkut (Com fundo)\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.exe
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.deps.json
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.runtimeconfig.json
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.g.cs
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.g.cs
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.cache
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.lref
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.baml
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.baml
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.baml
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.g.resources
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfoInputs.cache
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfo.cs
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.csproj.CoreCompileInputs.cache
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.sourcelink.json
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\refint\RedeSocial.dll
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.genruntimeconfig.cache
+C:\Users\NettN\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.exe
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.deps.json
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.runtimeconfig.json
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.g.cs
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.g.cs
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.cache
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.lref
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.baml
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.baml
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.baml
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.g.resources
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfoInputs.cache
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfo.cs
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.csproj.CoreCompileInputs.cache
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.sourcelink.json
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\refint\RedeSocial.dll
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.genruntimeconfig.cache
+C:\Users\Cliente\Downloads\RedeSocial (Com fundo fofo)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.exe
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.deps.json
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.runtimeconfig.json
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\bin\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.g.cs
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.g.cs
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.cache
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial_MarkupCompile.lref
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.baml
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Home.baml
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.baml
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.g.resources
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfoInputs.cache
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.AssemblyInfo.cs
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.csproj.CoreCompileInputs.cache
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.sourcelink.json
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.dll
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\refint\RedeSocial.dll
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.pdb
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.genruntimeconfig.cache
+C:\Users\Cliente\Downloads\RedeSocial (NIS)\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
