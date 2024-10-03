@@ -119,56 +119,56 @@
                     <!--Item Perfil-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,50,0,0" Style="{StaticResource ListViewPadrão}" PreviewMouseLeftButtonUp="TextBlock_MouseLeftButtonUp"> 
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Ellipse x:Name="ellipseFotoUser" Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
+                            <Ellipse x:Name="ellipseFotoUser" Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Perfil" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Inicio-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_inicio.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image Source="/Icones/icon_inicio.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Inicio" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Amigos-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_amigos.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image Source="/Icones/icon_amigos.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Amigos" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Conversas-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_conversas.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image Source="/Icones/icon_conversas.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Conversas" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Depoimentos-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_depoimentos.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image Source="/Icones/icon_depoimentos.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Depoimentos" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Comunidades-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_grupos.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image Source="/Icones/icon_grupos.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Comunidades" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Jogos-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_jogos.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" />
+                            <Image Source="/Icones/icon_jogos.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Jogos" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Sair-->
                     <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}" MouseDoubleClick="carlos">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image x:Name="botaoSair" Source="/Icones/icon_sair.png"  Height="36" Width="36" Stretch="Fill" Margin="12,0,0,0" MouseLeftButtonUp="botaoSair_MouseLeftButtonUp" />
+                            <Image x:Name="botaoSair" Source="/Icones/icon_sair.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" MouseLeftButtonUp="botaoSair_MouseLeftButtonUp" />
                             <TextBlock Text="Sair" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
