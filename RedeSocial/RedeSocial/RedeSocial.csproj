@@ -9,6 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fotos\Gojo.jpg" />
+    <None Remove="Fotos\Pukki.jpg" />
+    <None Remove="Icones\AdicionarFoto.png" />
     <None Remove="Icones\icon_amigos.png" />
     <None Remove="Icones\icon_conversas.png" />
     <None Remove="Icones\icon_depoimentos.png" />
@@ -28,6 +31,9 @@
     <Resource Include="Fontes\Arimo-Bold.ttf" />
     <Resource Include="Fontes\KulimPark-Regular.ttf" />
     <Resource Include="Fontes\KulimPark-Bold.ttf" />
+    <Resource Include="Fotos\Gojo.jpg" />
+    <Resource Include="Fotos\Pukki.jpg" />
+    <Resource Include="Icones\AdicionarFoto.png" />
     <Resource Include="Icones\icon_amigos.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

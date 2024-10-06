@@ -55,6 +55,118 @@
         </Style>
 
 
+        <!-- PÁGINA POST -->
+        <!--Botão Seus, Amigos e Todos: atribui propriedades e arredonda-->
+        <Style x:Key="BotaoPosts" TargetType="Button">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#F0F0FA"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#37376E"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="borda" CornerRadius="5" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="3" ShadowDepth="0"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--TextBox: arredondada-->
+        <Style x:Key="TextBoxArredondado" TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border CornerRadius="10" Background="#F0F0FA">
+                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--RichTextBox do formulário: arredondada-->
+        <Style x:Key="FormRichTextBoxArredondado" TargetType="RichTextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RichTextBox">
+                        <Border CornerRadius="10" Background="#F0F0FA">
+                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--RichTextBox do post: arredondada-->
+        <Style x:Key="RichTextBoxArredondado" TargetType="RichTextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RichTextBox">
+                        <Border CornerRadius="10" BorderBrush="Transparent" BorderThickness="1">
+                            <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--Botão postar: arredondada e altera a cor ao passar o mouse-->
+        <Style x:Key="BotaoPostar" TargetType="Button">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#F0F0FA"/>
+            <Setter Property="Background" Value="#37376E"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="borda" CornerRadius="5" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="borda" Property="Background" Value="#46467D"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--Botão adicionar foto: altera a cor do ao passar o mouse-->
+        <Style x:Key="CorBotaoAdicionarFoto" TargetType="Border">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#F0F0FA"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!--Botão NIS: altera a cor ao passar o mouse-->
+        <Style x:Key="BotaoNIS" TargetType="Button">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="borda" CornerRadius="10" BorderBrush="Transparent" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="borda" Property="Background" Value="#f0f0fa"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
 
     </Application.Resources>

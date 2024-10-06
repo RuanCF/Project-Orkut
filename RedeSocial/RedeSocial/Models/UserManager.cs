@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
@@ -14,6 +15,7 @@ namespace RedeSocial
         public required string FullName { get; set; }
         public DateOnly BirthDate { get; set; }
         public string Foto { get; set; }
+        public ArrayList Amigos { get; set; } = new ArrayList();
     }
 
     public class UserManager
@@ -196,7 +198,6 @@ namespace RedeSocial
             return null;
         }
 
-        //Adiciona uma foto de perfil
         public void AdicionarFoto(int codUsuario, string foto)
         {
             usersByEmail.ElementAt(codUsuario).Value.Foto = foto;
@@ -218,6 +219,47 @@ namespace RedeSocial
         public string BuscarFoto(int codUsuario)
         {
             return usersByEmail.ElementAt(codUsuario).Value.Foto;
+        }
+
+        public void AdicionarAmigo(int codUsuario, int codAmigo)
+        {
+            usersByEmail.ElementAt(codUsuario).Value.Amigos.Add(codAmigo);
+        }
+
+        public int BuscarCodAmigo(int codUsuario, int i)
+        {
+            return (int)usersByEmail.ElementAt(codUsuario).Value.Amigos[i];
+        }
+
+        public int BuscarQuantidadeAmigos(int codUsuario)
+        {
+            return usersByEmail.ElementAt(codUsuario).Value.Amigos.Count;
+        }
+
+        public ArrayList BuscarListaAmigos(int codUsuario)
+        {
+            return usersByEmail.ElementAt(codUsuario).Value.Amigos;
+        }
+
+        public bool VerificarCodAmigo(int codUsuario, int codAmigo)
+        {
+            return usersByEmail.ElementAt(codUsuario).Value.Amigos.Contains(codAmigo);
+        }
+
+        public void AdicionarUsuario(string email, string id, string passwordHash, string fullNome, DateOnly birthDate, string foto)
+        {
+            User novoUsuario = new User()
+            {
+                Email = email,
+                ID = id,
+                PasswordHash = HashPassword(passwordHash),
+                FullName = fullNome,
+                Foto = foto,
+                BirthDate = birthDate,
+            };
+
+            usersByEmail.Add(email, novoUsuario);
+            usersByID.Add(id, novoUsuario);
         }
     }
 }

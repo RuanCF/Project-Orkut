@@ -9,6 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using RedeSocial.Models;
 
 namespace RedeSocial
 {
@@ -18,6 +19,7 @@ namespace RedeSocial
     public partial class MainWindow : Window
     {
         private UserManager userManager = new UserManager();
+        private Teste teste = new Teste();
 
         public MainWindow()
         {
@@ -157,6 +159,16 @@ namespace RedeSocial
             {
                 labelSenha.Visibility = Visibility.Hidden;
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            teste.AdicionarUsuario();
+            teste.AdicionarAmigo();
+            teste.AdicionarPost();
+            teste.AdicionarLike();
+            teste.AdicionarComentario();
+            teste.AdicionarRecomendar();
         }
     }
 }

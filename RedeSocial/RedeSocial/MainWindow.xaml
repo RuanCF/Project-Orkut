@@ -109,7 +109,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
+
         <!--Datepicker sem marca-->
         <Style x:Key="DataSemMarca" TargetType="DatePickerTextBox">
             <Setter Property="Template">
@@ -208,6 +208,7 @@
                     </StackPanel>
                 </TabItem>
             </TabControl>
+            <Button Content="Gerar usuários para teste" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         </Grid>
     </Grid>
 
