@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\source\\repos\\project-orkut\\redesocial\\redesocial\\pageperfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pageperfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\source\\repos\\project-orkut\\redesocial\\redesocial\\pageperfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pageperfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\source\\repos\\project-orkut\\redesocial\\redesocial\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\source\\repos\\project-orkut\\redesocial\\redesocial\\pageperfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pageperfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\source\\repos\\project-orkut\\redesocial\\redesocial\\models\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\models\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\source\\repos\\project-orkut\\redesocial\\redesocial\\models\\teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\models\\teste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\source\\repos\\project-orkut\\redesocial\\redesocial\\pagepost.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pagepost.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,57 +51,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Home.xaml",
-              "DocumentMoniker": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\Home.xaml",
-              "RelativeDocumentMoniker": "RedeSocial\\Home.xaml",
-              "ToolTip": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\Home.xaml",
-              "RelativeToolTip": "RedeSocial\\Home.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-07T20:16:25.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Teste.cs",
-              "DocumentMoniker": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\Models\\Teste.cs",
-              "RelativeDocumentMoniker": "RedeSocial\\Models\\Teste.cs",
-              "ToolTip": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\Models\\Teste.cs",
-              "RelativeToolTip": "RedeSocial\\Models\\Teste.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBgAAAC6AAAAAAAAAA==",
+              "Title": "PagePost.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePost.xaml.cs",
+              "RelativeDocumentMoniker": "RedeSocial\\PagePost.xaml.cs",
+              "ToolTip": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePost.xaml.cs",
+              "RelativeToolTip": "RedeSocial\\PagePost.xaml.cs",
+              "ViewState": "AgIAALkCAAAAAAAAAAAQwM0CAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T20:04:50.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserManager.cs",
-              "DocumentMoniker": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\Models\\UserManager.cs",
-              "RelativeDocumentMoniker": "RedeSocial\\Models\\UserManager.cs",
-              "ToolTip": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\Models\\UserManager.cs",
-              "RelativeToolTip": "RedeSocial\\Models\\UserManager.cs",
-              "ViewState": "AgIAANoAAAAAAAAAAAAEwPAAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T19:59:34.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PagePerfil.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePerfil.xaml.cs",
-              "RelativeDocumentMoniker": "RedeSocial\\PagePerfil.xaml.cs",
-              "ToolTip": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePerfil.xaml.cs*",
-              "RelativeToolTip": "RedeSocial\\PagePerfil.xaml.cs*",
-              "ViewState": "AgIAABwAAAAAAAAAAAAuwC0AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T19:47:23.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-07T20:44:34.491Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PagePerfil.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePerfil.xaml.cs",
+              "RelativeDocumentMoniker": "RedeSocial\\PagePerfil.xaml.cs",
+              "ToolTip": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePerfil.xaml.cs",
+              "RelativeToolTip": "RedeSocial\\PagePerfil.xaml.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAWwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T19:47:23.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "PagePerfil.xaml",
               "DocumentMoniker": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePerfil.xaml",
               "RelativeDocumentMoniker": "RedeSocial\\PagePerfil.xaml",

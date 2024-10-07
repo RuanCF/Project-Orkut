@@ -59,6 +59,7 @@
         <!--Botão Seus, Amigos e Todos: atribui propriedades e arredonda-->
         <Style x:Key="BotaoPosts" TargetType="Button">
             <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="{StaticResource ArimoFont}"/>
             <Setter Property="Foreground" Value="#F0F0FA"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Background" Value="#37376E"/>
@@ -120,6 +121,7 @@
         <!--Botão postar: arredondada e altera a cor ao passar o mouse-->
         <Style x:Key="BotaoPostar" TargetType="Button">
             <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="{StaticResource ArimoFont}"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Foreground" Value="#F0F0FA"/>
             <Setter Property="Background" Value="#37376E"/>
@@ -151,6 +153,7 @@
         <!--Botão NIS: altera a cor ao passar o mouse-->
         <Style x:Key="BotaoNIS" TargetType="Button">
             <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="{StaticResource ArimoFont}"/>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="Template">
                 <Setter.Value>

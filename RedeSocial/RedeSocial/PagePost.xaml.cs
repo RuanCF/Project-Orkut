@@ -283,6 +283,7 @@ namespace RedeSocial
                 HorizontalAlignment = HorizontalAlignment.Left,
                 VerticalAlignment = VerticalAlignment.Top,
                 FontSize = 14,
+                FontFamily = (FontFamily)Application.Current.Resources["ArimoFont"],
                 FontWeight = FontWeights.Bold,
                 Margin = new Thickness(5, 13, 0, 0)
             };
@@ -316,6 +317,7 @@ namespace RedeSocial
                 Text = postManager.BuscarTitulo(i),
                 TextWrapping = TextWrapping.Wrap,
                 FontSize = 16,
+                FontFamily = (FontFamily)Application.Current.Resources["ArimoFont"],
                 Foreground = corPrincipal,
                 FontWeight = FontWeights.Bold,
                 Margin = new Thickness(20, 5, 0, 5)
@@ -325,6 +327,7 @@ namespace RedeSocial
             RichTextBox newTexto = new RichTextBox()
             {
                 FontSize = 14,
+                FontFamily = (FontFamily)Application.Current.Resources["ArimoFont"],
                 Margin = new Thickness(15, 5, 15, 15),
                 IsReadOnly = true,
                 Style = (Style)FindResource("RichTextBoxArredondado")

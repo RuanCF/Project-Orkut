@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cliente\\Source\\Repos\\Project-Orkut\\RedeSocial\\RedeSocial\\RedeSocial.csproj": {}
+    "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\RedeSocial.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cliente\\Source\\Repos\\Project-Orkut\\RedeSocial\\RedeSocial\\RedeSocial.csproj": {
+    "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\RedeSocial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cliente\\Source\\Repos\\Project-Orkut\\RedeSocial\\RedeSocial\\RedeSocial.csproj",
+        "projectUniqueName": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\RedeSocial.csproj",
         "projectName": "RedeSocial",
-        "projectPath": "C:\\Users\\Cliente\\Source\\Repos\\Project-Orkut\\RedeSocial\\RedeSocial\\RedeSocial.csproj",
+        "projectPath": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\RedeSocial.csproj",
         "packagesPath": "C:\\Users\\Cliente\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cliente\\Source\\Repos\\Project-Orkut\\RedeSocial\\RedeSocial\\obj\\",
+        "outputPath": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cliente\\AppData\\Roaming\\NuGet\\NuGet.Config",

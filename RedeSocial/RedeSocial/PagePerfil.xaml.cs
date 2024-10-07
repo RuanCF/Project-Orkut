@@ -25,6 +25,7 @@ namespace RedeSocial
         private PostManager postManager = new PostManager();
         int codUsuario;
         private Home mainWindow;
+        private PagePost pagePost;
 
         public PagePerfil(int codUser, Home _mainWin)
         {
@@ -105,5 +106,22 @@ namespace RedeSocial
             }
             AtualizarCapa();
         }
+
+        //A partir daqui vai ficar as postagens do Usuario, tentar de outra forma depois
+
+        public void atualizarPaginaPostProprio()
+        {
+            gridPosts.Children.Clear();
+
+            for (int i = postManager.BuscarQuantidade() - 1; i >= 0; i--)
+            {
+                if (postManager.VerificarPostProprio(i, codUsuario))
+                {
+                    //publicarPost(i);
+                }
+            }
+        }
+
+
     }
 }
