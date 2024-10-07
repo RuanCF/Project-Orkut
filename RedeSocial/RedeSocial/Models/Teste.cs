@@ -19,10 +19,10 @@ namespace RedeSocial.Models
         {
             string projectPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
             projectPath = projectPath.Remove(projectPath.Length - 4);
-            usuarioManager.AdicionarUsuario("jojo@email.com", "jojo", "123123", "Johnny Mukai", new DateOnly(2000, 12, 13), projectPath + "\\Fotos\\Pukki.jpg");
-            usuarioManager.AdicionarUsuario("gojojo@email.com", "gojojo", "123123", "Satoru Gojo", new DateOnly(1996, 12, 07), projectPath + "\\Fotos\\Gojo.jpg");
-            usuarioManager.AdicionarUsuario("jeje@email.com", "jeje", "123123", "Jennifer Lawrence", new DateOnly(1990, 08, 15), projectPath + "\\Fotos\\Jennifer.jpeg");
-            usuarioManager.AdicionarUsuario("gigi@email.com", "gigi", "123123", "Luigi", new DateOnly(1981, 10, 11), projectPath + "\\Fotos\\Luigi.png");
+            usuarioManager.AdicionarUsuario("jojo@email.com", "jojo", "123123", "Johnny Mukai", new DateOnly(2000, 12, 13), projectPath + "\\Fotos\\Pukki.jpg", projectPath + "\\Fotos\\Gojo.jpg");
+            usuarioManager.AdicionarUsuario("gojojo@email.com", "gojojo", "123123", "Satoru Gojo", new DateOnly(1996, 12, 07), projectPath + "\\Fotos\\Gojo.jpg", projectPath + "\\Fotos\\Gojo.jpg");
+            usuarioManager.AdicionarUsuario("jeje@email.com", "jeje", "123123", "Jennifer Lawrence", new DateOnly(1990, 08, 15), projectPath + "\\Fotos\\Jennifer.jpeg", projectPath + "\\Fotos\\Gojo.jpg");
+            usuarioManager.AdicionarUsuario("gigi@email.com", "gigi", "123123", "Luigi", new DateOnly(1981, 10, 11), projectPath + "\\Fotos\\Luigi.png", projectPath + "\\Fotos\\Gojo.jpg");
         }
 
         public void AdicionarAmigo()

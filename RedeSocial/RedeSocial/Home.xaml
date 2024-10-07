@@ -119,7 +119,7 @@
                 <!--Mudei o tamanho dos itens de 30 pra 35, era pra ser 33 pra acompanhar a proção, manda um feedback quando possível-->
                 <ListView x:Name="itensMenu" Background="Transparent" BorderBrush="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                     <!--Item Perfil-->
-                    <ListViewItem HorizontalAlignment="Left" Margin="0,50,0,0" Style="{StaticResource ListViewPadrão}" PreviewMouseLeftButtonUp="TextBlock_MouseLeftButtonUp">
+                    <ListViewItem HorizontalAlignment="Left" Margin="0,50,0,0" Style="{StaticResource ListViewPadrão}"  MouseLeftButtonUp="botaoPerfil">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
                             <Ellipse x:Name="ellipseFotoUser" Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Perfil" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>

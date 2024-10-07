@@ -16,6 +16,7 @@ namespace RedeSocial
         public required string FullName { get; set; }
         public DateOnly BirthDate { get; set; }
         public string Foto { get; set; }
+        public string Capa { get; set; }
         public ArrayList Amigos { get; set; } = new ArrayList();
         public List<Solicitacao> Solicitacoes { get; set; } = new List<Solicitacao>();
     }
@@ -205,6 +206,12 @@ namespace RedeSocial
             usersByEmail.ElementAt(codUsuario).Value.Foto = foto;
         }
 
+        //Adicionar capa
+        public void AdicionarCapa(int codusuario, string capa)
+        {
+            usersByEmail.ElementAt(codusuario).Value.Capa = capa;
+        }
+
         //Busca o código do usuário pelo id
         public int BuscarCodigoUsuario(string id)
         {
@@ -226,6 +233,12 @@ namespace RedeSocial
         public string BuscarFoto(int codUsuario)
         {
             return usersByEmail.ElementAt(codUsuario).Value.Foto;
+        }
+
+        //Buscar a capa de um usuário pelo código
+        public string BuscarCapa(int codUsuario)
+        {
+            return usersByEmail.ElementAt(codUsuario).Value.Capa;
         }
 
         public void AdicionarAmigo(int codUsuario, int codAmigo)
@@ -253,7 +266,7 @@ namespace RedeSocial
             return usersByEmail.ElementAt(codUsuario).Value.Amigos.Contains(codAmigo);
         }
 
-        public void AdicionarUsuario(string email, string id, string passwordHash, string fullNome, DateOnly birthDate, string foto)
+        public void AdicionarUsuario(string email, string id, string passwordHash, string fullNome, DateOnly birthDate, string foto, string capa)
         {
             User novoUsuario = new User()
             {
@@ -263,6 +276,7 @@ namespace RedeSocial
                 FullName = fullNome,
                 Foto = foto,
                 BirthDate = birthDate,
+                Capa = capa,
             };
 
             usersByEmail.Add(email, novoUsuario);

@@ -55,6 +55,12 @@ namespace RedeSocial
             this.Close();
         }
 
+        private void botaoPerfil(object sender, MouseButtonEventArgs e)
+        {
+            PagePerfil pagePerfil = new PagePerfil(codUsuario, this);
+            MainFrame.Navigate(pagePerfil);
+        }
+
         private void botaoSair_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             MainWindow mainWindow1 = new MainWindow();
