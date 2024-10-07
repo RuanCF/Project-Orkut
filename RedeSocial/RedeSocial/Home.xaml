@@ -126,7 +126,7 @@
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Inicio-->
-                    <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
+                    <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}" MouseLeftButtonUp="botaoInicio">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
                             <Image Source="/Icones/icon_inicio.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Inicio" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>

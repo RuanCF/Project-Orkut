@@ -61,6 +61,12 @@ namespace RedeSocial
             MainFrame.Navigate(pagePerfil);
         }
 
+        private void botaoInicio(object sender, MouseButtonEventArgs e)
+        {
+            PagePost pagePost = new PagePost(codUsuario);
+            MainFrame.Navigate(pagePost);
+        }
+
         private void botaoSair_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             MainWindow mainWindow1 = new MainWindow();
@@ -108,5 +114,7 @@ namespace RedeSocial
                 MainFrame.Navigate(pageBuscar);
             }
         }
+
+
     }
 }

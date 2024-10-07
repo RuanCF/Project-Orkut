@@ -21,6 +21,8 @@ namespace RedeSocial
     /// <summary>
     /// Interação lógica para PagePost.xam
     /// </summary>
+    
+    //TODO: talvez trocar os botões por um combobox
     public partial class PagePost : Page
     {
         private PostManager postManager = new PostManager();
