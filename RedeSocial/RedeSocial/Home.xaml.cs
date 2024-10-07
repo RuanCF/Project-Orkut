@@ -86,5 +86,21 @@ namespace RedeSocial
                 //ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codUsuario), UriKind.RelativeOrAbsolute))
             };
         }
+
+        private void botaoBuscar_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            PageBuscar pageBuscar = new PageBuscar(codUsuario);
+            MainFrame.Navigate(pageBuscar);
+
+        }
+
+        private void caixaPesquisa_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                PageBuscar pageBuscar = new PageBuscar(codUsuario);
+                MainFrame.Navigate(pageBuscar);
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RedeSocial.Models;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
@@ -16,6 +17,7 @@ namespace RedeSocial
         public DateOnly BirthDate { get; set; }
         public string Foto { get; set; }
         public ArrayList Amigos { get; set; } = new ArrayList();
+        public List<Solicitacao> Solicitacoes { get; set; } = new List<Solicitacao>();
     }
 
     public class UserManager
@@ -214,6 +216,11 @@ namespace RedeSocial
         {
             return usersByEmail.ElementAt(codUsuario).Value.FullName;
         }
+        //busca a quantidade de usuarios
+        public int BuscarQuantidade()
+        {
+            return usersByEmail.Count;
+        }
 
         //Busca a foto de um usuário pelo código
         public string BuscarFoto(int codUsuario)
@@ -260,6 +267,10 @@ namespace RedeSocial
 
             usersByEmail.Add(email, novoUsuario);
             usersByID.Add(id, novoUsuario);
+        }
+        public void AdicionarSolicitacao(int remetente, int destinatario)
+        {
+            usersByEmail.ElementAt(remetente).Value.Solicitacoes.Add(new Solicitacao(remetente, destinatario));
         }
     }
 }

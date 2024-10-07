@@ -22,6 +22,7 @@
     <None Remove="Icones\icon_menuB.png" />
     <None Remove="Icones\icon_menuBC.png" />
     <None Remove="Icones\icon_sair.png" />
+    <None Remove="Icones\Lupa.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -64,6 +65,7 @@
     <Resource Include="Icones\icon_sair.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Icones\Lupa.png" />
   </ItemGroup>
 
 </Project>

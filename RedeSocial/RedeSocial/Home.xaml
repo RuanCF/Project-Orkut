@@ -24,7 +24,8 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type ListViewItem}">
-                        <Border Height="55" BorderThickness="0" Background="{TemplateBinding Background}"> <!--Mudei a altura de 50 pra 55, mande um feedback-->
+                        <Border Height="55" BorderThickness="0" Background="{TemplateBinding Background}">
+                            <!--Mudei a altura de 50 pra 55, mande um feedback-->
                             <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                         </Border>
                         <ControlTemplate.Triggers>
@@ -51,7 +52,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
+
         <!--Estilo ToggleButton-->
         <ImageBrush x:Key="iconToggleButton" ImageSource="/Icones/icon_menuB.png"/>
         <ImageBrush x:Key="iconToggleButtonC" ImageSource="/Icones/icon_menuBC.png"/>
@@ -83,7 +84,8 @@
         <Grid Grid.Row="0" Background="#37376E ">
             <TextBlock Canvas.Top="57" Canvas.Left="57" FontFamily="{StaticResource ArimoFont}" FontSize="14" Foreground="#9094B6" 
        Panel.ZIndex="1" IsHitTestVisible="False" Text="Pesquise na Orbit" Visibility="{Binding ElementName=caixaPesquisa, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }"  HorizontalAlignment="Center" VerticalAlignment="Center" Padding="14 0 0 0" Width="520" />
-            <TextBox x:Name="caixaPesquisa"  Width="520" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="{StaticResource ArimoFont}" FontSize="14" Foreground="#333333" Padding="14 0 0 0" Style="{StaticResource SearchBox}"/>
+            <TextBox x:Name="caixaPesquisa"  Width="520" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" FontFamily="{StaticResource ArimoFont}" FontSize="14" Foreground="#333333" Padding="14 0 0 0" Style="{StaticResource SearchBox}" KeyDown="caixaPesquisa_KeyDown"/>
+            <Image x:Name="botaoBuscar" Source="\Icones\Lupa.png" Width="30" Height="30" HorizontalAlignment="Center" Margin="450,0,0,0" MouseLeftButtonUp="botaoBuscar_MouseLeftButtonUp"/>
 
             <!--Toggle Menu / margin era 93-->
             <ToggleButton x:Name="botaoMenu" VerticalAlignment="Center" HorizontalAlignment="Left" Height="30" Width="30" BorderThickness="0"  Margin="17.5,0,0,0" Checked="botaoMenu_Checked" Unchecked="botaoMenu_Unchecked" Style="{StaticResource botaoToggle}" IsChecked="True" >
@@ -117,7 +119,7 @@
                 <!--Mudei o tamanho dos itens de 30 pra 35, era pra ser 33 pra acompanhar a proção, manda um feedback quando possível-->
                 <ListView x:Name="itensMenu" Background="Transparent" BorderBrush="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                     <!--Item Perfil-->
-                    <ListViewItem HorizontalAlignment="Left" Margin="0,50,0,0" Style="{StaticResource ListViewPadrão}" PreviewMouseLeftButtonUp="TextBlock_MouseLeftButtonUp"> 
+                    <ListViewItem HorizontalAlignment="Left" Margin="0,50,0,0" Style="{StaticResource ListViewPadrão}" PreviewMouseLeftButtonUp="TextBlock_MouseLeftButtonUp">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
                             <Ellipse x:Name="ellipseFotoUser" Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Perfil" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
@@ -177,7 +179,11 @@
             </StackPanel>
         </Grid>
         <Grid Grid.Row="1"  Panel.ZIndex="0">
-            <Frame Name="MainFrame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" NavigationUIVisibility="Hidden"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="171*"/>
+                <ColumnDefinition Width="85*"/>
+            </Grid.ColumnDefinitions>
+            <Frame Name="MainFrame" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2"/>
         </Grid>
     </Grid>
 </Window>
