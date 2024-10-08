@@ -44,7 +44,7 @@ namespace RedeSocial
             if (userManager.VerificarSolicitacao(codUser_, codPerfil_))
             {
                 botaoAdicionar.Content = "Enviar solicitação";
-                userManager.RecusarSolicitacao(codUser_, codPerfil_);
+                userManager.RecusarSolicitacao(codPerfil_ ,codUser_);
             }
             else 
             {
