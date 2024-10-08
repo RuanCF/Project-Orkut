@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RedeSocial
+namespace RedeSocial.Models
 {
     public class Solicitacao
     {

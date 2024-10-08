@@ -444,3 +444,11 @@ C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageBuscar.baml
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoUsuario.baml
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfil.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut - Thais\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfil.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut - Thais\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfil.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut - Thais\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageAmigos.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut - Thais\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoAmigo.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut - Thais\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoSolicitacao.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut - Thais\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageAmigos.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut - Thais\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoAmigo.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut - Thais\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoSolicitacao.baml

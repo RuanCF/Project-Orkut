@@ -20,21 +20,36 @@ namespace RedeSocial
     /// </summary>
     public partial class PageCartaoUsuario : Page
     {
+
         UserManager userManager = new UserManager();
-        public PageCartaoUsuario(int codUser)
+        int codPerfil_;
+        int codUser_;
+        public PageCartaoUsuario(int codUser, int codPerfil)
         {
             InitializeComponent();
-            buscarUsuario(codUser);
+            codPerfil_ = codPerfil;
+            codUser_ = codUser;
+            buscarUsuario(codPerfil);
+
         }
-        private void buscarUsuario(int codUser)
+        private void buscarUsuario(int codPerfil)
         {
-            foto.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codUser))));
-            labelNome.Content = userManager.BuscarNome(codUser);
+            foto.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codPerfil))));
+            labelNome.Content = userManager.BuscarNome(codPerfil);
         }
 
         private void botaoAdicionar_Click(object sender, RoutedEventArgs e)
         {
-
+            if (userManager.VerificarSolicitacao(codUser_, codPerfil_))
+            {
+                botaoAdicionar.Content = "Enviar solicitação";
+                userManager.RecusarSolicitacao(codUser_, codPerfil_);
+            }
+            else 
+            {
+                userManager.AdicionarSolicitacao(codUser_, codPerfil_);
+                botaoAdicionar.Content = "Cancelar solicitação";
+            }
         }
     }
 }

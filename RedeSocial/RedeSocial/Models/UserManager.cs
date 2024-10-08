@@ -18,7 +18,7 @@ namespace RedeSocial
         public string Foto { get; set; }
         public string Capa { get; set; }
         public ArrayList Amigos { get; set; } = new ArrayList();
-        public List<Solicitacao> Solicitacoes { get; set; } = new List<Solicitacao>();
+        public ArrayList Solicitacoes { get; set; } = new ArrayList();
     }
 
     public class UserManager
@@ -284,7 +284,25 @@ namespace RedeSocial
         }
         public void AdicionarSolicitacao(int remetente, int destinatario)
         {
-            usersByEmail.ElementAt(remetente).Value.Solicitacoes.Add(new Solicitacao(remetente, destinatario));
+            usersByEmail.ElementAt(destinatario).Value.Solicitacoes.Add(remetente);
         }
+        public void AceitarSolicitacao(int remetente, int destinatario)
+        {
+            usersByEmail.ElementAt(destinatario).Value.Solicitacoes.Remove(remetente);
+            AdicionarAmigo(remetente, destinatario);
+            AdicionarAmigo(destinatario, remetente);
+        }
+
+        public void RecusarSolicitacao(int remetente, int destinatario)
+        {
+            usersByEmail.ElementAt(destinatario).Value.Solicitacoes.Remove(remetente);
+        }
+        public bool VerificarSolicitacao(int remetente, int destinatario)
+        {
+           return usersByEmail.ElementAt(destinatario).Value.Solicitacoes.Contains(remetente);
+        }
+
+
+
     }
 }

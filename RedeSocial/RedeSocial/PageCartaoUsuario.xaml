@@ -16,6 +16,6 @@
         </Grid.ColumnDefinitions>
         <Ellipse x:Name="foto"   Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Height="45" Width="45" Stretch="Fill" Margin="10,10,10,5" Stroke="#37376E"/>
         <Label x:Name="labelNome" Grid.Column="1" Content="nome usuario" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
-        <Button x:Name="botaoAdicionar" Background="GreenYellow" Grid.Column="2" Content="Adicionar" Width="100" FontSize="16" Height="45" Margin="10,0,10,0" Click="botaoAdicionar_Click"/>
+        <Button x:Name="botaoAdicionar" Background="GreenYellow" Grid.Column="2" Content="Enviar solicitação" Width="150" FontSize="16" Height="45" Margin="10,0,10,0" Click="botaoAdicionar_Click"/>
     </Grid>
 </Page>

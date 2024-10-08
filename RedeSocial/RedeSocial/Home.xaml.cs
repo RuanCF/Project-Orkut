@@ -115,6 +115,10 @@ namespace RedeSocial
             }
         }
 
-
+        private void botaoAmigos_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            PageAmigos pageAmigos = new PageAmigos(codUsuario);
+            MainFrame.Navigate(pageAmigos);
+        }
     }
 }

@@ -28,9 +28,9 @@ namespace RedeSocial
             
 
         }
-        public void listarUsuario(int codUser) 
+        public void listarUsuario(int codUser, int codPerfil) 
         {
-            PageCartaoUsuario pageCartao = new PageCartaoUsuario(codUser);
+            PageCartaoUsuario pageCartao = new PageCartaoUsuario(codUser,codPerfil);
             gridBuscar.RowDefinitions.Add(new RowDefinition());
             Frame frame = new Frame()
             {
@@ -50,7 +50,7 @@ namespace RedeSocial
 
                 if (i != codUser)
                 {
-                    listarUsuario(i);
+                    listarUsuario(codUser,i);
                 }
             }
         }
