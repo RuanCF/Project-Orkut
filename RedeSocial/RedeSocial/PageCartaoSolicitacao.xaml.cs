@@ -23,6 +23,7 @@ namespace RedeSocial
         UserManager userManager = new UserManager();
         int codPerfil_;
         int codUser_;
+   
 
         public PageCartaoSolicitacao(int codUser, int codPerfil)
         {
@@ -30,6 +31,7 @@ namespace RedeSocial
             codPerfil_ = codPerfil;
             codUser_ = codUser;
             buscarUsuario(codPerfil);
+
         }
         private void buscarUsuario(int codPerfil)
         {
@@ -43,6 +45,8 @@ namespace RedeSocial
             botaoAceitar.Visibility = Visibility.Hidden;
             botaoRecusar.Content = "Solicitação aceita";
             botaoRecusar.IsEnabled = false;
+            //na segunda vez que clicar no botao amigos esse cartao tem que estar como amigo 
+            
         }
 
         private void botaoRecusar_Click(object sender, RoutedEventArgs e)
@@ -51,6 +55,7 @@ namespace RedeSocial
             botaoAceitar.Visibility = Visibility.Hidden;
             botaoRecusar.Content = "Solicitação recusada";
             botaoRecusar.IsEnabled = false;
+            //se recusar o cartao precisa sumir do frame amigos
 
         }
     }

@@ -260,6 +260,7 @@ namespace RedeSocial
         {
             return usersByEmail.ElementAt(codUsuario).Value.Amigos;
         }
+     
 
         public bool VerificarCodAmigo(int codUsuario, int codAmigo)
         {
@@ -288,20 +289,27 @@ namespace RedeSocial
         }
         public void AceitarSolicitacao(int remetente, int destinatario)
         {
-            usersByEmail.ElementAt(destinatario).Value.Solicitacoes.Remove(remetente);
+            usersByEmail.ElementAt(remetente).Value.Solicitacoes.Remove(destinatario);
             AdicionarAmigo(remetente, destinatario);
             AdicionarAmigo(destinatario, remetente);
         }
 
         public void RecusarSolicitacao(int remetente, int destinatario)
         {
-            usersByEmail.ElementAt(destinatario).Value.Solicitacoes.Remove(remetente);
+            usersByEmail.ElementAt(remetente).Value.Solicitacoes.Remove(destinatario);
         }
         public bool VerificarSolicitacao(int remetente, int destinatario)
         {
            return usersByEmail.ElementAt(destinatario).Value.Solicitacoes.Contains(remetente);
         }
+        /*public void AtualizarCartaoAmigos(int remetente, int destinatario)
+        { if (se aceitar o convite mudar o botao para amigo)
+            { 
+            }
+        else ( se recusar o convite o cartao tem que sumir )
 
+        }
+        */
 
 
     }

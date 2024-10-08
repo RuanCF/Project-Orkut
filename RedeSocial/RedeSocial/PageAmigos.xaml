@@ -10,7 +10,10 @@
 
     <Grid Background="White">
         <ScrollViewer>
-            <Grid x:Name="gridAmigos"   Background="Beige" HorizontalAlignment="Center"  Margin="0,26,0,0" VerticalAlignment="Stretch" Width="600"/>
+
+            <Grid Background="Beige"  Margin="0,26,0,0" Width="600">
+                <WrapPanel x:Name="gridAmigos" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </Grid>
         </ScrollViewer>
     </Grid>
 </Page>

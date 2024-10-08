@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\pagecartaousuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pagecartaousuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\pagecartaosolicitacao.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pagecartaosolicitacao.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\pagepost.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pagepost.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\pageamigos.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pageamigos.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\pagecartaosolicitacao.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pagecartaosolicitacao.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\pageamigos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pageamigos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\models\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\models\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\pageamigos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pageamigos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\pagecartaousuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pagecartaousuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut - thais\\redesocial\\redesocial\\pagecartaosolicitacao.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pagecartaosolicitacao.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,46 +61,113 @@
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PagePost.xaml",
+              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PagePost.xaml",
+              "RelativeDocumentMoniker": "RedeSocial\\PagePost.xaml",
+              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PagePost.xaml",
+              "RelativeToolTip": "RedeSocial\\PagePost.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-08T14:17:35.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PageAmigos.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageAmigos.xaml.cs",
+              "RelativeDocumentMoniker": "RedeSocial\\PageAmigos.xaml.cs",
+              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageAmigos.xaml.cs",
+              "RelativeToolTip": "RedeSocial\\PageAmigos.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwCQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T12:24:27.083Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "RedeSocial\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\MainWindow.xaml.cs",
-              "RelativeToolTip": "RedeSocial\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAASwHUAAAAMAAAAAAAAAA==",
+              "Title": "PageCartaoUsuario.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageCartaoUsuario.xaml.cs",
+              "RelativeDocumentMoniker": "RedeSocial\\PageCartaoUsuario.xaml.cs",
+              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageCartaoUsuario.xaml.cs",
+              "RelativeToolTip": "RedeSocial\\PageCartaoUsuario.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T01:55:34.915Z",
+              "WhenOpened": "2024-10-08T14:23:16.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "RedeSocial\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\MainWindow.xaml",
-              "RelativeToolTip": "RedeSocial\\MainWindow.xaml",
+              "Title": "PageCartaoSolicitacao.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageCartaoSolicitacao.xaml.cs",
+              "RelativeDocumentMoniker": "RedeSocial\\PageCartaoSolicitacao.xaml.cs",
+              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageCartaoSolicitacao.xaml.cs",
+              "RelativeToolTip": "RedeSocial\\PageCartaoSolicitacao.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAvwBsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T12:21:56.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PageAmigos.xaml",
+              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageAmigos.xaml",
+              "RelativeDocumentMoniker": "RedeSocial\\PageAmigos.xaml",
+              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageAmigos.xaml",
+              "RelativeToolTip": "RedeSocial\\PageAmigos.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-08T01:55:14.356Z",
+              "WhenOpened": "2024-10-08T13:57:02.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "PageCartaoUsuario.xaml",
+              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageCartaoUsuario.xaml",
+              "RelativeDocumentMoniker": "RedeSocial\\PageCartaoUsuario.xaml",
+              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageCartaoUsuario.xaml",
+              "RelativeToolTip": "RedeSocial\\PageCartaoUsuario.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-08T13:46:37.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UserManager.cs",
               "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\Models\\UserManager.cs",
               "RelativeDocumentMoniker": "RedeSocial\\Models\\UserManager.cs",
               "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\Models\\UserManager.cs",
               "RelativeToolTip": "RedeSocial\\Models\\UserManager.cs",
-              "ViewState": "AgIAABQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAP0AAAAAAAAAAAAAAAYBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T01:48:27.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "RedeSocial\\Models\\Post.cs",
+              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\Models\\Post.cs",
+              "RelativeToolTip": "RedeSocial\\Models\\Post.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:06:03.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "PageCartaoSolicitacao.xaml",
               "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageCartaoSolicitacao.xaml",
               "RelativeDocumentMoniker": "RedeSocial\\PageCartaoSolicitacao.xaml",
@@ -104,56 +175,6 @@
               "RelativeToolTip": "RedeSocial\\PageCartaoSolicitacao.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-08T01:37:54.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Home.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\Home.xaml.cs",
-              "RelativeDocumentMoniker": "RedeSocial\\Home.xaml.cs",
-              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\Home.xaml.cs",
-              "RelativeToolTip": "RedeSocial\\Home.xaml.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHgAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T01:31:32.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Home.xaml",
-              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\Home.xaml",
-              "RelativeDocumentMoniker": "RedeSocial\\Home.xaml",
-              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\Home.xaml",
-              "RelativeToolTip": "RedeSocial\\Home.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-08T01:31:09.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PageAmigos.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageAmigos.xaml.cs",
-              "RelativeDocumentMoniker": "RedeSocial\\PageAmigos.xaml.cs",
-              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageAmigos.xaml.cs",
-              "RelativeToolTip": "RedeSocial\\PageAmigos.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T01:25:49.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PageAmigos.xaml",
-              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageAmigos.xaml",
-              "RelativeDocumentMoniker": "RedeSocial\\PageAmigos.xaml",
-              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut - Thais\\RedeSocial\\RedeSocial\\PageAmigos.xaml",
-              "RelativeToolTip": "RedeSocial\\PageAmigos.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-08T00:40:01.345Z",
               "EditorCaption": ""
             }
           ]

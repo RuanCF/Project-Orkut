@@ -30,6 +30,7 @@ namespace RedeSocial
             codPerfil_ = codPerfil;
             codUser_ = codUser;
             buscarUsuario(codPerfil);
+            alterarConteudoBotao(codUser, codPerfil);
 
         }
         private void buscarUsuario(int codPerfil)
@@ -51,5 +52,19 @@ namespace RedeSocial
                 botaoAdicionar.Content = "Cancelar solicitação";
             }
         }
+        private void alterarConteudoBotao(int codUser, int codPerfil)
+        {
+            if (userManager.VerificarSolicitacao(codUser, codPerfil))
+            {
+                botaoAdicionar.Content = "Cancelar solicitação";
+
+            } else if (userManager.VerificarCodAmigo(codUser, codPerfil))
+            {
+                botaoAdicionar.Content = "Adicionado";
+                botaoAdicionar.IsEnabled = false;
+
+            }
+        }
+       
     }
 }

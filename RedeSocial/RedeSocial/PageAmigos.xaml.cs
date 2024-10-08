@@ -18,6 +18,11 @@ namespace RedeSocial
     /// <summary>
     /// Interação lógica para PageAmigos.xam
     /// </summary>
+    /// 
+
+    //TODO: dividir 2 grids (Uma para solicitação. outra para amigos existentes) e colocar no wrappane 
+
+
     public partial class PageAmigos : Page
     {
         UserManager userManager = new UserManager();
@@ -29,14 +34,14 @@ namespace RedeSocial
         public void listarUsuario(int codUser, int codPerfil)
         {
             PageCartaoSolicitacao pageCartaoSolicitacao = new PageCartaoSolicitacao(codUser, codPerfil);
-            gridAmigos.RowDefinitions.Add(new RowDefinition());
+            
             Frame frame = new Frame()
             {
                 Height = 300,
                 Width = 250
             };
             frame.Navigate(pageCartaoSolicitacao);
-            Grid.SetRow(frame, gridAmigos.RowDefinitions.Count - 1);
+           
             gridAmigos.Children.Add(frame);
 
         }
@@ -56,5 +61,6 @@ namespace RedeSocial
                 }
             }
         }
+        //atualizar a pagina  com os cartoes depois de ja ter adicionado
     }
 }

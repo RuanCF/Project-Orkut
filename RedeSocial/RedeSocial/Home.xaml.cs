@@ -120,5 +120,10 @@ namespace RedeSocial
             PageAmigos pageAmigos = new PageAmigos(codUsuario);
             MainFrame.Navigate(pageAmigos);
         }
+
+        private void botaoAmigos_Selected(object sender, RoutedEventArgs e)
+        {
+            //aparecer a solicitação somente uma vez depois aparecer como amigo
+        }
     }
 }
