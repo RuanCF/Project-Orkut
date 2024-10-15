@@ -98,6 +98,7 @@ namespace RedeSocial
                 string projectPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
                 string modifiedString = projectPath.Remove(projectPath.Length - 3);
                 userManager.AdicionarFoto(userManager.BuscarCodigoUsuario(areaID.Text), modifiedString + "Fotos\\SemFoto.jpeg");
+                userManager.AdicionarCapa(userManager.BuscarCodigoUsuario(areaID.Text), modifiedString + "Fotos\\SemFoto.jpeg");
                 //Apaga os campos
                 areaEmail.Clear();
                 areaID.Clear();

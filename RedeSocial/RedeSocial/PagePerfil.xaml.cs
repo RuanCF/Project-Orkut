@@ -34,6 +34,7 @@ namespace RedeSocial
             codUsuario = codUser;
             mainWindow = _mainWin;
             AtualizarFotoPerfil();
+            AtualizarCapa();
             MostrarNomeUsuario();
         }
 
@@ -50,6 +51,7 @@ namespace RedeSocial
             {
                 ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codUsuario)))
             };
+
         }
 
         private void AtualizarCapa()
