@@ -22,16 +22,17 @@ namespace RedeSocial
     {
 
         UserManager userManager = new UserManager();
-        int codPerfil_;
-        int codUser_;
-        public PageCartaoUsuario(int codUser, int codPerfil)
+        int codPerfil;
+        int codUser;
+        Home mainWin;
+        public PageCartaoUsuario(int _codUser, int _codPerfil, Home _mainWin)
         {
             InitializeComponent();
-            codPerfil_ = codPerfil;
-            codUser_ = codUser;
-            buscarUsuario(codPerfil);
-            alterarConteudoBotao(codUser, codPerfil);
-
+            this.codPerfil = _codPerfil;
+            this.codUser = _codUser;
+            buscarUsuario(_codPerfil);
+            alterarConteudoBotao(_codUser, _codPerfil);
+            mainWin = _mainWin;
         }
         private void buscarUsuario(int codPerfil)
         {
@@ -41,14 +42,14 @@ namespace RedeSocial
 
         private void botaoAdicionar_Click(object sender, RoutedEventArgs e)
         {
-            if (userManager.VerificarSolicitacao(codUser_, codPerfil_))
+            if (userManager.VerificarSolicitacao(codUser, codPerfil))
             {
                 botaoAdicionar.Content = "Enviar solicitação";
-                userManager.RecusarSolicitacao(codPerfil_ ,codUser_);
+                userManager.RecusarSolicitacao(codPerfil ,codUser);
             }
             else 
             {
-                userManager.AdicionarSolicitacao(codUser_, codPerfil_);
+                userManager.AdicionarSolicitacao(codUser, codPerfil);
                 botaoAdicionar.Content = "Cancelar solicitação";
             }
         }
@@ -65,6 +66,11 @@ namespace RedeSocial
 
             }
         }
-       
+
+        private void foto_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            //PagePerfil pagePerfil = new PagePerfil(codPerfil);
+            //mainWin.MainFrame.Navigate(pagePerfil);
+        }
     }
 }

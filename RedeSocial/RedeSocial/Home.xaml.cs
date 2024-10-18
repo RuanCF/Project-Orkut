@@ -101,7 +101,7 @@ namespace RedeSocial
 
         private void botaoBuscar_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            PageBuscar pageBuscar = new PageBuscar(codUsuario);
+            PageBuscar pageBuscar = new PageBuscar(codUsuario, this);
             MainFrame.Navigate(pageBuscar);
 
         }
@@ -110,7 +110,7 @@ namespace RedeSocial
         {
             if (e.Key == Key.Enter)
             {
-                PageBuscar pageBuscar = new PageBuscar(codUsuario);
+                PageBuscar pageBuscar = new PageBuscar(codUsuario, this);
                 MainFrame.Navigate(pageBuscar);
             }
         }
