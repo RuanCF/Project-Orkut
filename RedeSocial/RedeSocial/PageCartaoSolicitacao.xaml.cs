@@ -21,15 +21,17 @@ namespace RedeSocial
     public partial class PageCartaoSolicitacao : Page
     {
         UserManager userManager = new UserManager();
-        int codPerfil_;
-        int codUser_;
-   
+        int codPerfil;
+        int codUser;
+        Frame mainFrame;
 
-        public PageCartaoSolicitacao(int codUser, int codPerfil)
+
+        public PageCartaoSolicitacao(int _codUser, int _codPerfil, Frame _mainFrame)
         {
             InitializeComponent();
-            codPerfil_ = codPerfil;
-            codUser_ = codUser;
+            mainFrame = _mainFrame; 
+            codPerfil = _codPerfil;
+            codUser = _codUser;
             buscarUsuario(codPerfil);
 
         }
@@ -41,22 +43,29 @@ namespace RedeSocial
 
         private void botaoAceitar_Click(object sender, RoutedEventArgs e)
         {
-            userManager.AceitarSolicitacao(codUser_, codPerfil_);
+            userManager.AceitarSolicitacao(codUser, codPerfil);
             botaoAceitar.Visibility = Visibility.Hidden;
             botaoRecusar.Content = "Solicitação aceita";
             botaoRecusar.IsEnabled = false;
+
             //na segunda vez que clicar no botao amigos esse cartao tem que estar como amigo 
             
         }
 
         private void botaoRecusar_Click(object sender, RoutedEventArgs e)
         {
-            userManager.RecusarSolicitacao(codUser_, codPerfil_);
+            userManager.RecusarSolicitacao(codUser, codPerfil);
             botaoAceitar.Visibility = Visibility.Hidden;
             botaoRecusar.Content = "Solicitação recusada";
             botaoRecusar.IsEnabled = false;
             //se recusar o cartao precisa sumir do frame amigos
 
+        }
+
+        private void foto_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            PagePerfilOutros pagePerfilOutros = new PagePerfilOutros(codUser, codPerfil, mainFrame);
+            mainFrame.Navigate(pagePerfilOutros);
         }
     }
 }

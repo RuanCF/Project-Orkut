@@ -34,11 +34,9 @@ namespace RedeSocial
         public Page6Amigos(int _codUsuario, Frame _mainFrame)
         {
             InitializeComponent();
-            codUsuario = _codUsuario;
             mainFrame = _mainFrame;
+            codUsuario = _codUsuario;
             buscarPerfilAmigo();
-            
-
         }
         public void buscarPerfilAmigo()
         {
@@ -95,32 +93,32 @@ namespace RedeSocial
 
         private void foto1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new PagePerfilOutros(amigo1, mainFrame));
+            mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo1, mainFrame));
         }
 
         private void foto2_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new PagePerfilOutros(amigo2, mainFrame));
+            mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo2, mainFrame));
         }
 
         private void foto3_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new PagePerfilOutros(amigo3, mainFrame));
+            mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo3, mainFrame));
         }
 
         private void foto4_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new PagePerfilOutros(amigo4, mainFrame));
+            mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo4, mainFrame));
         }
 
         private void foto5_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new PagePerfilOutros(amigo5, mainFrame));
+            mainFrame.Navigate(new PagePerfilOutros(codUsuario,amigo5, mainFrame));
         }
 
         private void foto6_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new PagePerfilOutros(amigo6, mainFrame));
+            mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo6, mainFrame));
         }
     }
 }

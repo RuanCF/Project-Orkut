@@ -26,20 +26,23 @@ namespace RedeSocial
         private UserManager userManager = new UserManager();
         private PostManager postManager = new PostManager();
         int codUsuario;
+        int codPerfil;
         private PagePost pagePost;
         Frame mainFrame;
 
 
-        public PagePerfilOutros(int codUser,Frame _mainFrame )
+        public PagePerfilOutros(int _codUser, int _codPerfil, Frame _mainFrame)
         {
             InitializeComponent();
-            codUsuario = codUser;
+            codUsuario = _codUser;
+            codPerfil = _codPerfil;
             mainFrame = _mainFrame;
             AtualizarFotoPerfil();
             AtualizarCapa();
             MostrarNomeUsuario();
             buscar6Amigos();
-           
+            alterarConteudoBotao();
+
         }
 
         private void AtualizarFotoPerfil()
@@ -47,11 +50,11 @@ namespace RedeSocial
             ellipseFotoUser.Fill = new ImageBrush
             {
                 //Uri é unified resource identifier, ele identifica recursos.
-                ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codUsuario))),
+                ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codPerfil))),
                 //ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codUsuario), UriKind.RelativeOrAbsolute))
                 Stretch = Stretch.UniformToFill,
             };
-           
+
 
         }
 
@@ -59,14 +62,14 @@ namespace RedeSocial
         {
             retanguloCapa.Fill = new ImageBrush
             {
-                ImageSource = new BitmapImage(new Uri(userManager.BuscarCapa(codUsuario))),
+                ImageSource = new BitmapImage(new Uri(userManager.BuscarCapa(codPerfil))),
                 Stretch = Stretch.UniformToFill,
             };
         }
 
         private void MostrarNomeUsuario()
         {
-            string nomeUsuario = userManager.BuscarNome(codUsuario); // Método que busca o nome do usuário
+            string nomeUsuario = userManager.BuscarNome(codPerfil); // Método que busca o nome do usuário
             labelNomeUsuario.Content = nomeUsuario;
         }
 
@@ -78,7 +81,7 @@ namespace RedeSocial
 
             for (int i = postManager.BuscarQuantidade() - 1; i >= 0; i--)
             {
-                if (postManager.VerificarPostProprio(i, codUsuario))
+                if (postManager.VerificarPostProprio(i, codPerfil))
                 {
                     //publicarPost(i);
                 }
@@ -86,11 +89,58 @@ namespace RedeSocial
         }
         public void buscar6Amigos()
         {
-            Page6Amigos page6Amigos = new Page6Amigos(codUsuario, mainFrame);
+            Page6Amigos page6Amigos = new Page6Amigos(codPerfil, mainFrame);
             frame6Amigos.Navigate(page6Amigos);
         }
 
-       
+        private void botaoAdicionar_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (botaoAdicionar.Content.ToString() == "Cancelar solicitação")
+            {
+                botaoAdicionar.Content = "Enviar solicitação";
+                userManager.RecusarSolicitacao(codPerfil, codUsuario);
+            }
+            else if (botaoAdicionar.Content.ToString() == "Enviar solicitação")
+            {
+                userManager.AdicionarSolicitacao(codUsuario, codPerfil);
+                botaoAdicionar.Content = "Cancelar solicitação";
+            }
+            else if (botaoAdicionar.Content.ToString() == "Aceitar solicitação")
+            {
+                userManager.AceitarSolicitacao(codUsuario, codPerfil);
+                botaoAdicionar.Content = "Adicionado";
+                botaoAdicionar.IsEnabled = false;
+            }
+
+
+        }
+        private void alterarConteudoBotao()
+        {
+            if (userManager.VerificarSolicitacao(codUsuario, codPerfil))
+            {
+                botaoAdicionar.Content = "Cancelar solicitação";
+
+            }
+            else if (userManager.VerificarCodAmigo(codUsuario, codPerfil))
+            {
+                botaoAdicionar.Content = "Adicionado";
+                botaoAdicionar.IsEnabled = false;
+
+            }
+            else if (userManager.VerificarSolicitacao(codPerfil, codUsuario))
+            {
+
+                botaoAdicionar.Content = "Aceitar solicitação";
+            }
+        }
+        private void verificarUsuario()
+        {
+            if (codUsuario == codPerfil)
+            {
+
+            }
+        }
     }
 }
 

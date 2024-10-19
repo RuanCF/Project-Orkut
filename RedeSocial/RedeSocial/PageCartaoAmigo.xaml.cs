@@ -22,33 +22,36 @@ namespace RedeSocial
     public partial class PageCartaoAmigo : Page
     {
         UserManager userManager = new UserManager();
-        int codPerfil_;
-        int codUser_;
-        public PageCartaoAmigo(int codUser, int codPerfil)
+        int codPerfil;
+        int codUser;
+        Frame mainFrame;
+        public PageCartaoAmigo(int _codUser, int _codPerfil, Frame _mainFrame)
         {
             InitializeComponent();
-            codPerfil_ = codPerfil;
-            codUser_ = codUser;
+            mainFrame = _mainFrame;
+            codPerfil = _codPerfil;
+            codUser = _codUser;
             buscarUsuario(codPerfil);
             
         }
-        private void buscarUsuario(int codPerfil)
+        private void buscarUsuario(int codPerfil )
         {
             foto.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codPerfil))));
             labelNome.Content = userManager.BuscarNome(codPerfil);
         }
 
-     
-
-        private void botaoDesfazerAmizade_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+    
+        private void botaoDesfazerAmizade_Click(object sender, RoutedEventArgs e)
         {
-            userManager.DesfazerAmizade(codUser_, codPerfil_);
-            botaoDesfazerAmizade.Visibility = Visibility.Hidden;
-     
-
+            userManager.DesfazerAmizade(codUser, codPerfil);
+            botaoDesfazerAmizade.Content = "excluido da lista de amigo ";
         }
-  
 
+        private void foto_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            PagePerfilOutros pagePerfilOutros = new PagePerfilOutros(codUser, codPerfil, mainFrame);
+            mainFrame.Navigate(pagePerfilOutros);
+        }
     }
 }
 

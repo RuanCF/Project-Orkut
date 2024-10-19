@@ -15,7 +15,7 @@
             <RowDefinition Height= "Auto"/>
             <RowDefinition Height = "Auto"/>
         </Grid.RowDefinitions>
-        <Ellipse x:Name="foto"   Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Height="120" Width="120" Stretch="Fill" Margin="10,10,10,5" Stroke="#37376E"/>
+        <Ellipse x:Name="foto"   Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Height="120" Width="120" Stretch="Fill" Margin="10,10,10,5" Stroke="#37376E" MouseLeftButtonUp="foto_MouseLeftButtonUp"/>
         <Label x:Name="labelNome" Grid.Row="1" Content="nome usuario" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
         <Button x:Name="botaoAceitar" Background="GreenYellow" Grid.Row="2" Content="Aceitar"  FontSize="16" Height="45" Margin="10,0,10,0" Click="botaoAceitar_Click" />
         <Button x:Name="botaoRecusar" Background="LightSalmon" Grid.Row="3" Content="Recusar"  FontSize="16" Height="45" Margin="10,0,10,0" Click="botaoRecusar_Click" />

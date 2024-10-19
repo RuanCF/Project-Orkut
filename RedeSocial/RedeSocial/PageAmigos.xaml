@@ -12,16 +12,29 @@
         <ScrollViewer>
             <StackPanel>
                 <Grid Background="Beige"  Margin="0,26,0,0" Width="600">
-                    <Label Content="Solicitações Recebidas" />
-                    <WrapPanel x:Name="gridSolicitacaoRecebida" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Content="Solicitações Recebidas" />
+                    <WrapPanel Grid.Row="1" x:Name="gridSolicitacaoRecebida" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
+                        
                 </Grid>
-                <Grid Background="Violet"  Margin="0,26,0,0" Width="600">
-                    <Label Content="Solicitações enviadas"/>
-                    <WrapPanel x:Name="gridSolicitacaoEnviada" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
+                <Grid Background="Beige"  Margin="0,26,0,0" Width="600">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Content="Solicitações enviadas"/>
+                    <WrapPanel Grid.Row="1" x:Name="gridSolicitacaoEnviada" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
                 </Grid>
-                <Grid Background="Blue"  Margin="0,26,0,0" Width="600">
-                    <Label Content="Amigos"/>
-                    <WrapPanel x:Name="gridAmigos" HorizontalAlignment="Left"/>
+                <Grid Background="Beige"  Margin="0,26,0,0" Width="600">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Content="Amigos"/>
+                    <WrapPanel Grid.Row="1" x:Name="gridAmigos" HorizontalAlignment="Left"/>
                 </Grid>
             </StackPanel>
 

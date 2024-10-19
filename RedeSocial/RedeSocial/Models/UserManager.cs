@@ -305,6 +305,7 @@ namespace RedeSocial
         public void DesfazerAmizade(int codUser, int codAmigo)
         {
             usersByEmail.ElementAt(codUser).Value.Amigos.Remove(codAmigo);
+            usersByEmail.ElementAt(codAmigo).Value.Amigos.Remove(codUser);
         }
      
         

@@ -21,17 +21,16 @@ namespace RedeSocial
     public partial class PageBuscar : Page
     {
         UserManager userManager = new UserManager();
-        Home mainWin;
-        public PageBuscar(int codUser, Home _mainWin)
+        Frame mainFrame;
+        public PageBuscar(int codUser, Frame _mainFrame)
         {
             InitializeComponent();
-           repetirLista(codUser);
-           mainWin = _mainWin;
-
+            mainFrame = _mainFrame;
+            repetirLista(codUser);
         }
         public void listarUsuario(int codUser, int codPerfil) 
         {
-            PageCartaoUsuario pageCartao = new PageCartaoUsuario(codUser,codPerfil, mainWin);
+            PageCartaoUsuario pageCartao = new PageCartaoUsuario(codUser,codPerfil, mainFrame);
             gridBuscar.RowDefinitions.Add(new RowDefinition());
             Frame frame = new Frame()
             {

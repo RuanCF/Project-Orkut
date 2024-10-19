@@ -24,17 +24,17 @@ namespace RedeSocial
         UserManager userManager = new UserManager();
         int codPerfil;
         int codUser;
-        Home mainWin;
-        public PageCartaoUsuario(int _codUser, int _codPerfil, Home _mainWin)
+        Frame mainFrame;
+        public PageCartaoUsuario(int _codUser, int _codPerfil, Frame _mainFrame)
         {
             InitializeComponent();
-            this.codPerfil = _codPerfil;
-            this.codUser = _codUser;
-            buscarUsuario(_codPerfil);
-            alterarConteudoBotao(_codUser, _codPerfil);
-            mainWin = _mainWin;
+            mainFrame = _mainFrame;
+            codPerfil = _codPerfil;
+            codUser = _codUser;
+            buscarUsuario();
+            alterarConteudoBotao();
         }
-        private void buscarUsuario(int codPerfil)
+        private void buscarUsuario()
         {
             foto.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codPerfil))));
             labelNome.Content = userManager.BuscarNome(codPerfil);
@@ -42,19 +42,25 @@ namespace RedeSocial
 
         private void botaoAdicionar_Click(object sender, RoutedEventArgs e)
         {
-            if (userManager.VerificarSolicitacao(codUser, codPerfil))
+            if (botaoAdicionar.Content.ToString() == "Cancelar solicitação")
             {
                 botaoAdicionar.Content = "Enviar solicitação";
                 userManager.RecusarSolicitacao(codPerfil ,codUser);
             }
-            else 
+            else if (botaoAdicionar.Content.ToString() == "Enviar solicitação")
             {
                 userManager.AdicionarSolicitacao(codUser, codPerfil);
                 botaoAdicionar.Content = "Cancelar solicitação";
+            }else if (botaoAdicionar.Content.ToString() == "Aceitar solicitação")
+            {
+                userManager.AceitarSolicitacao(codUser, codPerfil);
+                botaoAdicionar.Content = "Adicionado";
+                botaoAdicionar.IsEnabled = false;
             }
 
+
         }
-        private void alterarConteudoBotao(int codUser, int codPerfil)
+        private void alterarConteudoBotao()
         {
             if (userManager.VerificarSolicitacao(codUser, codPerfil))
             {
@@ -65,13 +71,17 @@ namespace RedeSocial
                 botaoAdicionar.Content = "Adicionado";
                 botaoAdicionar.IsEnabled = false;
 
+            } else if (userManager.VerificarSolicitacao(codPerfil, codUser))
+            {
+
+                botaoAdicionar.Content = "Aceitar solicitação";
             }
         }
 
         private void foto_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            //PagePerfil pagePerfil = new PagePerfil(codPerfil);
-            //mainWin.MainFrame.Navigate(pagePerfil);
+            PagePerfilOutros pagePerfilOutros = new PagePerfilOutros(codUser, codPerfil, mainFrame);
+            mainFrame.Navigate(pagePerfilOutros);
         }
     }
 }
