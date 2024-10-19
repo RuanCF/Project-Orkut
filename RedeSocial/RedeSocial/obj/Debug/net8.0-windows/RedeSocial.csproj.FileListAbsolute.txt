@@ -498,3 +498,5 @@ C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeS
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Page6Amigos.g.cs
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Page6Amigos.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfilOutros.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfilOutros.baml

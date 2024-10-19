@@ -26,16 +26,21 @@ namespace RedeSocial
         int codUsuario;
         private Home mainWindow;
         private PagePost pagePost;
+        Frame mainFrame;
 
-        public PagePerfil(int codUser, Home _mainWin)
+        public PagePerfil(int codUser, Home _mainWin, Frame _mainFrame)
         {
             InitializeComponent();
             codUsuario = codUser;
             mainWindow = _mainWin;
+            mainFrame = _mainFrame;
             AtualizarFotoPerfil();
             AtualizarCapa();
             MostrarNomeUsuario();
             buscar6Amigos();
+           
+
+
         }
 
         private void AtualizarFotoPerfil()
@@ -125,7 +130,7 @@ namespace RedeSocial
         }
         public void buscar6Amigos()
         {
-            Page6Amigos page6Amigos = new Page6Amigos(codUsuario);
+            Page6Amigos page6Amigos = new Page6Amigos(codUsuario, mainFrame );
             frame6Amigos.Navigate(page6Amigos);
         }
 

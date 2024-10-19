@@ -29,9 +29,11 @@ namespace RedeSocial
         public PageAmigos(int codUser)
         {
             InitializeComponent();
-            repetirLista(codUser);
+            repetirListaRecebidas(codUser);
+            repetirListaEnviadas(codUser);
+            repetirListaAmigos(codUser);
         }
-        public void listarUsuario(int codUser, int codPerfil)
+        public void listarUsuarioRecebidas(int codUser, int codPerfil)
         {
             PageCartaoSolicitacao pageCartaoSolicitacao = new PageCartaoSolicitacao(codUser, codPerfil);
             
@@ -42,10 +44,11 @@ namespace RedeSocial
             };
             frame.Navigate(pageCartaoSolicitacao);
            
-            gridAmigos.Children.Add(frame);
+            gridSolicitacaoRecebida.Children.Add(frame);
 
         }
-        public void repetirLista(int codUser)
+
+        public void repetirListaRecebidas(int codUser)
         {
 
             for (int i = 0; i < userManager.BuscarQuantidade(); i++)
@@ -55,12 +58,76 @@ namespace RedeSocial
                 {
                     if (userManager.VerificarSolicitacao(i, codUser))
                     {
-                        listarUsuario(codUser, i);
+                        listarUsuarioRecebidas(codUser, i);
                     }
                    
                 }
             }
         }
         //atualizar a pagina  com os cartoes depois de ja ter adicionado
+        public void listarUsuarioEnviadas(int codUser, int codPerfil)
+        {
+            PageCartaoSolicitacao pageCartaoSolicitacao = new PageCartaoSolicitacao(codUser, codPerfil);
+
+            Frame frame = new Frame()
+            {
+                Height = 300,
+                Width = 250
+            };
+            frame.Navigate(pageCartaoSolicitacao);
+
+            gridSolicitacaoEnviada.Children.Add(frame);
+
+        }
+
+        public void repetirListaEnviadas(int codUser)
+        {
+
+            for (int i = 0; i < userManager.BuscarQuantidade(); i++)
+            {
+
+                if (i != codUser)
+                {
+                    if (userManager.VerificarSolicitacao(codUser, i))
+                    {
+                        listarUsuarioEnviadas(codUser,i);
+                    }
+
+                }
+            }
+        }
+
+
+        public void listarUsuarioAmigos(int codUser, int codPerfil)
+        {
+            PageCartaoAmigo pageCartaoAmigo = new PageCartaoAmigo(codUser, codPerfil);
+
+            Frame frame = new Frame()
+            {
+                Height = 300,
+                Width = 250
+            };
+            frame.Navigate(pageCartaoAmigo);
+
+            gridAmigos.Children.Add(frame);
+
+        }
+
+        public void repetirListaAmigos(int codUser)
+        {
+
+            for (int i = 0; i < userManager.BuscarQuantidade(); i++)
+            {
+
+                if (i != codUser)
+                {
+                    if (userManager.VerificarCodAmigo(i, codUser))
+                    {
+                        listarUsuarioAmigos(codUser, i);
+                    }
+
+                }
+            }
+        }
     }
 }

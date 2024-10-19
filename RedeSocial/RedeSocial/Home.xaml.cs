@@ -57,7 +57,7 @@ namespace RedeSocial
 
         private void botaoPerfil(object sender, MouseButtonEventArgs e)
         {
-            PagePerfil pagePerfil = new PagePerfil(codUsuario, this);
+            PagePerfil pagePerfil = new PagePerfil(codUsuario, this, MainFrame);
             MainFrame.Navigate(pagePerfil);
         }
 

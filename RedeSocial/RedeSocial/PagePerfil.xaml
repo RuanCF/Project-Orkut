@@ -71,7 +71,7 @@
                     <!--Coloca os posts antes-->
                     <Grid x:Name="gridPosts" Grid.Column="0"/>
                     <!--Aqui é a borda amigos-->
-                    <Border Grid.Column="1" Background="#FFFFFF" Width="450" Height="220" CornerRadius="15" HorizontalAlignment="Left" Margin="95,0,0,0" BorderBrush="#37376E" BorderThickness="0.75">
+                    <Border Grid.Column="1" Background="#FFFFFF" Width="450" Height="250" CornerRadius="15" HorizontalAlignment="Left" Margin="95,0,0,0" BorderBrush="#37376E" BorderThickness="0.75">
                         <Frame x:Name="frame6Amigos"/>
                     </Border>
                 </Grid>

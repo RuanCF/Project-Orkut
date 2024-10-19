@@ -24,11 +24,21 @@ namespace RedeSocial
         int codUsuario;
         int codAmigo;
         int posAmigo;
-        public Page6Amigos(int _codUsuario)
+        Frame mainFrame;
+        int amigo1;
+        int amigo2;
+        int amigo3;
+        int amigo4;
+        int amigo5;
+        int amigo6;
+        public Page6Amigos(int _codUsuario, Frame _mainFrame)
         {
             InitializeComponent();
             codUsuario = _codUsuario;
+            mainFrame = _mainFrame;
             buscarPerfilAmigo();
+            
+
         }
         public void buscarPerfilAmigo()
         {
@@ -41,12 +51,14 @@ namespace RedeSocial
                     foto1.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))));
                     labelNome1.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
+                    amigo1=codAmigo;
                 }
                 else if (posAmigo == 1)
                 {
                     foto2.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))));
                     labelNome2.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
+                    amigo2 = codAmigo;
 
                 }
                 else if (posAmigo == 2)
@@ -54,28 +66,62 @@ namespace RedeSocial
                     foto3.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))));
                     labelNome3.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
+                    amigo3 = codAmigo;
                 }
                 else if (posAmigo == 3)
                 {
                     foto4.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))));
                     labelNome4.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
+                    amigo4 = codAmigo;
+
                 }
                 else if (posAmigo == 4)
                 {
                     foto5.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))));
                     labelNome5.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
+                    amigo5 = codAmigo;
                 }
                 else if (posAmigo == 5)
                 {
                     foto6.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))));
                     labelNome6.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
+                    amigo6 = codAmigo;
                 }
             }
         }
 
+        private void foto1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new PagePerfilOutros(amigo1, mainFrame));
+        }
+
+        private void foto2_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new PagePerfilOutros(amigo2, mainFrame));
+        }
+
+        private void foto3_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new PagePerfilOutros(amigo3, mainFrame));
+        }
+
+        private void foto4_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new PagePerfilOutros(amigo4, mainFrame));
+        }
+
+        private void foto5_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new PagePerfilOutros(amigo5, mainFrame));
+        }
+
+        private void foto6_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            mainFrame.Navigate(new PagePerfilOutros(amigo6, mainFrame));
+        }
     }
 }
 

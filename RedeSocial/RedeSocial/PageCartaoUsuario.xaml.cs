@@ -52,6 +52,7 @@ namespace RedeSocial
                 userManager.AdicionarSolicitacao(codUser, codPerfil);
                 botaoAdicionar.Content = "Cancelar solicitação";
             }
+
         }
         private void alterarConteudoBotao(int codUser, int codPerfil)
         {

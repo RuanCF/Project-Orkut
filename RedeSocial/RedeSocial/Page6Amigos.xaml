@@ -5,10 +5,10 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:RedeSocial"
       mc:Ignorable="d" 
-      d:DesignHeight="200" d:DesignWidth="400"
+      d:DesignHeight="250" d:DesignWidth="400"
       Title="Page6Amigos">
 
-    <Grid  Background="White">
+    <Grid  >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
@@ -19,22 +19,22 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Ellipse x:Name= "foto1" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Margin="10,10,10,10"  Width="80" Stroke="Black"/>
+        <Ellipse x:Name= "foto1" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Margin="10,10,10,25"  Width="80" MouseLeftButtonUp="foto1_MouseLeftButtonUp"/>
 
 
-        <Ellipse x:Name="foto2" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Margin="10,10,10,10"  Width="80" Stroke="Black"/>
+        <Ellipse x:Name="foto2" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Margin="10,10,10,25"  Width="80"  MouseLeftButtonUp="foto2_MouseLeftButtonUp"/>
 
 
-        <Ellipse x:Name="foto3" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Margin="10,10,10,10"  Width="80" Stroke="Black"/>
+        <Ellipse x:Name="foto3" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Margin="10,10,10,25"  Width="80"  MouseLeftButtonUp="foto3_MouseLeftButtonUp"/>
 
 
-        <Ellipse x:Name="foto4" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Margin="10,10,10,10"  Width="80" Stroke="Black"/>
+        <Ellipse x:Name="foto4" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Margin="10,10,10,25"  Width="80"  MouseLeftButtonUp="foto4_MouseLeftButtonUp"/>
 
 
-        <Ellipse x:Name="foto5"  Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Margin="10,10,10,10"  Width="80" Stroke="Black"/>
+        <Ellipse x:Name="foto5"  Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Margin="10,10,10,25"  Width="80"  MouseLeftButtonUp="foto5_MouseLeftButtonUp"/>
 
 
-        <Ellipse x:Name="foto6" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Margin="10,10,10,10"  Width="80" Stroke="Black"/>
+        <Ellipse x:Name="foto6" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Margin="10,10,10,25"  Width="80"  MouseLeftButtonUp="foto6_MouseLeftButtonUp"/>
 
 
 

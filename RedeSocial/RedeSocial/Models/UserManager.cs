@@ -302,14 +302,12 @@ namespace RedeSocial
         {
            return usersByEmail.ElementAt(destinatario).Value.Solicitacoes.Contains(remetente);
         }
-        /*public void AtualizarCartaoAmigos(int remetente, int destinatario)
-        { if (se aceitar o convite mudar o botao para amigo)
-            { 
-            }
-        else ( se recusar o convite o cartao tem que sumir )
-
+        public void DesfazerAmizade(int codUser, int codAmigo)
+        {
+            usersByEmail.ElementAt(codUser).Value.Amigos.Remove(codAmigo);
         }
-        */
+     
+        
 
 
     }

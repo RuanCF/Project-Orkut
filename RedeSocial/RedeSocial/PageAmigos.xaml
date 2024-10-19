@@ -10,10 +10,21 @@
 
     <Grid Background="White">
         <ScrollViewer>
+            <StackPanel>
+                <Grid Background="Beige"  Margin="0,26,0,0" Width="600">
+                    <Label Content="Solicitações Recebidas" />
+                    <WrapPanel x:Name="gridSolicitacaoRecebida" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
+                </Grid>
+                <Grid Background="Violet"  Margin="0,26,0,0" Width="600">
+                    <Label Content="Solicitações enviadas"/>
+                    <WrapPanel x:Name="gridSolicitacaoEnviada" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
+                </Grid>
+                <Grid Background="Blue"  Margin="0,26,0,0" Width="600">
+                    <Label Content="Amigos"/>
+                    <WrapPanel x:Name="gridAmigos" HorizontalAlignment="Left"/>
+                </Grid>
+            </StackPanel>
 
-            <Grid Background="Beige"  Margin="0,26,0,0" Width="600">
-                <WrapPanel x:Name="gridAmigos" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            </Grid>
         </ScrollViewer>
     </Grid>
 </Page>
