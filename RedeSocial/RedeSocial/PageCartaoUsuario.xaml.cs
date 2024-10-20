@@ -36,7 +36,11 @@ namespace RedeSocial
         }
         private void buscarUsuario()
         {
-            foto.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codPerfil))));
+            foto.Fill = new ImageBrush
+            {
+                ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codPerfil))),
+                Stretch = Stretch.UniformToFill,
+            };
             labelNome.Content = userManager.BuscarNome(codPerfil);
         }
 
@@ -46,16 +50,20 @@ namespace RedeSocial
             {
                 botaoAdicionar.Content = "Enviar solicitação";
                 userManager.RecusarSolicitacao(codPerfil ,codUser);
+                botaoAdicionar.Style = (Style)FindResource("EstiloBotaoAzul");
             }
             else if (botaoAdicionar.Content.ToString() == "Enviar solicitação")
             {
                 userManager.AdicionarSolicitacao(codUser, codPerfil);
                 botaoAdicionar.Content = "Cancelar solicitação";
-            }else if (botaoAdicionar.Content.ToString() == "Aceitar solicitação")
+                botaoAdicionar.Style = (Style)FindResource("EstiloBotaoCinza");
+            }
+            else if (botaoAdicionar.Content.ToString() == "Aceitar solicitação")
             {
                 userManager.AceitarSolicitacao(codUser, codPerfil);
                 botaoAdicionar.Content = "Adicionado";
                 botaoAdicionar.IsEnabled = false;
+                botaoAdicionar.Style = (Style)FindResource("EstiloBotaoAzul");
             }
 
 

@@ -38,12 +38,12 @@
 
 
 
-        <Label x:Name="labelNome1" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="0,0,0,5" RenderTransformOrigin="1.215,8.853"/>
-        <Label x:Name="labelNome2" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="0,0,0,5" RenderTransformOrigin="1.215,8.853"/>
-        <Label x:Name="labelNome3" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="0,0,0,5" RenderTransformOrigin="1.215,8.853"/>
-        <Label x:Name="labelNome4" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="0,0,0,5" RenderTransformOrigin="1.215,8.853"/>
-        <Label x:Name="labelNome5" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="0,0,0,5" RenderTransformOrigin="1.215,8.853"/>
-        <Label x:Name="labelNome6" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="0,0,0,5" RenderTransformOrigin="1.215,8.853"/>
+        <Label x:Name="labelNome1" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="0,0,0,5" RenderTransformOrigin="1.215,8.853" FontFamily="{StaticResource ArimoFont}" FontWeight="Bold" Foreground="#333333"/>
+        <Label x:Name="labelNome2" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="0,0,0,5" RenderTransformOrigin="1.215,8.853" FontFamily="{StaticResource ArimoFont}" FontWeight="Bold" Foreground="#333333"/>
+        <Label x:Name="labelNome3" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="0,0,0,5" RenderTransformOrigin="1.215,8.853" FontFamily="{StaticResource ArimoFont}" FontWeight="Bold" Foreground="#333333"/>
+        <Label x:Name="labelNome4" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="0,0,0,5" RenderTransformOrigin="1.215,8.853" FontFamily="{StaticResource ArimoFont}" FontWeight="Bold" Foreground="#333333"/>
+        <Label x:Name="labelNome5" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="0,0,0,5" RenderTransformOrigin="1.215,8.853" FontFamily="{StaticResource ArimoFont}" FontWeight="Bold" Foreground="#333333"/>
+        <Label x:Name="labelNome6" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="0,0,0,5" RenderTransformOrigin="1.215,8.853" FontFamily="{StaticResource ArimoFont}" FontWeight="Bold" Foreground="#333333"/>
 
     </Grid>
 

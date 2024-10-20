@@ -20,20 +20,20 @@
                     <WrapPanel Grid.Row="1" x:Name="gridSolicitacaoRecebida" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
                         
                 </Grid>
-                <Grid Background="Beige"  Margin="0,29,0,0" Width="970">
+                <Grid Background="#FFF0F0FA"  Margin="0,29,0,0" Width="970">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0" Content="Solicitações Enviadas" FontFamily="{StaticResource ArimoFont}" FontSize="18"/>
+                    <Label Grid.Row="0" Content="Solicitações Enviadas" FontFamily="{StaticResource ArimoFont}" FontSize="18" FontWeight="Bold" Margin="0,0,0,22"/>
                     <WrapPanel Grid.Row="1" x:Name="gridSolicitacaoEnviada" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
                 </Grid>
-                <Grid Background="Beige"  Margin="0,29,0,0" Width="970">
+                <Grid Background="#FFF0F0FA"  Margin="0,29,0,0" Width="970">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0" Content="Amigos" FontFamily="{StaticResource ArimoFont}" FontSize="18"/>
+                    <Label Grid.Row="0" Content="Amigos" FontFamily="{StaticResource ArimoFont}" FontSize="18" FontWeight="Bold" Margin="0,0,0,22"/>
                     <WrapPanel Grid.Row="1" x:Name="gridAmigos" HorizontalAlignment="Left"/>
                 </Grid>
             </StackPanel>

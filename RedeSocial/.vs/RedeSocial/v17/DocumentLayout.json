@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Principal\\Project-Orkut\\RedeSocial\\",
+  "WorkspaceRootPath": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\zettz\\onedrive\\documentos\\fatec\\projeto ed\\principal\\project-orkut\\redesocial\\redesocial\\pagenariz.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pagenariz.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\source\\repos\\project-orkut\\redesocial\\redesocial\\pageperfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pageperfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\zettz\\onedrive\\documentos\\fatec\\projeto ed\\principal\\project-orkut\\redesocial\\redesocial\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\source\\repos\\project-orkut\\redesocial\\redesocial\\pagecartaousuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pagecartaousuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\source\\repos\\project-orkut\\redesocial\\redesocial\\pageperfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pageperfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\cliente\\source\\repos\\project-orkut\\redesocial\\redesocial\\pagecartaousuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pagecartaousuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,35 +26,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PageNariz.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Principal\\Project-Orkut\\RedeSocial\\RedeSocial\\PageNariz.xaml.cs",
-              "RelativeDocumentMoniker": "RedeSocial\\PageNariz.xaml.cs",
-              "ToolTip": "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Principal\\Project-Orkut\\RedeSocial\\RedeSocial\\PageNariz.xaml.cs",
-              "RelativeToolTip": "RedeSocial\\PageNariz.xaml.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAAwwM0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T17:16:39.71Z",
+              "DocumentIndex": 3,
+              "Title": "PageCartaoUsuario.xaml",
+              "DocumentMoniker": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PageCartaoUsuario.xaml",
+              "RelativeDocumentMoniker": "RedeSocial\\PageCartaoUsuario.xaml",
+              "ToolTip": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PageCartaoUsuario.xaml",
+              "RelativeToolTip": "RedeSocial\\PageCartaoUsuario.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-20T19:38:27.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Home.xaml",
-              "DocumentMoniker": "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Principal\\Project-Orkut\\RedeSocial\\RedeSocial\\Home.xaml",
-              "RelativeDocumentMoniker": "RedeSocial\\Home.xaml",
-              "ToolTip": "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Principal\\Project-Orkut\\RedeSocial\\RedeSocial\\Home.xaml",
-              "RelativeToolTip": "RedeSocial\\Home.xaml",
+              "Title": "PageCartaoUsuario.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PageCartaoUsuario.xaml.cs",
+              "RelativeDocumentMoniker": "RedeSocial\\PageCartaoUsuario.xaml.cs",
+              "ToolTip": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PageCartaoUsuario.xaml.cs",
+              "RelativeToolTip": "RedeSocial\\PageCartaoUsuario.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T19:38:26.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PagePerfil.xaml",
+              "DocumentMoniker": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePerfil.xaml",
+              "RelativeDocumentMoniker": "RedeSocial\\PagePerfil.xaml",
+              "ToolTip": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePerfil.xaml*",
+              "RelativeToolTip": "RedeSocial\\PagePerfil.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-20T17:15:18.935Z",
+              "WhenOpened": "2024-10-20T19:37:57.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PagePerfil.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePerfil.xaml.cs",
+              "RelativeDocumentMoniker": "RedeSocial\\PagePerfil.xaml.cs",
+              "ToolTip": "C:\\Users\\Cliente\\source\\repos\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePerfil.xaml.cs*",
+              "RelativeToolTip": "RedeSocial\\PagePerfil.xaml.cs*",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAiwFUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T19:38:57.249Z",
               "EditorCaption": ""
             }
           ]

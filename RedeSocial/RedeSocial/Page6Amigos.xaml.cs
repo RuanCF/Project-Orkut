@@ -46,14 +46,22 @@ namespace RedeSocial
                
                 if (posAmigo == 0)
                 {
-                    foto1.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))));
+                    foto1.Fill = new ImageBrush
+                    {
+                        ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))),
+                        Stretch = Stretch.UniformToFill,
+                    };
                     labelNome1.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
                     amigo1=codAmigo;
                 }
                 else if (posAmigo == 1)
                 {
-                    foto2.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))));
+                    foto2.Fill = new ImageBrush
+                    {
+                        ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))),
+                        Stretch = Stretch.UniformToFill,
+                    };
                     labelNome2.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
                     amigo2 = codAmigo;
@@ -61,14 +69,22 @@ namespace RedeSocial
                 }
                 else if (posAmigo == 2)
                 {
-                    foto3.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))));
+                    foto3.Fill = new ImageBrush
+                    {
+                        ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))),
+                        Stretch = Stretch.UniformToFill,
+                    };
                     labelNome3.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
                     amigo3 = codAmigo;
                 }
                 else if (posAmigo == 3)
                 {
-                    foto4.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))));
+                    foto4.Fill = new ImageBrush
+                    {
+                        ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))),
+                        Stretch = Stretch.UniformToFill,
+                    };
                     labelNome4.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
                     amigo4 = codAmigo;
@@ -76,14 +92,22 @@ namespace RedeSocial
                 }
                 else if (posAmigo == 4)
                 {
-                    foto5.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))));
+                    foto5.Fill = new ImageBrush
+                    {
+                        ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))),
+                        Stretch = Stretch.UniformToFill,
+                    };
                     labelNome5.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
                     amigo5 = codAmigo;
                 }
                 else if (posAmigo == 5)
                 {
-                    foto6.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))));
+                    foto6.Fill = new ImageBrush
+                    {
+                        ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codAmigo))),
+                        Stretch = Stretch.UniformToFill,
+                    };
                     labelNome6.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
                     amigo6 = codAmigo;

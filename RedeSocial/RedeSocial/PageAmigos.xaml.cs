@@ -74,7 +74,7 @@ namespace RedeSocial
             Frame frame = new Frame()
             {
                 Height = 300,
-                Width = 250
+                Width = 230
             };
             frame.Navigate(pageCartaoSolicitacaoEnviada);
 
@@ -106,8 +106,8 @@ namespace RedeSocial
 
             Frame frame = new Frame()
             {
-                Height = 300,
-                Width = 250
+                Height = 310,
+                Width = 230
             };
             frame.Navigate(pageCartaoAmigo);
 

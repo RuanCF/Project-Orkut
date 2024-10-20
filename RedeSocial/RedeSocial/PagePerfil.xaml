@@ -57,8 +57,8 @@
                                    Height="30" Margin="72,20,0,100" FontSize="16" FontFamily="{StaticResource ArimoFont}" FontWeight="Bold" Foreground="White" Grid.Row="1" Visibility="Hidden" IsHitTestVisible="False"/>
 
                             <Label x:Name="labelNomeUsuario" Grid.Row="1" Content="Nome do usuário" Margin="230,10,39,0"  VerticalAlignment="Top" FontSize="22" FontFamily="{StaticResource ArimoFont}" Foreground="#333333" FontWeight="Bold" VerticalContentAlignment="Bottom"/>
-                            <Label Grid.Row="1" Content="VAR amigos" Margin="244,46,660,0" Height="30" VerticalAlignment="Top" FontSize="12" FontFamily="{StaticResource ArimoFont}" Foreground="#333333" VerticalContentAlignment="Center"/>
-                            <Button Grid.Row="1" Content="Alterar Capa" Height="30" Margin="869,12,28,88" Style="{StaticResource EstiloBotaoRedondo}" Click="Button_Click"/>
+                            <Label x:Name="labelQuantAmigos" Grid.Row="1" Content="VAR amigos" Margin="244,46,660,0" Height="30" VerticalAlignment="Top" FontSize="14" FontFamily="{StaticResource ArimoFont}" Foreground="#333333" VerticalContentAlignment="Center"/>
+                            <Button Content="Alterar Capa" Grid.Row="1"  Height="30" Margin="869,12,28,88" Style="{StaticResource EstiloBotaoCinza}" Click="Button_Click"/>
                         </Grid>
                     </Border>
                 </Grid>

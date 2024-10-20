@@ -34,9 +34,7 @@ namespace RedeSocial
             codUsuario = codUser;
             mainWindow = _mainWin;
             mainFrame = _mainFrame;
-            AtualizarFotoPerfil();
-            AtualizarCapa();
-            MostrarNomeUsuario();
+            MostrarDadosUsuario();
             buscar6Amigos();
            
 
@@ -68,10 +66,24 @@ namespace RedeSocial
             };
         }
 
-        private void MostrarNomeUsuario()
+        private void MostrarDadosUsuario()
         {
             string nomeUsuario = userManager.BuscarNome(codUsuario); // Método que busca o nome do usuário
             labelNomeUsuario.Content = nomeUsuario;
+            ellipseFotoUser.Fill = new ImageBrush
+            {
+                //Uri é unified resource identifier, ele identifica recursos.
+                ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codUsuario))),
+                //ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codUsuario), UriKind.RelativeOrAbsolute))
+                Stretch = Stretch.UniformToFill,
+            };
+            retanguloCapa.Fill = new ImageBrush
+            {
+                ImageSource = new BitmapImage(new Uri(userManager.BuscarCapa(codUsuario))),
+                Stretch = Stretch.UniformToFill,
+            };
+            int quantAmigos = userManager.BuscarQuantidadeAmigos(codUsuario);
+            labelQuantAmigos.Content = quantAmigos + " amigos";
         }
 
 

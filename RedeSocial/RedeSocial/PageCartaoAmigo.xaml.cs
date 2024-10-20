@@ -36,7 +36,11 @@ namespace RedeSocial
         }
         private void buscarUsuario(int codPerfil )
         {
-            foto.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codPerfil))));
+            foto.Fill = new ImageBrush
+            {
+                ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codPerfil))),
+                Stretch = Stretch.UniformToFill,
+            };
             labelNome.Content = userManager.BuscarNome(codPerfil);
         }
 
