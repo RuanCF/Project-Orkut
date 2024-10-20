@@ -41,8 +41,8 @@ namespace RedeSocial
             
             Frame frame = new Frame()
             {
-                Height = 300,
-                Width = 250
+                Height = 345,
+                Width = 230
             };
             frame.Navigate(pageCartaoSolicitacao);
            

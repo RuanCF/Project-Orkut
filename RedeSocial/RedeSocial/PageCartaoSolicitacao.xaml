@@ -5,22 +5,75 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:RedeSocial"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="250"
+      d:DesignHeight="345" d:DesignWidth="230" Background="Transparent"
       Title="PageCartaoSolicitacao">
 
-    <Grid Background="Beige">
-        <Grid.RowDefinitions>
-            <RowDefinition Height = "Auto"/>
-            <RowDefinition Height = "*"/>
-            <RowDefinition Height= "Auto"/>
-            <RowDefinition Height = "Auto"/>
-        </Grid.RowDefinitions>
-        <Ellipse x:Name="foto"   Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Height="120" Width="120" Stretch="Fill" Margin="10,10,10,5" Stroke="#37376E" MouseLeftButtonUp="foto_MouseLeftButtonUp"/>
-        <Label x:Name="labelNome" Grid.Row="1" Content="nome usuario" VerticalAlignment="Center" FontSize="16" FontWeight="Bold"/>
-        <Button x:Name="botaoAceitar" Background="GreenYellow" Grid.Row="2" Content="Aceitar"  FontSize="16" Height="45" Margin="10,0,10,0" Click="botaoAceitar_Click" />
-        <Button x:Name="botaoRecusar" Background="LightSalmon" Grid.Row="3" Content="Recusar"  FontSize="16" Height="45" Margin="10,0,10,0" Click="botaoRecusar_Click" />
+    <Page.Resources>
+        <Style x:Key="EstiloBotaoAceitar" TargetType="Button">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#37376E"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="borda" CornerRadius="4"  Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="borda" Property="Background" Value="#4B4B82"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="borda" Property="Background" Value="#2D2D5A "/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="EstiloBotaoRecusar" TargetType="Button">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#E2E5E9"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="borda" CornerRadius="4"  Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="borda" Property="Background" Value="#D6D9DD"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="borda" Property="Background" Value="#DDE0E4 "/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+
+    <Grid Margin="10,10,10,0">
+        <Border Background="#FFFFFFFF" CornerRadius="6">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height = "Auto"/>
+                    <RowDefinition Height = "Auto"/>
+                    <RowDefinition Height= "Auto"/>
+                    <RowDefinition Height = "Auto"/>
+                </Grid.RowDefinitions>
+                <Rectangle x:Name="foto"  Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="210" Width="210" Stretch="UniformToFill" Margin="0,0,0,5" RadiusX="6" RadiusY="6"  MouseLeftButtonUp="foto_MouseLeftButtonUp"/>
+                <Label x:Name="labelNome" Grid.Row="1" Content="Nome de Usuário" VerticalAlignment="Center" FontSize="15" FontFamily="{StaticResource ArimoFont}" FontWeight="Bold" Padding="12,0,0,0" VerticalContentAlignment="Center"/>
+                <Button x:Name="botaoAceitar"  Grid.Row="2" Content="Aceitar"  FontSize="13" Height="35" Margin="12,11,12,11" Style="{StaticResource EstiloBotaoAceitar}" Click="botaoAceitar_Click"/>
+                <Button x:Name="botaoRecusar"  Grid.Row="3" Content="Recusar"  FontSize="13" Height="35" Margin="12,0,12,18" Style="{StaticResource EstiloBotaoRecusar}" Click="botaoRecusar_Click"/>
 
 
 
+            </Grid>
+        </Border>
     </Grid>
 </Page>

@@ -37,7 +37,11 @@ namespace RedeSocial
         }
         private void buscarUsuario(int codPerfil)
         {
-            foto.Fill = new ImageBrush(new BitmapImage(new Uri(userManager.BuscarFoto(codPerfil))));
+            foto.Fill = new ImageBrush
+            {
+                ImageSource = new BitmapImage(new Uri(userManager.BuscarFoto(codPerfil))),
+                Stretch = Stretch.UniformToFill,
+            };
             labelNome.Content = userManager.BuscarNome(codPerfil);
         }
 
@@ -68,4 +72,6 @@ namespace RedeSocial
             mainFrame.Navigate(pagePerfilOutros);
         }
     }
+
+    //<Ellipse x:Name="foto"   Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Height="120" Width="120" Stretch="Fill" Margin="10,10,10,5" Stroke="#37376E" MouseLeftButtonUp="foto_MouseLeftButtonUp"/>
 }
