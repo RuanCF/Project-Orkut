@@ -7,6 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="CoisasChat\PageCartaoChat.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CoisasChat\PageCartaoChatSelecionado.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PageJogos.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PageNariz.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PageChat.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Home.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -42,6 +57,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="CoisasChat\PageCartaoChat.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CoisasChat\PageCartaoChatSelecionado.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PageJogos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PageNariz.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PageChat.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Home.xaml">
       <SubType>Designer</SubType>
     </Page>

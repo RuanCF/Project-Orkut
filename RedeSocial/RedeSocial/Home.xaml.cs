@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Microsoft.Win32;
+using RedeSocial.CoisasChat;
+using RedeSocial.Models;
 
 namespace RedeSocial
 {
@@ -22,12 +24,14 @@ namespace RedeSocial
     {
         private UserManager userManager = new UserManager();
         PagePost pagePost;
+        ChatList chatList;
         int codUsuario;
-        public Home(int codUser)
+        public Home(int codUser, ChatList _chatList)
         {
             InitializeComponent();
             codUsuario = codUser;
             pagePost = new PagePost(codUsuario);
+            chatList = _chatList;
             MainFrame.Navigate(pagePost);
             AtualizarFotoPerfil();
         }
@@ -43,14 +47,14 @@ namespace RedeSocial
 
         private void ListViewItem_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            MainWindow mainWindow = new();
+            MainWindow mainWindow = new(chatList);
             mainWindow.Show();
             this.Close();
         }
 
         private void carlos(object sender, MouseButtonEventArgs e)
         {
-            MainWindow mainWindow = new();
+            MainWindow mainWindow = new(chatList);
             mainWindow.Show();
             this.Close();
         }
@@ -69,7 +73,7 @@ namespace RedeSocial
 
         private void botaoSair_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            MainWindow mainWindow1 = new MainWindow();
+            MainWindow mainWindow1 = new MainWindow(chatList);
             mainWindow1.Show();
             this.Close();
         }
@@ -124,6 +128,16 @@ namespace RedeSocial
         private void botaoAmigos_Selected(object sender, RoutedEventArgs e)
         {
             //aparecer a solicitação somente uma vez depois aparecer como amigo
+        }
+
+        private void ListViewItem_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Navigate(new PageChat(codUsuario, chatList));
+        }
+
+        private void botaoJogos_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Navigate(new PageJogos(codUsuario));
         }
     }
 }

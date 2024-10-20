@@ -508,3 +508,31 @@ C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Page6Amigos.baml
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoSolicitacaoEnviada.baml
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfilOutros.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasChat\PageCartaoChat.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasChat\PageCartaoChatSelecionado.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Page6Amigos.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageAmigos.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageBuscar.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoAmigo.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoSolicitacao.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoSolicitacaoEnviada.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoUsuario.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageChat.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfil.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfilOutros.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasChat\PageCartaoChat.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasChat\PageCartaoChatSelecionado.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Page6Amigos.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageAmigos.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageBuscar.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoAmigo.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoSolicitacao.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoSolicitacaoEnviada.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoUsuario.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageChat.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfil.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfilOutros.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageJogos.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageNariz.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageJogos.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageNariz.baml

@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.IO;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,11 +21,23 @@ namespace RedeSocial
     public partial class MainWindow : Window
     {
         private UserManager userManager = new UserManager();
+        private NarizManager narizManager = new NarizManager();
         private Teste teste = new Teste();
+        private ChatList chatList;
 
-        public MainWindow()
+        public MainWindow(ChatList _chatList = null)
         {
             InitializeComponent();
+            chatList = _chatList;
+            criarChatListUmaVez();
+        }
+
+        private void criarChatListUmaVez()
+        {
+            if (chatList == null)
+            {
+                chatList = new ChatList();
+            }
         }
 
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -107,20 +121,28 @@ namespace RedeSocial
                 areaNome.Clear();
                 AreaNascimento.SelectedDate = null;
                 tabMenu.SelectedIndex = 0;
+
+                narizManager.AdicionarUsuario();
             }
         }
 
         private void botaoEntrar_Click(object sender, RoutedEventArgs e)
         {
+            entrar();
+        }
+
+        private void entrar()
+        {
             string email = areaUsuario.Text;
             string password = areaSenha.Password;
 
             string resultado = userManager.Logar(email, password);
-            
+            if (resultado != "Logado com sucesso!")
+                MessageBox.Show(resultado);
 
             if (resultado == "Logado com sucesso!")
             {
-                Home homeWindow = new Home(userManager.BuscarCodigoUsuario(email));
+                Home homeWindow = new Home(userManager.BuscarCodigoUsuario(email), chatList);
                 homeWindow.Show();
                 this.Close();
             }
@@ -170,6 +192,25 @@ namespace RedeSocial
             teste.AdicionarLike();
             teste.AdicionarComentario();
             teste.AdicionarRecomendar();
+            teste.AdicionarMensagem(chatList);
+
+            botaoTeste.IsEnabled = false;
+        }
+
+        private void areaUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                entrar();
+            }
+        }
+
+        private void areaSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                entrar();
+            }
         }
     }
 }

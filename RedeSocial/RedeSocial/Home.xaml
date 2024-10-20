@@ -140,17 +140,10 @@
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Conversas-->
-                    <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
+                    <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
                             <Image Source="/Icones/icon_conversas.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Conversas" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
-                        </StackPanel>
-                    </ListViewItem>
-                    <!--Item Depoimentos-->
-                    <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
-                        <StackPanel Orientation="Horizontal" Width="230" Height="50">
-                            <Image Source="/Icones/icon_depoimentos.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
-                            <TextBlock Text="Depoimentos" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Comunidades-->
@@ -161,7 +154,7 @@
                         </StackPanel>
                     </ListViewItem>
                     <!--Item Jogos-->
-                    <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}">
+                    <ListViewItem x:Name="botaoJogos" HorizontalAlignment="Left" Margin="0,0,0,0" Style="{StaticResource ListViewPadrão}" MouseLeftButtonUp="botaoJogos_MouseLeftButtonUp">
                         <StackPanel Orientation="Horizontal" Width="230" Height="50">
                             <Image Source="/Icones/icon_jogos.png"  Height="30" Width="30" Stretch="Fill" Margin="12,0,0,0" />
                             <TextBlock Text="Jogos" Margin="25,0,0,0" Style="{StaticResource TextBlockMenu}"/>

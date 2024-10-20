@@ -143,13 +143,13 @@
                                 <!--TextBox Usuário-->
                                 <TextBlock Width="345" Height="14" Canvas.Top="57" Canvas.Left="57"  Foreground="#9094B6" 
                                Panel.ZIndex="1" IsHitTestVisible="False" Text="ID ou E-mail" Visibility="{Binding ElementName=areaUsuario, Path=Text.IsEmpty, Converter={StaticResource BoolToVis} }" FontFamily="{StaticResource ArimoFont}" FontSize="14" />
-                                <TextBox x:Name="areaUsuario" Width="375" Height="53" Canvas.Top="38" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" Foreground="#333333" Style="{StaticResource CaixaRedondoEmCima}" />
+                                <TextBox x:Name="areaUsuario" Width="375" Height="53" Canvas.Top="38" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" Foreground="#333333" Style="{StaticResource CaixaRedondoEmCima}" KeyDown="areaUsuario_KeyDown" />
 
                                 <!--PasswordBox Senha-->
                                 <TextBlock x:Name="labelSenha" Width="345" Height="14" Canvas.Top="109" Canvas.Left="57"  Foreground="#9094B6" 
                                Panel.ZIndex="1" IsHitTestVisible="False" Text="Senha" Visibility="{Binding ElementName=areaSenha, Path=Password.IsEmpty, Converter={StaticResource BoolToVis} }" FontFamily="{StaticResource ArimoFont}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" />
                                 <!--IsEmpty não funciona em PasswordBox, criar um converter depois-->
-                                <PasswordBox x:Name="areaSenha" Width="375" Height="53" Canvas.Top="90" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" Foreground="#333333" Style="{StaticResource PasswordRedondoEmBaixo}" PasswordChanged="areaSenha_PasswordChanged_1" />
+                                <PasswordBox x:Name="areaSenha" Width="375" Height="53" Canvas.Top="90" Canvas.Left="42" VerticalContentAlignment="Center" Padding="14 0 0 0" Foreground="#333333" Style="{StaticResource PasswordRedondoEmBaixo}" PasswordChanged="areaSenha_PasswordChanged_1" KeyDown="areaSenha_KeyDown" />
 
                                 <!--Checkbox (Separar texto e caixa depois) e ToggleSwitchSenha (MahApps.Metro framework)-->
                                 <CheckBox Width="100" Height="14"  Content="Lembrar Conta" Canvas.Top="168" Canvas.Left="57" FontSize="12" FontFamily="{StaticResource ArimoFont}"  />
@@ -208,7 +208,7 @@
                     </StackPanel>
                 </TabItem>
             </TabControl>
-            <Button Content="Gerar usuários para teste" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+            <Button x:Name="botaoTeste" Content="Gerar usuários para teste" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         </Grid>
     </Grid>
 
