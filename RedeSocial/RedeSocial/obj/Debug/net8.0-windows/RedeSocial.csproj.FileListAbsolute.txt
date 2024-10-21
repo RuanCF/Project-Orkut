@@ -548,3 +548,5 @@ C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageNariz.baml
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageComunidades.g.cs
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageComunidades.baml
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageComunidades.g.cs
+C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageComunidades.baml

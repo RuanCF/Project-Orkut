@@ -15,7 +15,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Border Grid.Column="1" Background="#FFFFFF" CornerRadius="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="350" Margin="10">
+            <Border Grid.Column="1" Background="#FFFFFF" CornerRadius="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="350" Margin="10, 20, 10, 20">
                 <Border.Effect>
                     <DropShadowEffect BlurRadius="3" ShadowDepth="0"/>
                 </Border.Effect>
@@ -28,7 +28,7 @@
                 </ScrollViewer>
             </Border>
 
-            <Border Grid.Column="2" Background="#FFFFFF" CornerRadius="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="500" Margin="10">
+            <Border Grid.Column="2" Background="#FFFFFF" CornerRadius="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="500" Margin="10, 20, 10, 20">
                 <Border.Effect>
                     <DropShadowEffect BlurRadius="3" ShadowDepth="0"/>
                 </Border.Effect>
