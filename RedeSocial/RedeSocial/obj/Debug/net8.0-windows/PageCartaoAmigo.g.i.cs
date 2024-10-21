@@ -77,7 +77,7 @@ namespace RedeSocial {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/RedeSocial;V1.0.0.0;component/pagecartaoamigo.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/RedeSocial;component/pagecartaoamigo.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PageCartaoAmigo.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

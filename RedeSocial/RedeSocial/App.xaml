@@ -183,6 +183,8 @@
 
         <!--Botao Azul-->
         <Style x:Key="EstiloBotaoAzul" TargetType="Button">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="{StaticResource ArimoFont}"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Background" Value="#37376E"/>
             <Setter Property="Foreground" Value="White"/>
@@ -206,6 +208,8 @@
         </Style>
         <!--Botao Cinzinha-->
         <Style x:Key="EstiloBotaoCinza" TargetType="Button">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="{StaticResource ArimoFont}"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Background" Value="#E2E5E9"/>
             <Setter Property="Foreground" Value="#333333"/>

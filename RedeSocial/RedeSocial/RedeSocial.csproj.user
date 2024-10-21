@@ -13,6 +13,9 @@
     <Compile Update="CoisasChat\PageCartaoChatSelecionado.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PageComunidades.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PageJogos.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -61,6 +64,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CoisasChat\PageCartaoChatSelecionado.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PageComunidades.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PageJogos.xaml">

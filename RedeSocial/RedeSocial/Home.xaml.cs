@@ -139,5 +139,10 @@ namespace RedeSocial
         {
             MainFrame.Navigate(new PageJogos(codUsuario));
         }
+
+        private void botaoComunidades_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            MainFrame.Navigate(new PageComunidades());
+        }
     }
 }
