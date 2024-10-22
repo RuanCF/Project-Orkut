@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\App.xaml
-18-1539702559
+18-1121139926
 
-28-1350411309
+28-1379288239
 1981124507420
-CoisasChat\PageCartaoChat.xaml;CoisasChat\PageCartaoChatSelecionado.xaml;Home.xaml;MainWindow.xaml;Page6Amigos.xaml;PageAmigos.xaml;PageBuscar.xaml;PageCartaoAmigo.xaml;PageCartaoSolicitacao.xaml;PageCartaoSolicitacaoEnviada.xaml;PageCartaoUsuario.xaml;PageChat.xaml;PageComunidades.xaml;PageJogos.xaml;PageNariz.xaml;PagePerfil.xaml;PagePerfilOutros.xaml;PagePost.xaml;
+CoisasAmigos\PageCartaoAmigo.xaml;CoisasAmigos\PageCartaoSolicitacao.xaml;CoisasAmigos\PageCartaoSolicitacaoEnviada.xaml;CoisasBuscar\PageCartaoUsuario.xaml;CoisasChat\PageCartaoChat.xaml;CoisasChat\PageCartaoChatSelecionado.xaml;CoisasJogos\PageNariz.xaml;CoisasPerfil\Page6Amigos.xaml;CoisasPerfil\PagePerfilOutros.xaml;Home.xaml;MainWindow.xaml;PageAmigos.xaml;PageBuscar.xaml;PageChat.xaml;PageComunidades.xaml;PageJogos.xaml;PagePerfil.xaml;PagePost.xaml;
 
 False
 

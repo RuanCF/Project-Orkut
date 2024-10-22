@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Principal\\Project-Orkut\\RedeSocial\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\zettz\\onedrive\\documentos\\fatec\\projeto ed\\principal\\project-orkut\\redesocial\\redesocial\\pagechat.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pagechat.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,23 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PageChat.xaml",
-              "DocumentMoniker": "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Principal\\Project-Orkut\\RedeSocial\\RedeSocial\\PageChat.xaml",
-              "RelativeDocumentMoniker": "RedeSocial\\PageChat.xaml",
-              "ToolTip": "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Principal\\Project-Orkut\\RedeSocial\\RedeSocial\\PageChat.xaml",
-              "RelativeToolTip": "RedeSocial\\PageChat.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-21T05:59:44.177Z",
-              "EditorCaption": ""
             }
           ]
         }

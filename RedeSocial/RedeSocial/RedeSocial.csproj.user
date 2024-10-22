@@ -19,7 +19,7 @@
     <Compile Update="PageJogos.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="PageNariz.xaml.cs">
+    <Compile Update="CoisasJogos\PageNariz.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="PageChat.xaml.cs">
@@ -28,7 +28,7 @@
     <Compile Update="Home.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Page6Amigos.xaml.cs">
+    <Compile Update="CoisasPerfil\Page6Amigos.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="PageAmigos.xaml.cs">
@@ -37,22 +37,22 @@
     <Compile Update="PageBuscar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="PageCartaoAmigo.xaml.cs">
+    <Compile Update="CoisasAmigos\PageCartaoAmigo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="PageCartaoSolicitacao.xaml.cs">
+    <Compile Update="CoisasAmigos\PageCartaoSolicitacao.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="PageCartaoSolicitacaoEnviada.xaml.cs">
+    <Compile Update="CoisasAmigos\PageCartaoSolicitacaoEnviada.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="PageCartaoUsuario.xaml.cs">
+    <Compile Update="CoisasBuscar\PageCartaoUsuario.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="PagePerfil.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="PagePerfilOutros.xaml.cs">
+    <Compile Update="CoisasPerfil\PagePerfilOutros.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="PagePost.xaml.cs">
@@ -72,7 +72,7 @@
     <Page Update="PageJogos.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PageNariz.xaml">
+    <Page Update="CoisasJogos\PageNariz.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PageChat.xaml">
@@ -84,7 +84,7 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Page6Amigos.xaml">
+    <Page Update="CoisasPerfil\Page6Amigos.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PageAmigos.xaml">
@@ -93,22 +93,22 @@
     <Page Update="PageBuscar.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PageCartaoAmigo.xaml">
+    <Page Update="CoisasAmigos\PageCartaoAmigo.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PageCartaoSolicitacao.xaml">
+    <Page Update="CoisasAmigos\PageCartaoSolicitacao.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PageCartaoSolicitacaoEnviada.xaml">
+    <Page Update="CoisasAmigos\PageCartaoSolicitacaoEnviada.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PageCartaoUsuario.xaml">
+    <Page Update="CoisasBuscar\PageCartaoUsuario.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PagePerfil.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PagePerfilOutros.xaml">
+    <Page Update="CoisasPerfil\PagePerfilOutros.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PagePost.xaml">

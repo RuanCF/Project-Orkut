@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,8 @@ namespace RedeSocial.Models
 
         int userCod;
 
+        string projectPath;
+
         double upgrade1;
         double upgrade2;
         double upgrade3;
@@ -49,6 +52,9 @@ namespace RedeSocial.Models
 
             //Configuração inicial
             userCod = codUsuario;
+
+            projectPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName; //Pega o caminho do projeto
+            projectPath = projectPath.Remove(projectPath.Length - 4);
 
             upgradeMultiplicador = 1;
 
@@ -293,7 +299,7 @@ namespace RedeSocial.Models
                 HorizontalAlignment = HorizontalAlignment.Center,
                 Margin = new Thickness(0, 120, 0, 0),
                 IsHitTestVisible = false,
-                Source = new BitmapImage(new Uri("C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Johnny\\Clicker\\Clicker\\Imagens\\Moustache.png"))
+                Source = new BitmapImage(new Uri(projectPath + "\\Imagens\\Moustache.png"))
             };
             grid1.Children.Add(acessorio);
 
