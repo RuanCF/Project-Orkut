@@ -148,7 +148,7 @@ namespace RedeSocial
 
         public void buscar6Amigos()
         {
-            Page6Amigos page6Amigos = new Page6Amigos(codUsuario, mainFrame);
+            Page6Amigos page6Amigos = new Page6Amigos(codUsuario, mainFrame, mainWindow, null);
             frame6Amigos.Navigate(page6Amigos);
         }
 

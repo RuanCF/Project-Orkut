@@ -25,14 +25,17 @@ namespace RedeSocial
         int codPerfil;
         int codUser;
         Frame mainFrame;
-        public PageCartaoUsuario(int _codUser, int _codPerfil, Frame _mainFrame)
+        Home mainWindow;
+        public PageCartaoUsuario(int _codUser, int _codPerfil, Frame _mainFrame, Home _mainWindow)
         {
             InitializeComponent();
             mainFrame = _mainFrame;
             codPerfil = _codPerfil;
             codUser = _codUser;
+            mainWindow = _mainWindow;
             buscarUsuario();
             alterarConteudoBotao();
+           
         }
         private void buscarUsuario()
         {
@@ -88,7 +91,7 @@ namespace RedeSocial
 
         private void foto_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            PagePerfilOutros pagePerfilOutros = new PagePerfilOutros(codUser, codPerfil, mainFrame);
+            PagePerfilOutros pagePerfilOutros = new PagePerfilOutros(codUser, codPerfil, mainFrame, mainWindow);
             mainFrame.Navigate(pagePerfilOutros);
         }
     }

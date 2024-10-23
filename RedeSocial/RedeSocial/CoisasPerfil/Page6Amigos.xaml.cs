@@ -21,29 +21,49 @@ namespace RedeSocial
     public partial class Page6Amigos : Page
     {
         UserManager userManager = new UserManager();
+
+        Frame mainFrame;
+        Home mainWindow;
+
         int codUsuario;
         int codAmigo;
         int posAmigo;
-        Frame mainFrame;
+        int codPerfil;
+
         int amigo1;
         int amigo2;
         int amigo3;
         int amigo4;
         int amigo5;
         int amigo6;
-        public Page6Amigos(int _codUsuario, Frame _mainFrame)
+        public Page6Amigos(int _codUsuario, Frame _mainFrame, Home _mainWindow, int? _codPerfil = null)
         {
             InitializeComponent();
-            mainFrame = _mainFrame;
             codUsuario = _codUsuario;
-            buscarPerfilAmigo();
-        }
-        public void buscarPerfilAmigo()
-        {
-            for (int i = 0; i < userManager.BuscarQuantidadeAmigos(codUsuario); i++)
+            mainWindow = _mainWindow;
+            mainFrame = _mainFrame;
+
+            if (_codPerfil.HasValue)
             {
-                codAmigo = userManager.BuscarCodAmigo(codUsuario, i);
-               
+                codPerfil = _codPerfil.Value;
+            }
+
+            if (_codPerfil != null)
+            {
+                buscarPerfilAmigo(codPerfil);
+            }
+            else
+            {
+                buscarPerfilAmigo(codUsuario);
+            }
+
+        }
+        public void buscarPerfilAmigo(int cod)
+        {
+            for (int i = 0; i < userManager.BuscarQuantidadeAmigos(cod); i++)
+            {
+                codAmigo = userManager.BuscarCodAmigo(cod, i);
+
                 if (posAmigo == 0)
                 {
                     foto1.Fill = new ImageBrush
@@ -53,7 +73,7 @@ namespace RedeSocial
                     };
                     labelNome1.Content = userManager.BuscarNome(codAmigo);
                     posAmigo++;
-                    amigo1=codAmigo;
+                    amigo1 = codAmigo;
                 }
                 else if (posAmigo == 1)
                 {
@@ -117,32 +137,74 @@ namespace RedeSocial
 
         private void foto1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo1, mainFrame));
+            if (codUsuario == amigo1)
+            {
+                mainFrame.Navigate(new PagePerfil(codUsuario, mainWindow, mainFrame));
+            }
+            else
+            {
+                mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo1, mainFrame, mainWindow));
+            }
         }
 
         private void foto2_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo2, mainFrame));
+            if (codUsuario == amigo2)
+            {
+                mainFrame.Navigate(new PagePerfil(codUsuario, mainWindow, mainFrame));
+            }
+            else
+            {
+                mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo2, mainFrame, mainWindow));
+            }
         }
 
         private void foto3_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo3, mainFrame));
+            if (codUsuario == amigo3)
+            {
+                mainFrame.Navigate(new PagePerfil(codUsuario, mainWindow, mainFrame));
+            }
+            else
+            {
+                mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo3, mainFrame, mainWindow));
+            }
         }
 
         private void foto4_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo4, mainFrame));
+            if (codUsuario == amigo4)
+            {
+                mainFrame.Navigate(new PagePerfil(codUsuario, mainWindow, mainFrame));
+            }
+            else
+            {
+                mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo4, mainFrame, mainWindow));
+            }
         }
 
         private void foto5_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new PagePerfilOutros(codUsuario,amigo5, mainFrame));
+            if (codUsuario == amigo5)
+            {
+                mainFrame.Navigate(new PagePerfil(codUsuario, mainWindow, mainFrame));
+            }
+            else
+            {
+                mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo5, mainFrame, mainWindow));
+            }
         }
 
         private void foto6_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo6, mainFrame));
+            if (codUsuario == amigo6)
+            {
+                mainFrame.Navigate(new PagePerfil(codUsuario, mainWindow, mainFrame));
+            }
+            else
+            {
+                mainFrame.Navigate(new PagePerfilOutros(codUsuario, amigo6, mainFrame, mainWindow));
+            }
         }
     }
 }

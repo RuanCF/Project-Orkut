@@ -27,10 +27,12 @@ namespace RedeSocial
     {
         UserManager userManager = new UserManager();
         Frame mainFrame;
-        public PageAmigos(int codUser, Frame _mainFrame)
+        Home mainWindow;
+        public PageAmigos(int codUser, Frame _mainFrame, Home _mainWindow)
         {
             InitializeComponent();
             mainFrame = _mainFrame;
+            mainWindow = _mainWindow;
             repetirListaRecebidas(codUser);
             repetirListaEnviadas(codUser);
             repetirListaAmigos(codUser);
@@ -69,7 +71,7 @@ namespace RedeSocial
         //atualizar a pagina  com os cartoes depois de ja ter adicionado
         public void listarUsuarioEnviadas(int codUser, int codPerfil)
         {
-            PageCartaoSolicitacaoEnviada pageCartaoSolicitacaoEnviada = new PageCartaoSolicitacaoEnviada(codUser, codPerfil, mainFrame);
+            PageCartaoSolicitacaoEnviada pageCartaoSolicitacaoEnviada = new PageCartaoSolicitacaoEnviada(codUser, codPerfil, mainFrame, mainWindow);
 
             Frame frame = new Frame()
             {
@@ -102,7 +104,7 @@ namespace RedeSocial
 
         public void listarUsuarioAmigos(int codUser, int codPerfil)
         {
-            PageCartaoAmigo pageCartaoAmigo = new PageCartaoAmigo(codUser, codPerfil, mainFrame);
+            PageCartaoAmigo pageCartaoAmigo = new PageCartaoAmigo(codUser, codPerfil, mainFrame, mainWindow);
 
             Frame frame = new Frame()
             {

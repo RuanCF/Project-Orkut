@@ -29,6 +29,7 @@ namespace RedeSocial
         int codPerfil;
         private PagePost pagePost;
         Frame mainFrame;
+        Home mainWindow;
 
         //Coisas do Post
         //string enderecoMidia;
@@ -40,12 +41,14 @@ namespace RedeSocial
         SolidColorBrush corPlano;
         SolidColorBrush corLinha;
 
-        public PagePerfilOutros(int _codUser, int _codPerfil, Frame _mainFrame)
+        public PagePerfilOutros(int _codUser, int _codPerfil, Frame _mainFrame, Home _mainWindow)
         {
             InitializeComponent();
             codUsuario = _codUser;
             codPerfil = _codPerfil;
             mainFrame = _mainFrame;
+            mainWindow = _mainWindow;
+
 
             projectPath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName; //Pega o caminho do projeto
             projectPath = projectPath.Remove(projectPath.Length - 4);
@@ -56,13 +59,14 @@ namespace RedeSocial
             corSecundaria = new SolidColorBrush(Color.FromRgb(75, 75, 130));
             corPlano = new SolidColorBrush(Color.FromRgb(255, 255, 255));
             corLinha = new SolidColorBrush(Color.FromRgb(200, 200, 200));
-
+            
             AtualizarFotoPerfil();
             AtualizarCapa();
             MostrarNomeUsuario();
             buscar6Amigos();
             alterarConteudoBotao();
             atualizarPaginaPostProprio();
+            
         }
 
         private void AtualizarFotoPerfil()
@@ -93,7 +97,7 @@ namespace RedeSocial
 
         public void buscar6Amigos()
         {
-            Page6Amigos page6Amigos = new Page6Amigos(codPerfil, mainFrame);
+            Page6Amigos page6Amigos = new Page6Amigos(codUsuario, mainFrame, mainWindow, codPerfil);
             frame6Amigos.Navigate(page6Amigos);
         }
 

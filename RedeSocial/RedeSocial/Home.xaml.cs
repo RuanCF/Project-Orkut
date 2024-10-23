@@ -26,6 +26,7 @@ namespace RedeSocial
         PagePost pagePost;
         ChatList chatList;
         int codUsuario;
+       
         public Home(int codUser, ChatList _chatList)
         {
             InitializeComponent();
@@ -105,7 +106,7 @@ namespace RedeSocial
 
         private void botaoBuscar_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            PageBuscar pageBuscar = new PageBuscar(codUsuario, MainFrame);
+            PageBuscar pageBuscar = new PageBuscar(codUsuario, MainFrame, this);
             MainFrame.Navigate(pageBuscar);
 
         }
@@ -114,14 +115,14 @@ namespace RedeSocial
         {
             if (e.Key == Key.Enter)
             {
-                PageBuscar pageBuscar = new PageBuscar(codUsuario, MainFrame);
+                PageBuscar pageBuscar = new PageBuscar(codUsuario, MainFrame, this);
                 MainFrame.Navigate(pageBuscar);
             }
         }
 
         private void botaoAmigos_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            PageAmigos pageAmigos = new PageAmigos(codUsuario, MainFrame);
+            PageAmigos pageAmigos = new PageAmigos(codUsuario, MainFrame, this);
             MainFrame.Navigate(pageAmigos);
         }
 

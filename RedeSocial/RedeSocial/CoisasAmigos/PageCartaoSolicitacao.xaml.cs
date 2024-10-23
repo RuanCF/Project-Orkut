@@ -24,6 +24,7 @@ namespace RedeSocial
         int codPerfil;
         int codUser;
         Frame mainFrame;
+        Home mainWindow;
 
 
         public PageCartaoSolicitacao(int _codUser, int _codPerfil, Frame _mainFrame)
@@ -68,7 +69,7 @@ namespace RedeSocial
 
         private void foto_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            PagePerfilOutros pagePerfilOutros = new PagePerfilOutros(codUser, codPerfil, mainFrame);
+            PagePerfilOutros pagePerfilOutros = new PagePerfilOutros(codUser, codPerfil, mainFrame, mainWindow);
             mainFrame.Navigate(pagePerfilOutros);
         }
     }

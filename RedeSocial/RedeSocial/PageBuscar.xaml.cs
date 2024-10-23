@@ -22,15 +22,18 @@ namespace RedeSocial
     {
         UserManager userManager = new UserManager();
         Frame mainFrame;
-        public PageBuscar(int codUser, Frame _mainFrame)
+        Home mainWindow;
+        public PageBuscar(int codUser, Frame _mainFrame, Home _mainWindow)
         {
             InitializeComponent();
             mainFrame = _mainFrame;
+            mainWindow = _mainWindow;
             repetirLista(codUser);
+            
         }
         public void listarUsuario(int codUser, int codPerfil) 
         {
-            PageCartaoUsuario pageCartao = new PageCartaoUsuario(codUser,codPerfil, mainFrame);
+            PageCartaoUsuario pageCartao = new PageCartaoUsuario(codUser,codPerfil, mainFrame, mainWindow);
             gridBuscar.RowDefinitions.Add(new RowDefinition());
             Frame frame = new Frame()
             {

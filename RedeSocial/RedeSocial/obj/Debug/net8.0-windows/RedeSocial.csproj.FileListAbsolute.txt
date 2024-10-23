@@ -467,9 +467,6 @@ C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeS
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageAmigos.g.cs
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageBuscar.g.cs
-C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoAmigo.g.cs
-C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoSolicitacao.g.cs
-C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoUsuario.g.cs
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfil.g.cs
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.g.cs
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\App.g.cs
@@ -480,9 +477,6 @@ C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeS
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageAmigos.baml
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageBuscar.baml
-C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoAmigo.baml
-C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoSolicitacao.baml
-C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoUsuario.baml
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfil.baml
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePost.baml
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.g.resources
@@ -496,12 +490,6 @@ C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeS
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.pdb
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\RedeSocial.genruntimeconfig.cache
 C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\ref\RedeSocial.dll
-C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Page6Amigos.g.cs
-C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Page6Amigos.baml
-C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfilOutros.g.cs
-C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfilOutros.baml
-C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoSolicitacaoEnviada.g.cs
-C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoSolicitacaoEnviada.baml
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\Page6Amigos.g.cs
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageCartaoSolicitacaoEnviada.g.cs
 C:\Users\Cliente\Source\Repos\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PagePerfilOutros.g.cs
@@ -550,3 +538,27 @@ C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\Rede
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasBuscar\PageCartaoUsuario.baml
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasJogos\PageNariz.baml
 C:\Users\ZettZ\OneDrive\Documentos\Fatec\Projeto ED\Principal\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasPerfil\PagePerfilOutros.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasAmigos\PageCartaoAmigo.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasAmigos\PageCartaoSolicitacao.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasAmigos\PageCartaoSolicitacaoEnviada.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasBuscar\PageCartaoUsuario.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasChat\PageCartaoChat.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasChat\PageCartaoChatSelecionado.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasJogos\PageNariz.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasPerfil\Page6Amigos.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasPerfil\PagePerfilOutros.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageChat.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageComunidades.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageJogos.g.cs
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasAmigos\PageCartaoAmigo.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasAmigos\PageCartaoSolicitacao.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasAmigos\PageCartaoSolicitacaoEnviada.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasBuscar\PageCartaoUsuario.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasChat\PageCartaoChat.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasChat\PageCartaoChatSelecionado.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasJogos\PageNariz.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasPerfil\Page6Amigos.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\CoisasPerfil\PagePerfilOutros.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageChat.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageComunidades.baml
+C:\Users\thais\OneDrive\Área de Trabalho\acelera\Project-Orkut\RedeSocial\RedeSocial\obj\Debug\net8.0-windows\PageJogos.baml

@@ -1,7 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ZettZ\\OneDrive\\Documentos\\Fatec\\Projeto ED\\Principal\\Project-Orkut\\RedeSocial\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut\\redesocial\\redesocial\\coisasperfil\\page6amigos.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\coisasperfil\\page6amigos.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut\\redesocial\\redesocial\\coisasperfil\\page6amigos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\coisasperfil\\page6amigos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut\\redesocial\\redesocial\\coisasperfil\\pageperfiloutros.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\coisasperfil\\pageperfiloutros.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut\\redesocial\\redesocial\\coisasperfil\\pageperfiloutros.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\coisasperfil\\pageperfiloutros.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|c:\\users\\thais\\onedrive\\\u00E1rea de trabalho\\acelera\\project-orkut\\redesocial\\redesocial\\pageperfil.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{5DC26911-CD30-41C2-A6DC-5A2CDF8DAAFD}|RedeSocial\\RedeSocial.csproj|solutionrelative:redesocial\\pageperfil.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Page6Amigos.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\CoisasPerfil\\Page6Amigos.xaml.cs",
+              "RelativeDocumentMoniker": "RedeSocial\\CoisasPerfil\\Page6Amigos.xaml.cs",
+              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\CoisasPerfil\\Page6Amigos.xaml.cs*",
+              "RelativeToolTip": "RedeSocial\\CoisasPerfil\\Page6Amigos.xaml.cs*",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAUwJAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T11:52:05.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PagePerfilOutros.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\CoisasPerfil\\PagePerfilOutros.xaml.cs",
+              "RelativeDocumentMoniker": "RedeSocial\\CoisasPerfil\\PagePerfilOutros.xaml.cs",
+              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\CoisasPerfil\\PagePerfilOutros.xaml.cs",
+              "RelativeToolTip": "RedeSocial\\CoisasPerfil\\PagePerfilOutros.xaml.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAGQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T12:00:21.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PagePerfilOutros.xaml",
+              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\CoisasPerfil\\PagePerfilOutros.xaml",
+              "RelativeDocumentMoniker": "RedeSocial\\CoisasPerfil\\PagePerfilOutros.xaml",
+              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\CoisasPerfil\\PagePerfilOutros.xaml",
+              "RelativeToolTip": "RedeSocial\\CoisasPerfil\\PagePerfilOutros.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-23T12:00:16.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagePerfil.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePerfil.xaml.cs",
+              "RelativeDocumentMoniker": "RedeSocial\\PagePerfil.xaml.cs",
+              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\PagePerfil.xaml.cs",
+              "RelativeToolTip": "RedeSocial\\PagePerfil.xaml.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAowAYEAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T11:58:50.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Page6Amigos.xaml",
+              "DocumentMoniker": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\CoisasPerfil\\Page6Amigos.xaml",
+              "RelativeDocumentMoniker": "RedeSocial\\CoisasPerfil\\Page6Amigos.xaml",
+              "ToolTip": "C:\\Users\\thais\\OneDrive\\\u00C1rea de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\CoisasPerfil\\Page6Amigos.xaml",
+              "RelativeToolTip": "RedeSocial\\CoisasPerfil\\Page6Amigos.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-23T11:19:49.442Z",
+              "EditorCaption": ""
             }
           ]
         }
