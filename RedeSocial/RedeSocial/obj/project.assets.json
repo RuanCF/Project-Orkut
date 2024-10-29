@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thais\\OneDrive\\Área de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\RedeSocial.csproj",
+      "projectUniqueName": "C:\\Users\\thais\\OneDrive\\Área de Trabalho\\acelera\\Project-Orkut - Copia\\RedeSocial\\RedeSocial\\RedeSocial.csproj",
       "projectName": "RedeSocial",
-      "projectPath": "C:\\Users\\thais\\OneDrive\\Área de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\RedeSocial.csproj",
+      "projectPath": "C:\\Users\\thais\\OneDrive\\Área de Trabalho\\acelera\\Project-Orkut - Copia\\RedeSocial\\RedeSocial\\RedeSocial.csproj",
       "packagesPath": "C:\\Users\\thais\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thais\\OneDrive\\Área de Trabalho\\acelera\\Project-Orkut\\RedeSocial\\RedeSocial\\obj\\",
+      "outputPath": "C:\\Users\\thais\\OneDrive\\Área de Trabalho\\acelera\\Project-Orkut - Copia\\RedeSocial\\RedeSocial\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
